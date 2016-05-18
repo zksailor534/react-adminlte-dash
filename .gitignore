@@ -1,21 +1,4 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Non-deliverable build assets
-build
-gh-pages
-dist-modules
-
-# Dependency directory
 node_modules
-
-# Optional npm cache directory
-.npm
-
-# Optional REPL history
-.node_repl_history
-
-# Lint cache
-.eslintcache
+*.log
+.idea
+dist

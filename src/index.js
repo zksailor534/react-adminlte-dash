@@ -1,5 +1,6 @@
-'use strict';
+// Import components
+import Logo from './components/Logo';
 
-import { AdminLTE } from './components/AdminLTE.jsx';
-
-exports.AdminLTE = AdminLTE;
+module.exports = {
+  Logo
+};
