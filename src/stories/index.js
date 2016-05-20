@@ -1,1 +1,2 @@
 import './Logo';
+import './NavBar';

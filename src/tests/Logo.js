@@ -14,7 +14,7 @@ describe('Logo', () => {
 
   it('should show the given text in mini format', () => {
     const text = 'TXT';
-    const wrapper = shallow(<Logo size='mini' textSm={text} />);
+    const wrapper = shallow(<Logo sidebarMini mobileView textSm={text} />);
     expect(wrapper.text()).to.be.equal(text);
   });
 

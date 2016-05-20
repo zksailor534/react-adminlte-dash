@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const mainStyles = {
   WebkitTransition: 'width 0.3s ease-in-out',
@@ -9,7 +10,6 @@ const mainStyles = {
   float: 'left',
   height: '50px',
   lineHeight: '50px',
-  alignItems: 'center',
   textAlign: 'center',
   WebkitFontSmoothing: 'antialiased',
   fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
@@ -17,7 +17,8 @@ const mainStyles = {
   fontWeight: '300',
   overflow: 'hidden',
   border: '0 solid transparent',
-  color: '#ffffff'
+  color: '#ffffff',
+  left: '0px'
 };
 
 class Logo extends React.Component {
@@ -87,16 +88,14 @@ class Logo extends React.Component {
           fontSize: '20px',
           width: '230px'
         };
-      } else if (this.props.mini) {
+      } else if (this.props.sidebarMini) {
         return {
           width: '50px',
           display: 'block',
           padding: '0px',
-          marginLeft: '-15px',
-          marginRight: '-15px',
           fontSize: '18px'
         };
-      } else if (!this.props.mini) {
+      } else if (!this.props.sidebarMini) {
         return {
           display: 'none'
         };
@@ -130,9 +129,9 @@ class Logo extends React.Component {
 }
 
 Logo.propTypes = {
-  mini: React.PropTypes.bool,
   mobileView: React.PropTypes.bool,
   onClick: React.PropTypes.func,
+  sidebarMini: React.PropTypes.bool,
   skin: React.PropTypes.string,
   style: React.PropTypes.object,
   textLg: React.PropTypes.string,
@@ -140,8 +139,8 @@ Logo.propTypes = {
 };
 
 Logo.defaultProps = {
-  mini: true,
   mobileView: false,
+  sidebarMini: true,
   skin: 'blue',
   style: {},
   textLg: 'AdminLTE',

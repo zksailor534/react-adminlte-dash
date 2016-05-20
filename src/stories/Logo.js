@@ -39,6 +39,6 @@ storiesOf('Logo', module)
   .add('light yellow', () => (
     <Logo onClick={action('button clicked')} skin='yellow-light' />
   ))
-  .add('mini on mobile', () => (
-    <Logo onClick={action('button clicked')} mini mobileView />
+  .add('mini sidebar on mobile', () => (
+    <Logo onClick={action('button clicked')} sidebarMini mobileView />
   ));
