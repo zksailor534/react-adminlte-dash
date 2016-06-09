@@ -7,37 +7,37 @@ storiesOf('NavBar', module)
     <NavBar />
   ))
   .add('light blue', () => (
-    <NavBar skin='blue-light' />
+    <NavBar skin="blue-light" />
   ))
   .add('black', () => (
-    <NavBar skin='black' />
+    <NavBar skin="black" />
   ))
   .add('light black', () => (
-    <NavBar skin='black-light' />
+    <NavBar skin="black-light" />
   ))
   .add('green', () => (
-    <NavBar skin='green' />
+    <NavBar skin="green" />
   ))
   .add('light green', () => (
-    <NavBar skin='green-light' />
+    <NavBar skin="green-light" />
   ))
   .add('purple', () => (
-    <NavBar skin='purple' />
+    <NavBar skin="purple" />
   ))
   .add('light purple', () => (
-    <NavBar skin='purple-light' />
+    <NavBar skin="purple-light" />
   ))
   .add('red', () => (
-    <NavBar skin='red' />
+    <NavBar skin="red" />
   ))
   .add('light red', () => (
-    <NavBar skin='red-light' />
+    <NavBar skin="red-light" />
   ))
   .add('yellow', () => (
-    <NavBar skin='yellow' />
+    <NavBar skin="yellow" />
   ))
   .add('light yellow', () => (
-    <NavBar skin='yellow-light' />
+    <NavBar skin="yellow-light" />
   ))
   .add('mini sidebar on mobile', () => (
     <NavBar sidebarMini mobileView />
@@ -45,3 +45,4 @@ storiesOf('NavBar', module)
   .add('mobile', () => (
     <NavBar sidebarMini={false} mobileView />
   ));
+

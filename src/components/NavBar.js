@@ -1,13 +1,13 @@
 import React from 'react';
-import Radium from 'radium';
+import radium from 'radium';
 import { FaBars } from 'react-icons/lib/fa';
 import base from '../styles/base';
 import skin from '../styles/skins';
 import responsiveStyles from '../styles/responsive';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 class NavBar extends React.Component {
-  render () {
+  render() {
     return (
       <nav
         style={[
@@ -15,7 +15,7 @@ class NavBar extends React.Component {
           base.navbar,
           skin(this.props.skin).navbar,
           responsiveStyles('NavBar', this.props.mobileView, this.props.sidebarMini),
-          this.props.style
+          this.props.style,
         ]}
         className="navbar-static-top"
       >
@@ -24,7 +24,7 @@ class NavBar extends React.Component {
             float: 'left',
             backgroundColor: 'transparent',
             backgroundImage: 'none',
-            margin: '18px'
+            margin: '18px',
           }}
         />
       </nav>
@@ -36,14 +36,14 @@ NavBar.propTypes = {
   mobileView: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
   skin: React.PropTypes.string,
-  style: React.PropTypes.object
+  style: React.PropTypes.object,
 };
 
 NavBar.defaultProps = {
   mobileView: false,
   sidebarMini: true,
   skin: 'blue',
-  style: {}
+  style: {},
 };
 
-export default Radium(NavBar);
+export default radium(NavBar);

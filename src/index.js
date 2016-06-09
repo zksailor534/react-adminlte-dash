@@ -4,5 +4,5 @@ import NavBar from './components/NavBar';
 
 module.exports = {
   Logo,
-  NavBar
+  NavBar,
 };

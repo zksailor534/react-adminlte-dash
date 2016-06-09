@@ -3,7 +3,7 @@ const base = {
     position: 'relative',
     overflow: 'hidden',
     maxHeight: '100px',
-    zIndex: '1030'
+    zIndex: '1030',
   },
   navbar: {
     WebkitTransition: 'margin-left 0.3s ease-in-out',
@@ -14,7 +14,7 @@ const base = {
     border: 'none',
     minHeight: '50px',
     borderRadius: '0px',
-    color: '#ffffff'
+    color: '#ffffff',
   },
   sidebarToggle: {
     float: 'left',
@@ -22,9 +22,9 @@ const base = {
     backgroundImage: 'none',
     margin: '18px',
     ':hover': {
-      color: '#ffffff'
-    }
-  }
+      color: '#ffffff',
+    },
+  },
 };
 
 export default base;

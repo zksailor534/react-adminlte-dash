@@ -11,15 +11,14 @@ const responsiveStyles = (caller, mobileView, sidebarMini) => {
         return {};
       } else if (sidebarMini) {
         return {
-          marginLeft: '50px'
+          marginLeft: '50px',
         };
       } else if (!sidebarMini) {
         return {
-          marginLeft: '0px'
+          marginLeft: '0px',
         };
-      } else {
-        return {};
       }
+      return {};
 
     default:
       return {};
