@@ -1,24 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Logo, NavBar } from '.';
+import { Navbar } from '.';
 
-const targetId = 'render-target';
+// Import jquery scripts
+import 'admin-lte/dist/js/app.min.js';
+
+// Import styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/adminlte.scss';
+
+// add classes to body <<TO BE REMOVED>>
+document.body.className = 'hold-transition skin-blue sidebar-mini';
 
 // Create target element
-const component = function (target) {
-  const element = document.createElement('div');
-  element.id = target;
-  return element;
-};
-
-// Add target element to body
-document.body.appendChild(component(targetId));
+const target = document.createElement('div');
+target.id = 'render-target';
+target.className = 'wrapper';
+document.body.appendChild(target);
 
 // Render React components in element
 ReactDOM.render(
-  <header>
-    <Logo />
-    <NavBar />
-  </header>,
-  document.getElementById(targetId)
+  <Navbar />,
+  document.getElementById('render-target')
 );

@@ -1,49 +1,30 @@
 import React from 'react';
-import radium from 'radium';
-import { FaBars } from 'react-icons/lib/fa';
-import base from '../styles/base';
-import skin from '../styles/skins';
-import responsiveStyles from '../styles/responsive';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarLogo from './NavbarLogo';
 
-class NavBar extends React.Component {
+class Navbar extends React.Component {
   render() {
     return (
-      <nav
-        style={[
-          base.mainHeader,
-          base.navbar,
-          skin(this.props.skin).navbar,
-          responsiveStyles('NavBar', this.props.mobileView, this.props.sidebarMini),
-          this.props.style,
-        ]}
-        className="navbar-static-top"
-      >
-        <FaBars
-          style={{
-            float: 'left',
-            backgroundColor: 'transparent',
-            backgroundImage: 'none',
-            margin: '18px',
-          }}
-        />
-      </nav>
+      <header className="main-header">
+        {this.props.logo}
+        <nav className="navbar navbar-static-top">
+          {/* Sidebar toggle button */}
+          <a href="#" className="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span className="sr-only">Toggle navigation</span>
+          </a>
+          {this.props.children}
+        </nav>
+      </header>
     );
   }
 }
 
-NavBar.propTypes = {
-  mobileView: React.PropTypes.bool,
-  sidebarMini: React.PropTypes.bool,
-  skin: React.PropTypes.string,
-  style: React.PropTypes.object,
+Navbar.propTypes = {
+  children: React.PropTypes.node,
+  logo: React.PropTypes.element,
 };
 
-NavBar.defaultProps = {
-  mobileView: false,
-  sidebarMini: true,
-  skin: 'blue',
-  style: {},
+Navbar.defaultProps = {
+  logo: <NavbarLogo />,
 };
 
-export default radium(NavBar);
+export default Navbar;
