@@ -5,13 +5,17 @@ class Navbar extends React.Component {
   render() {
     return (
       <header className="main-header">
+
+        {/* Logo */}
         {this.props.logo}
+
+        {/* Header Navbar: style can be found in header.less */}
         <nav className="navbar navbar-static-top">
-          {/* Sidebar toggle button */}
+          {/* Sidebar toggle button*/}
           <a href="#" className="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span className="sr-only">Toggle navigation</span>
           </a>
-          {this.props.children}
+
         </nav>
       </header>
     );

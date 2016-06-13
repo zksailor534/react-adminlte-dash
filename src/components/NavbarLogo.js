@@ -5,9 +5,9 @@ class NavbarLogo extends React.Component {
     return (
       <a href={this.props.link} className="logo">
         {/* mini logo for sidebar mini 50x50 pixels */}
-        <span className="logo-mini">{this.props.textSm}</span>
+        <div className="logo-mini">{this.props.logoSm}</div>
         {/* logo for regular state and mobile devices */}
-        <span className="logo-lg">{this.props.textLg}</span>
+        <div className="logo-lg">{this.props.logoLg}</div>
       </a>
     );
   }
@@ -15,14 +15,14 @@ class NavbarLogo extends React.Component {
 
 NavbarLogo.propTypes = {
   link: React.PropTypes.string,
-  textLg: React.PropTypes.element,
-  textSm: React.PropTypes.element,
+  logoLg: React.PropTypes.element,
+  logoSm: React.PropTypes.element,
 };
 
 NavbarLogo.defaultProps = {
   link: '#',
-  textLg: <div><b>Admin</b>LTE</div>,
-  textSm: <div><b>A</b>LT</div>,
+  logoLg: <span><b>Admin</b>LTE</span>,
+  logoSm: <span><b>A</b>LT</span>,
 };
 
 export default NavbarLogo;

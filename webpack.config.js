@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -14,18 +13,8 @@ const PATHS = {
 
 const common = {
   resolve: {
-    alias: {
-      jquery: 'jquery/src/jquery',
-    },
     extensions: ['', '.js', '.jsx'],
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      jquery: 'jquery',
-    }),
-  ],
   module: {
     loaders: [
       // Javascript & React loader
@@ -40,16 +29,12 @@ const common = {
       // CSS style loader
       { test: /\.css$/, loaders: ['style', 'css'] },
       // SCSS style loader
-      { test: /\.scss$/, loaders: ['style', 'css', 'sass'] },
+      { test: /\.less$/, loaders: ['style', 'css', 'less'] },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
       },
       { test: /\.(ttf|eot|svg|jpg|gif|png)(\?[\s\S]+)?$/, loader: 'file' },
-      // Serve jQuery for Bootstrap scripts
-      { test: /bootstrap-sass\/assets\/javascripts\//, loader: 'imports?jQuery=jquery' },
-      // Serve jQuery for AdminLTE scripts
-      { test: /admin-lte\/dist\/js\//, loader: 'imports?jQuery=jquery' },
     ],
   },
 };
