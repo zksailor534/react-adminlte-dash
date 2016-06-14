@@ -1,7 +1,9 @@
 // Import components
 import AdminLTE from './components/AdminLTE';
-// import NavbarLogo from './components/NavbarLogo';
-// import Navbar from './components/NavBar';
+import Navbar from './components/NavBar';
+import MainSidebar from './components/MainSidebar';
+import SidebarMenu from './components/SidebarMenu';
+import SidebarMenuItem from './components/SidebarMenuItem';
 
 // Import styles
 import 'bootstrap/dist/css/bootstrap.css';
@@ -11,6 +13,8 @@ import './styles/less/skins/_all-skins.less';
 
 module.exports = {
   AdminLTE,
-  // NavbarLogo,
-  // Navbar,
+  Navbar,
+  MainSidebar,
+  SidebarMenu,
+  SidebarMenuItem,
 };
