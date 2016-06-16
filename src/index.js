@@ -5,6 +5,7 @@ import MainSidebar from './components/MainSidebar';
 import SidebarMenu from './components/SidebarMenu';
 import SidebarMenuItem from './components/SidebarMenuItem';
 import SidebarMenuSearch from './components/SidebarMenuSearch';
+import SidebarMenuUser from './components/SidebarMenuUser';
 
 // Import styles
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,4 +20,5 @@ module.exports = {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuSearch,
+  SidebarMenuUser,
 };

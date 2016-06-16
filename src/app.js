@@ -5,7 +5,8 @@ import { AdminLTE,
   MainSidebar,
   SidebarMenu,
   SidebarMenuItem,
-  SidebarMenuSearch } from '.';
+  SidebarMenuSearch,
+  SidebarMenuUser } from '.';
 
 import user2 from './styles/img/user2-160x160.jpg';
 
@@ -29,15 +30,12 @@ class Demo extends React.Component {
         <MainSidebar>
           {/* sidebar menu: : style can be found in sidebar.less */}
           {/* Sidebar user panel */}
-          <div className="user-panel">
-            <div className="pull-left image">
-              <img src={user2} className="img-circle" alt="User" />
-            </div>
-            <div className="pull-left info">
-              <p>Alexander Pierce</p>
-              <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
-            </div>
-          </div>
+          <SidebarMenuUser
+            userName="Alexander Pierce"
+            userStatus="online"
+            userImage={user2}
+          />
+
           {/* search form */}
           <SidebarMenuSearch
             onSearch={ (value) => (alert(`Searching for: ${value}`)) }
