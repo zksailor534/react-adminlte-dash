@@ -4,7 +4,10 @@ import { AdminLTE,
   Navbar,
   MainSidebar,
   SidebarMenu,
-  SidebarMenuItem } from '.';
+  SidebarMenuItem,
+  SidebarMenuSearch } from '.';
+
+import user2 from './styles/img/user2-160x160.jpg';
 
 // Create target element
 const target = document.createElement('div');
@@ -12,6 +15,7 @@ target.id = 'render-target';
 document.body.appendChild(target);
 
 class Demo extends React.Component {
+  /* eslint no-alert: 0 */
   render() {
     return (
       <AdminLTE
@@ -24,6 +28,21 @@ class Demo extends React.Component {
         {/* Left side column. contains the logo and sidebar */}
         <MainSidebar>
           {/* sidebar menu: : style can be found in sidebar.less */}
+          {/* Sidebar user panel */}
+          <div className="user-panel">
+            <div className="pull-left image">
+              <img src={user2} className="img-circle" alt="User" />
+            </div>
+            <div className="pull-left info">
+              <p>Alexander Pierce</p>
+              <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+          {/* search form */}
+          <SidebarMenuSearch
+            onSearch={ (value) => (alert(`Searching for: ${value}`)) }
+          />
+
           <SidebarMenu title="MAIN NAVIGATION">
 
             <SidebarMenuItem

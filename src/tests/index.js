@@ -1,1 +1,1 @@
-import './Logo';
+import './SidebarMenuItem';
