@@ -12,8 +12,8 @@ const PATHS = {
 };
 
 const common = {
-  entry: {
-    bootstrap: 'bootstrap-loader',
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
   },
   module: {
     loaders: [
@@ -27,19 +27,12 @@ const common = {
         },
       },
       // CSS style loader
-      { test: /\.css$/, loaders: ['style', 'css', 'postcss'] },
-      // SCSS style loader
-      { test: /\.scss$/, loaders: ['style', 'css', 'postcss', 'sass'] },
+      { test: /\.css$/, loaders: ['style', 'css'] },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url?limit=10000',
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
       },
-      {
-        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-        loader: 'file',
-      },
-      // Serve jQuery for Bootstrap scripts
-      { test: /bootstrap-sass\/assets\/javascripts\//, loader: 'imports?jQuery=jquery' },
+      { test: /\.(ttf|eot|svg|jpg|gif|png)(\?[\s\S]+)?$/, loader: 'file' },
     ],
   },
 };

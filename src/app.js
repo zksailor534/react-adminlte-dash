@@ -1,24 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Logo, NavBar } from '.';
-
-const targetId = 'render-target';
+import { Logo,
+  NavBar } from '.';
 
 // Create target element
-const component = function (target) {
-  const element = document.createElement('div');
-  element.id = target;
-  return element;
-};
+const target = document.createElement('div');
+target.id = 'render-target';
+document.body.appendChild(target);
 
-// Add target element to body
-document.body.appendChild(component(targetId));
+class Demo extends React.Component {
+  /* eslint no-alert: 0 */
+  render() {
+    return (
+      <header>
+        <Logo />
+        <NavBar />
+      </header>
+    );
+  }
+}
 
 // Render React components in element
 ReactDOM.render(
-  <header>
-    <Logo />
-    <NavBar />
-  </header>,
-  document.getElementById(targetId)
+  <Demo />,
+  document.getElementById('render-target')
 );
