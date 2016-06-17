@@ -1,127 +1,104 @@
 import React from 'react';
-import { FaBars } from 'react-icons/lib/fa';
 
 const styles = {
-  mainHeader: {
-    position: 'relative',
-    overflow: 'hidden',
-    maxHeight: '100px',
-    zIndex: '1030',
-  },
-
-  navbar: {
-    WebkitTransition: 'margin-left 0.3s ease-in-out',
-    OTransition: 'margin-left 0.3s ease-in-out',
-    transition: 'margin-left 0.3s ease-in-out',
-    marginBottom: '0px',
-    marginLeft: '230px',
-    border: 'none',
-    minHeight: '50px',
-    borderRadius: '0px',
-    color: '#ffffff',
-  },
-
-  sidebarToggle: {
+  base: {
+    WebkitTransition: 'width 0.3s ease-in-out',
+    OTransition: 'width 0.3s ease-in-out',
+    transition: 'width 0.3s ease-in-out',
+    display: 'block',
+    boxSizing: 'border-box',
     float: 'left',
-    backgroundColor: 'transparent',
-    backgroundImage: 'none',
-    margin: '16px',
+    height: '50px',
+    lineHeight: '50px',
+    textAlign: 'center',
+    WebkitFontSmoothing: 'antialiased',
+    fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+    padding: '0 15px',
+    fontWeight: '300',
+    overflow: 'hidden',
+    border: '0 solid transparent',
+    color: '#ffffff',
+    left: '0px',
+    width: '230px',
+    fontSize: '18px',
   },
 
   black: {
-    WebkitBoxShadow: '0px 1px 1px rgba(0, 0, 0, 0.05)',
-    boxShadow: '0px 1px 1px rgba(0, 0, 0, 0.05)',
     backgroundColor: '#ffffff',
-    color: '#000000',
+    color: '#333333',
+    borderRight: '1px solid #eee',
   },
 
   blackLight: {
-    WebkitBoxShadow: '0px 1px 1px rgba(0, 0, 0, 0.05)',
-    boxShadow: '0px 1px 1px rgba(0, 0, 0, 0.05)',
     backgroundColor: '#ffffff',
-    color: '#000000',
+    color: '#333333',
+    borderRight: '1px solid #eee',
   },
 
   blue: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#3c8dbc',
+    backgroundColor: '#367fa9',
+    borderRight: '0 solid transparent',
   },
 
   blueLight: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
     backgroundColor: '#3c8dbc',
+    borderRight: '0 solid transparent',
   },
 
   green: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#00a65a',
+    backgroundColor: '#008d4c',
+    borderRight: '0 solid transparent',
   },
 
   greenLight: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
     backgroundColor: '#00a65a',
+    borderRight: '0 solid transparent',
   },
 
   purple: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#605ca8',
+    backgroundColor: '#555299',
+    borderRight: '0 solid transparent',
   },
 
   purpleLight: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
     backgroundColor: '#605ca8',
+    borderRight: '0 solid transparent',
   },
 
   red: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#dd4b39',
+    backgroundColor: '#d73925',
+    borderRight: '0 solid transparent',
   },
 
   redLight: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
     backgroundColor: '#dd4b39',
+    borderRight: '0 solid transparent',
   },
 
   yellow: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#f39c12',
+    backgroundColor: '#e08e0b',
+    borderRight: '0 solid transparent',
   },
 
   yellowLight: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
     backgroundColor: '#f39c12',
+    borderRight: '0 solid transparent',
   },
 
   mini: {
-    marginLeft: '50px',
+    width: '50px',
+    display: 'block',
+    padding: '0px',
+    fontSize: '18px',
   },
 
   mobile: {
-    marginLeft: '0',
+    width: '100%',
+    float: 'none',
   },
 };
 
-class Navbar extends React.Component {
+class Logo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -138,12 +115,14 @@ class Navbar extends React.Component {
   }
 
   getStyles() {
-    let style = { ...styles.mainHeader, ...styles.navbar };
+    let style = { ...styles.base };
 
     // Window sizing and collapse
     if (this.state.windowWidth > 767) {
-      if (this.props.sidebarCollapse && this.props.sidebarMini) {
-        style = { ...style, ...styles.mini };
+      if (this.props.sidebarCollapse) {
+        if (this.props.sidebarMini) {
+          style = { ...style, ...styles.mini };
+        }
       }
     } else {
       style = { ...style, ...styles.mobile };
@@ -194,38 +173,46 @@ class Navbar extends React.Component {
     return style;
   }
 
+  getLogo() {
+    if (this.state.windowWidth > 767) {
+      if (this.props.sidebarCollapse && this.props.sidebarMini) {
+        return this.props.logoSm;
+      }
+    }
+    return this.props.logoLg;
+  }
+
   handleResize() {
     this.setState({ windowWidth: window.innerWidth });
   }
 
-  handleToggle(e) {
-    e.preventDefault();
-    this.props.sidebarToggle();
-  }
-
   render() {
     return (
-      <nav style={this.getStyles()} >
-        <FaBars
-          style={{ ...styles.sidebarToggle }}
-          onClick={this.handleToggle.bind(this)}
-        />
-      </nav>
+      <button
+        style={this.getStyles()}
+        onClick={this.props.onClick}
+      >
+        {this.getLogo()}
+      </button>
     );
   }
 }
 
-Navbar.propTypes = {
+Logo.propTypes = {
+  onClick: React.PropTypes.func,
   sidebarCollapse: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
   skin: React.PropTypes.string,
-  sidebarToggle: React.PropTypes.func.isRequired,
+  logoLg: React.PropTypes.element,
+  logoSm: React.PropTypes.element,
 };
 
-Navbar.defaultProps = {
+Logo.defaultProps = {
   sidebarCollapse: false,
   sidebarMini: true,
   skin: 'blue',
+  logoLg: <span><b>Admin</b>LTE</span>,
+  logoSm: <span><b>A</b>LT</span>,
 };
 
-export default Navbar;
+export default Logo;

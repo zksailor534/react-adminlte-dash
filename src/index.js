@@ -1,12 +1,8 @@
 // Import components
-import Logo from './components/Logo';
-import NavBar from './components/NavBar';
-
-// Import external styles
-import 'bootstrap/dist/css/bootstrap.css';
-import 'font-awesome/css/font-awesome.css';
+import NavbarLogo from './components/NavbarLogo';
+import Navbar from './components/NavBar';
 
 module.exports = {
-  Logo,
-  NavBar,
+  NavbarLogo,
+  Navbar,
 };
