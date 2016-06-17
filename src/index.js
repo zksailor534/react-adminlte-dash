@@ -1,6 +1,6 @@
 // Import components
 import AdminLTE from './components/AdminLTE';
-import Navbar from './components/NavBar';
+import Navbar from './components/Navbar';
 import MainSidebar from './components/MainSidebar';
 import SidebarMenu from './components/SidebarMenu';
 import SidebarMenuItem from './components/SidebarMenuItem';

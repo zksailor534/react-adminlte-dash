@@ -17,14 +17,31 @@ document.body.appendChild(target);
 
 class Demo extends React.Component {
   /* eslint no-alert: 0 */
+  constructor(props) {
+    super(props);
+    this.state = {
+      sidebarCollapse: false,
+      sidebarMini: true,
+    };
+  }
+
+  sidebarToggle() {
+    this.setState({
+      sidebarCollapse: !this.state.sidebarCollapse,
+    });
+  }
+
   render() {
     return (
       <AdminLTE
         skin="blue"
-        sidebarMini
+        sidebarMini={this.state.sidebarMini}
         layout="fixed"
+        sidebarCollapsed={this.state.sidebarCollapse}
       >
-        <Navbar />
+        <Navbar
+          sidebarToggle={this.sidebarToggle.bind(this)}
+        />
 
         {/* Left side column. contains the logo and sidebar */}
         <MainSidebar>
