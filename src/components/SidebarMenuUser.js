@@ -7,13 +7,6 @@ import classNames from 'classnames';
 // unknown: text-muted
 
 class SidebarMenuUser extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     active: this.props.active,
-  //   };
-  // }
-
   render() {
     let userImage = <i className="fa fa-user fa-3x"></i>;
     let userStatus = null;

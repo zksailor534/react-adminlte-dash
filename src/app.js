@@ -6,7 +6,8 @@ import { AdminLTE,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuSearch,
-  SidebarMenuUser } from '.';
+  SidebarMenuUser,
+  NavbarDropdown } from '.';
 
 import user2 from './styles/img/user2-160x160.jpg';
 
@@ -41,7 +42,11 @@ class Demo extends React.Component {
       >
         <Navbar
           sidebarToggle={this.sidebarToggle.bind(this)}
-        />
+        >
+          <NavbarDropdown
+            type="messages"
+          />
+        </Navbar>
 
         {/* Left side column. contains the logo and sidebar */}
         <MainSidebar>
