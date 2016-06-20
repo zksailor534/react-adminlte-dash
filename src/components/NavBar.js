@@ -25,7 +25,7 @@ const styles = {
     float: 'left',
     backgroundColor: 'transparent',
     backgroundImage: 'none',
-    margin: '16px',
+    padding: '16px',
   },
 
   black: {

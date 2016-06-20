@@ -1,48 +1,47 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import { NavBar } from '../index';
+import { storiesOf, action } from '@kadira/storybook';
+import Navbar from '../components/Navbar';
 
 storiesOf('NavBar', module)
   .add('default view', () => (
-    <NavBar />
+    <Navbar sidebarToggle={action('toggle clicked')} />
   ))
   .add('light blue', () => (
-    <NavBar skin="blue-light" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="blue-light" />
   ))
   .add('black', () => (
-    <NavBar skin="black" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="black" />
   ))
   .add('light black', () => (
-    <NavBar skin="black-light" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="black-light" />
   ))
   .add('green', () => (
-    <NavBar skin="green" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="green" />
   ))
   .add('light green', () => (
-    <NavBar skin="green-light" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="green-light" />
   ))
   .add('purple', () => (
-    <NavBar skin="purple" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="purple" />
   ))
   .add('light purple', () => (
-    <NavBar skin="purple-light" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="purple-light" />
   ))
   .add('red', () => (
-    <NavBar skin="red" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="red" />
   ))
   .add('light red', () => (
-    <NavBar skin="red-light" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="red-light" />
   ))
   .add('yellow', () => (
-    <NavBar skin="yellow" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="yellow" />
   ))
   .add('light yellow', () => (
-    <NavBar skin="yellow-light" />
+    <Navbar sidebarToggle={action('toggle clicked')} skin="yellow-light" />
   ))
-  .add('mini sidebar on mobile', () => (
-    <NavBar sidebarMini mobileView />
+  .add('collapsed sidebar', () => (
+    <Navbar sidebarToggle={action('toggle clicked')} sidebarCollapse sidebarMini={false} />
   ))
-  .add('mobile', () => (
-    <NavBar sidebarMini={false} mobileView />
+  .add('collapsed mini sidebar', () => (
+    <Navbar sidebarToggle={action('toggle clicked')} sidebarCollapse sidebarMini />
   ));
-

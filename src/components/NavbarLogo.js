@@ -20,7 +20,7 @@ const styles = {
     color: '#ffffff',
     left: '0px',
     width: '230px',
-    fontSize: '18px',
+    fontSize: '20px',
   },
 
   black: {

@@ -1,2 +1,2 @@
-import './Logo';
-import './NavBar';
+import './NavbarLogo';
+import './Navbar';
