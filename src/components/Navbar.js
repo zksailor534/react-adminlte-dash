@@ -35,21 +35,7 @@ const styles = {
     color: '#000000',
   },
 
-  blackLight: {
-    WebkitBoxShadow: '0px 1px 1px rgba(0, 0, 0, 0.05)',
-    boxShadow: '0px 1px 1px rgba(0, 0, 0, 0.05)',
-    backgroundColor: '#ffffff',
-    color: '#000000',
-  },
-
   blue: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#3c8dbc',
-  },
-
-  blueLight: {
     WebkitBoxShadow: '0px',
     boxShadow: '0px',
     color: '#ffffff',
@@ -63,21 +49,7 @@ const styles = {
     backgroundColor: '#00a65a',
   },
 
-  greenLight: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#00a65a',
-  },
-
   purple: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#605ca8',
-  },
-
-  purpleLight: {
     WebkitBoxShadow: '0px',
     boxShadow: '0px',
     color: '#ffffff',
@@ -91,21 +63,7 @@ const styles = {
     backgroundColor: '#dd4b39',
   },
 
-  redLight: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#dd4b39',
-  },
-
   yellow: {
-    WebkitBoxShadow: '0px',
-    boxShadow: '0px',
-    color: '#ffffff',
-    backgroundColor: '#f39c12',
-  },
-
-  yellowLight: {
     WebkitBoxShadow: '0px',
     boxShadow: '0px',
     color: '#ffffff',
@@ -152,42 +110,31 @@ class Navbar extends React.Component {
     // Skins
     switch (this.props.skin) {
       case 'black':
+      case 'black-light':
         style = { ...style, ...styles.black };
         break;
-      case 'black-light':
-        style = { ...style, ...styles.blackLight };
-        break;
       case 'blue':
+      case 'blue-light':
         style = { ...style, ...styles.blue };
         break;
-      case 'blue-light':
-        style = { ...style, ...styles.blueLight };
-        break;
       case 'green':
+      case 'green-light':
         style = { ...style, ...styles.green };
         break;
-      case 'green-light':
-        style = { ...style, ...styles.greenLight };
-        break;
       case 'purple':
+      case 'purple-light':
         style = { ...style, ...styles.purple };
         break;
-      case 'purple-light':
-        style = { ...style, ...styles.purpleLight };
-        break;
       case 'red':
+      case 'red-light':
         style = { ...style, ...styles.red };
         break;
-      case 'red-light':
-        style = { ...style, ...styles.redLight };
-        break;
       case 'yellow':
+      case 'yellow-light':
         style = { ...style, ...styles.yellow };
         break;
-      case 'yellow-light':
-        style = { ...style, ...styles.yellowLight };
-        break;
       default:
+        style = { ...style, ...styles.blue };
         break;
     }
 
