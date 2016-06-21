@@ -10,6 +10,8 @@ import { AdminLTE,
   NavbarDropdown } from '.';
 
 import user2 from './styles/img/user2-160x160.jpg';
+import user3 from './styles/img/user3-128x128.jpg';
+import user4 from './styles/img/user4-128x128.jpg';
 
 // Create target element
 const target = document.createElement('div');
@@ -45,7 +47,78 @@ class Demo extends React.Component {
         >
           <NavbarDropdown
             type="messages"
-          />
+          >
+            <ul className="dropdown-menu">
+              <li className="header">You have 4 messages</li>
+              <li>
+                {/* inner menu: contains the actual data */}
+                <ul className="menu">
+                  <li>{/* start message */}
+                    <a href="#">
+                      <div className="pull-left">
+                        <img src={user2} className="img-circle" alt="User" />
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i className="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  {/* end message */}
+                  <li>
+                    <a href="#">
+                      <div className="pull-left">
+                        <img src={user3} className="img-circle" alt="User" />
+                      </div>
+                      <h4>
+                        AdminLTE Design Team
+                        <small><i className="fa fa-clock-o"></i> 2 hours</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div className="pull-left">
+                        <img src={user4} className="img-circle" alt="User" />
+                      </div>
+                      <h4>
+                        Developers
+                        <small><i className="fa fa-clock-o"></i> Today</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div className="pull-left">
+                        <img src={user3} className="img-circle" alt="User" />
+                      </div>
+                      <h4>
+                        Sales Department
+                        <small><i className="fa fa-clock-o"></i> Yesterday</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div className="pull-left">
+                        <img src={user4} className="img-circle" alt="User" />
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i className="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </NavbarDropdown>
         </Navbar>
 
         {/* Left side column. contains the logo and sidebar */}

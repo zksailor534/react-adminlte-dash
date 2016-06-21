@@ -1,23 +1,28 @@
 import React from 'react';
+import classNames from 'classnames';
 
 // Navbar Dropdown Type Options
 // messages: fa-envelope-o
 // notifications: fa-bell-o
 // tasks: fa-flag-o
-// user: user image
-// control: fa-gears-o
 
 class NavbarDropdown extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+    };
+  }
+
+  toggleMenu() {
+    this.setState({
+      open: !this.state.open,
+    });
+  }
+
   render() {
     let menuClass;
     let menuIcon = null;
-    let userImage = <i className="fa fa-user fa-2x"></i>;
-
-    // Use user image if available
-    if (this.props.userImage) {
-      userImage = <img src={this.props.userImage} className="img-circle" alt="User" />;
-    }
-
 
     switch (this.props.type) {
       case 'messages':
@@ -32,21 +37,20 @@ class NavbarDropdown extends React.Component {
         menuClass = 'dropdown tasks-menu';
         menuIcon = <i className="fa fa-flag-o"></i>;
         break;
-      case 'user':
-        menuClass = 'dropdown user user-menu';
-        menuIcon = userImage;
-        break;
-      case 'control':
-        menuClass = '';
-        menuIcon = <i className="fa fa-gears-o"></i>;
-        break;
       default:
         menuClass = '';
     }
 
     return (
-      <li className={menuClass}>
-        <a href={this.props.link} className="dropdown-toggle" data-toggle="dropdown">
+      <li className={classNames(menuClass,
+        { open: this.state.open })}
+      >
+        <a
+          href={this.props.link}
+          className="dropdown-toggle"
+          data-toggle="dropdown"
+          onClick={this.toggleMenu.bind(this)}
+        >
           {menuIcon}
           <span className="label label-success">4</span>
         </a>
@@ -65,7 +69,7 @@ NavbarDropdown.propTypes = {
 
 NavbarDropdown.defaultProps = {
   link: '#',
-  type: 'control',
+  type: 'messages',
 };
 
 export default NavbarDropdown;
