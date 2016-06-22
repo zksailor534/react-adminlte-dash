@@ -1,9 +1,8 @@
 import './Logo';
-import './NavBar';
-
-// Import jquery scripts
-import 'admin-lte/dist/js/app.min.js';
+import './Navbar';
 
 // Import styles
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/adminlte.scss';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
+import './styles/less/AdminLTE.less';
+import './styles/less/skins/_all-skins.less';
