@@ -60,10 +60,11 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "react": "^15.1.0"
+    "react": "^15.1.0",
+    "react-bootstrap": "^0.29.5"
   },
   "main": "dist",
   "engines": {
     "npm": "^3.0.0"
-  },
+  }
 }

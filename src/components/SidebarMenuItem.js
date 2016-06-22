@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import { Collapse } from 'react-bootstrap';
 
 // Left Icon Options
 // plain: fa-circle-o
@@ -80,9 +81,11 @@ class SidebarMenuItem extends React.Component {
     // Deal with submenu
     if (this.props.children) {
       subMenu = (
-        <ul className="treeview-menu">
-          {this.props.children}
-        </ul>
+        <Collapse in={this.state.active} >
+          <ul className="treeview-menu">
+            {this.props.children}
+          </ul>
+        </Collapse>
       );
     }
 

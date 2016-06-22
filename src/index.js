@@ -1,7 +1,7 @@
 // Import components
 import AdminLTE from './components/AdminLTE';
 import Navbar from './components/Navbar';
-import NavbarDropdown from './components/NavbarDropdown';
+import DropdownMenu from './components/DropdownMenu';
 import MainSidebar from './components/MainSidebar';
 import SidebarMenu from './components/SidebarMenu';
 import SidebarMenuItem from './components/SidebarMenuItem';
@@ -22,5 +22,5 @@ module.exports = {
   SidebarMenuItem,
   SidebarMenuSearch,
   SidebarMenuUser,
-  NavbarDropdown,
+  DropdownMenu,
 };

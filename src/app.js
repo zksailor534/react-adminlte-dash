@@ -7,7 +7,7 @@ import { AdminLTE,
   SidebarMenuItem,
   SidebarMenuSearch,
   SidebarMenuUser,
-  NavbarDropdown } from '.';
+  DropdownMenu } from '.';
 
 import user2 from './styles/img/user2-160x160.jpg';
 import user3 from './styles/img/user3-128x128.jpg';
@@ -45,7 +45,7 @@ class Demo extends React.Component {
         <Navbar
           sidebarToggle={this.sidebarToggle.bind(this)}
         >
-          <NavbarDropdown
+          <DropdownMenu
             type="messages"
           >
             <ul className="dropdown-menu">
@@ -118,7 +118,7 @@ class Demo extends React.Component {
               </li>
               <li className="footer"><a href="#">See All Messages</a></li>
             </ul>
-          </NavbarDropdown>
+          </DropdownMenu>
         </Navbar>
 
         {/* Left side column. contains the logo and sidebar */}
