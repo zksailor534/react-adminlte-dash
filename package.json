@@ -63,7 +63,7 @@
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.5"
   },
-  "main": "dist",
+  "main": "dist/index.js",
   "engines": {
     "npm": "^3.0.0"
   }
