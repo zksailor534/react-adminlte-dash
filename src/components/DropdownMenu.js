@@ -71,9 +71,9 @@ class DropdownMenu extends React.Component {
         { open: this.state.open })}
       >
         <a
-          href={this.props.link}
           className="dropdown-toggle"
           data-toggle="dropdown"
+          href={this.props.link}
           onClick={this.toggleMenu.bind(this)}
         >
           {menuIcon}

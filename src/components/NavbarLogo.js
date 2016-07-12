@@ -3,7 +3,10 @@ import React from 'react';
 class NavbarLogo extends React.Component {
   render() {
     return (
-      <a href={this.props.link} className="logo">
+      <a
+        className="logo"
+        href={this.props.link}
+      >
         {/* mini logo for sidebar mini 50x50 pixels */}
         <div className="logo-mini">{this.props.logoSm}</div>
         {/* logo for regular state and mobile devices */}

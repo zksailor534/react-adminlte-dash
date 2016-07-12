@@ -23,24 +23,24 @@ class SidebarMenuSearch extends React.Component {
     return (
       <form
         action="#"
-        method="get"
         className="sidebar-form"
+        method="get"
         onSubmit={this.onSubmit.bind(this)}
       >
         <div className="input-group">
           <input
-            type="text"
-            name="q"
             className="form-control"
-            placeholder="Search..."
+            name="q"
             onChange={this.onInput.bind(this)}
+            placeholder="Search..."
+            type="text"
           />
             <span className="input-group-btn">
               <button
-                type="submit"
-                name="search"
-                id="search-btn"
                 className="btn btn-flat"
+                id="search-btn"
+                name="search"
+                type="submit"
               >
                 <i className="fa fa-search"></i>
               </button>

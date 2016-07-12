@@ -1,3 +1,7 @@
-node_modules
-*.log
-dist
+build/
+gh-pages/
+dist-modules/
+node_modules/
+coverage/
+.eslintcache
+

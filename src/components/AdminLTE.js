@@ -89,13 +89,13 @@ class AdminLTE extends React.Component {
 
     return (
       <div
-        id="adminlte_core"
         className={classNames('hold-transition',
           skinClass,
           { 'sidebar-mini': this.props.sidebarMini },
           { 'sidebar-collapse': !this.state.screenSm && this.props.sidebarCollapsed },
           { 'sidebar-open': this.state.screenSm && !this.props.sidebarCollapsed },
           layoutClass)}
+        id="adminlte_core"
       >
         <div className="wrapper">
           {this.props.children}

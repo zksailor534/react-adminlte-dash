@@ -1,4 +1,5 @@
-// Import components
+'use strict';
+
 import AdminLTE from './components/AdminLTE';
 import Navbar from './components/Navbar';
 import DropdownMenu from './components/DropdownMenu';
@@ -8,12 +9,7 @@ import SidebarMenuItem from './components/SidebarMenuItem';
 import SidebarMenuSearch from './components/SidebarMenuSearch';
 import SidebarMenuUser from './components/SidebarMenuUser';
 
-// Import styles
-import 'bootstrap/dist/css/bootstrap.css';
-import 'font-awesome/css/font-awesome.css';
-import './styles/less/AdminLTE.less';
-import './styles/less/skins/_all-skins.less';
-
+// this should be the entry point to your library
 module.exports = {
   AdminLTE,
   Navbar,
