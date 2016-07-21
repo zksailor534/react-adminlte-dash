@@ -13,7 +13,13 @@ class SidebarMenuUser extends React.Component {
 
     // Use replacement image if no user image available
     if (this.props.userImage) {
-      userImage = <img src={this.props.userImage} className="img-circle" alt="User" />;
+      userImage = (
+        <img
+          alt="User"
+          className="img-circle"
+          src={this.props.userImage}
+        />
+      );
     }
 
     // Deal with user status

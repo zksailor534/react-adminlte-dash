@@ -1,2 +1,6 @@
-src
-.babelrc
+demo/
+dist/
+tests/
+src/
+.*
+

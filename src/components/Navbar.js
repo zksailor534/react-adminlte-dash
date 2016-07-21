@@ -15,8 +15,8 @@ class Navbar extends React.Component {
           <a
             className="sidebar-toggle"
             data-toggle="offcanvas"
-            role="button"
             onClick={() => this.props.sidebarToggle()}
+            role="button"
           >
             <span className="sr-only">Toggle navigation</span>
           </a>

@@ -1,2 +1,12 @@
+<<<<<<< HEAD
 node_modules
 *.log
+=======
+build/
+gh-pages/
+dist-modules/
+node_modules/
+coverage/
+.eslintcache
+
+>>>>>>> react-component-boilerplate
