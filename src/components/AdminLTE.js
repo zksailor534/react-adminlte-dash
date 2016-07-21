@@ -22,7 +22,7 @@ class AdminLTE extends React.Component {
 
   handleResize() {
     this.setState({
-      screenSm: window.innerWidth < screenSmMin,
+      screenSm: (typeof window !== 'undefined') ? window.innerWidth < screenSmMin : undefined,
     });
   }
 

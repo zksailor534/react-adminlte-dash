@@ -26,35 +26,26 @@ const config = {
     demo: path.join(ROOT_PATH, 'demo'),
     tests: path.join(ROOT_PATH, 'tests'),
   },
-  filename: 'boilerplate',
-  library: 'Boilerplate',
+  filename: 'bundle',
+  library: 'React-AdminLTE',
 };
-const CSS_PATHS = [
-  config.paths.demo,
-  path.join(config.paths.src, 'styles', 'less', 'AdminLTE.less'),
-  path.join(config.paths.src, 'styles', 'less', 'skins', '_all-skins.less'),
-  path.join(ROOT_PATH, 'node_modules', 'highlight.js', 'styles', 'github.css'),
-  path.join(ROOT_PATH, 'node_modules', 'react-ghfork', 'gh-fork-ribbon.ie.css'),
-  path.join(ROOT_PATH, 'node_modules', 'react-ghfork', 'gh-fork-ribbon.css'),
-  path.join(ROOT_PATH, 'node_modules', 'bootstrap', 'dist', 'css', 'bootstrap.css'),
-  path.join(ROOT_PATH, 'node_modules', 'font-awesome', 'css', 'font-awesome.css')
-];
 const STYLE_ENTRIES = [
   'bootstrap/dist/css/bootstrap.css',
   'font-awesome/css/font-awesome.css',
   'highlight.js/styles/github.css',
   'react-ghfork/gh-fork-ribbon.ie.css',
   'react-ghfork/gh-fork-ribbon.css',
-  './demo/main.less',
   './src/styles/less/AdminLTE.less',
   './src/styles/less/skins/_all-skins.less',
 ];
+let extractCSS = new ExtractTextPlugin('[contenthash].css');
+let extractLESS = new ExtractTextPlugin('[contenthash].css');
 
 process.env.BABEL_ENV = TARGET;
 
 const demoCommon = {
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css', '.less', '.png', '.jpg']
+    extensions: ['', '.js', '.jsx', '.css', '.less']
   },
   module: {
     preLoaders: [
@@ -83,7 +74,7 @@ const demoCommon = {
         loader: 'json',
         include: path.join(ROOT_PATH, 'package.json'),
       },
-      { test: /\.(ttf|eot|svg|jpg|gif|png)(\?[\s\S]+)?$/, loader: 'file' },
+      { test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/, loader: 'file' },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
@@ -168,7 +159,7 @@ NamedModulesPlugin.prototype.apply = function(compiler) {
           });
 
           // Skip CSS and LESS files since those go through ExtractTextPlugin
-          if(!id.endsWith('.css')) {
+          if(!id.endsWith('.css') && !id.endsWith('.less')) {
             module.id = id;
           }
         }
@@ -195,7 +186,8 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
       new CleanPlugin(['gh-pages'], {
         verbose: false,
       }),
-      new ExtractTextPlugin('[name].[chunkhash].css'),
+      extractCSS,
+      extractLESS,
       new webpack.DefinePlugin({
           // This affects the react lib size
         'process.env.NODE_ENV': '"production"',
@@ -231,13 +223,11 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
       loaders: [
         {
           test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style', 'css'),
-          include: CSS_PATHS,
+          loader: extractCSS.extract('style', 'css?sourceMap'),
         },
         {
           test: /\.less$/,
-          loader: ExtractTextPlugin.extract('style', 'css', 'less'),
-          include: CSS_PATHS,
+          loader: extractLESS.extract('style', 'css?SourceMap!less?sourceMap'),
         },
         {
           test: /\.jsx?$/,
@@ -286,7 +276,13 @@ const distCommon = {
     libraryTarget: 'umd',
     library: config.library
   },
-  entry: config.paths.src,
+  entry: {
+    app: config.paths.src,
+    vendors: [
+      'react',
+    ],
+    style: STYLE_ENTRIES,
+  },
   externals: {
     'react': {
       commonjs: 'react',
@@ -298,13 +294,28 @@ const distCommon = {
   module: {
     loaders: [
       {
+        test: /\.css$/,
+        loader: extractCSS.extract('style', 'css?sourceMap'),
+      },
+      {
+        test: /\.less$/,
+        loader: extractLESS.extract('style', 'css?SourceMap!less?sourceMap'),
+      },
+      {
         test: /\.jsx?$/,
         loaders: ['babel'],
         include: config.paths.src
-      }
+      },
+      { test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/, loader: 'file' },
+      {
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+      },
     ]
   },
   plugins: [
+    extractCSS,
+    extractLESS,
     new SystemBellPlugin()
   ]
 };
