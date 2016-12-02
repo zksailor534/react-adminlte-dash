@@ -7,15 +7,11 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import SystemBellPlugin from 'system-bell-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import merge from 'webpack-merge';
-import React from 'react';
-import ReactDOM from 'react-dom/server';
 
-import App from './demo/App';
 import pkg from './package.json';
 
 import js from 'highlight.js/lib/languages/javascript';
 
-const RENDER_UNIVERSAL = true;
 const TARGET = process.env.npm_lifecycle_event;
 const ROOT_PATH = __dirname;
 const config = {
