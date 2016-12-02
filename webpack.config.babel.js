@@ -26,26 +26,25 @@ const config = {
     demo: path.join(ROOT_PATH, 'demo'),
     tests: path.join(ROOT_PATH, 'tests'),
   },
-  filename: 'bundle',
+  filename: 'AdminLTE',
   library: 'React-AdminLTE',
 };
 const STYLE_ENTRIES = [
   'bootstrap/dist/css/bootstrap.css',
   'font-awesome/css/font-awesome.css',
+  'admin-lte/dist/css/AdminLTE.css',
+  'admin-lte/dist/css/skins/_all-skins.css',
   'highlight.js/styles/github.css',
   'react-ghfork/gh-fork-ribbon.ie.css',
   'react-ghfork/gh-fork-ribbon.css',
-  './src/styles/less/AdminLTE.less',
-  './src/styles/less/skins/_all-skins.less',
 ];
-let extractCSS = new ExtractTextPlugin('[contenthash].css');
-let extractLESS = new ExtractTextPlugin('[contenthash].css');
+let extractCSS = new ExtractTextPlugin('AdminLTE.css');
 
 process.env.BABEL_ENV = TARGET;
 
 const demoCommon = {
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css', '.less']
+    extensions: ['', '.js', '.jsx', '.css']
   },
   module: {
     preLoaders: [
@@ -62,19 +61,20 @@ const demoCommon = {
       {
         test: /\.png$/,
         loader: 'url?limit=100000&mimetype=image/png',
-        include: config.paths.demo,
       },
       {
         test: /\.jpg$/,
         loader: 'file',
-        include: config.paths.demo,
       },
       {
         test: /\.json$/,
         loader: 'json',
         include: path.join(ROOT_PATH, 'package.json'),
       },
-      { test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/, loader: 'file' },
+      {
+        test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/,
+        loader: 'file'
+      },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
@@ -121,10 +121,6 @@ if (TARGET === 'start') {
           loaders: ['style', 'css'],
         },
         {
-          test: /\.less$/,
-          loaders: ['style', 'css', 'less'],
-        },
-        {
           test: /\.jsx?$/,
           loaders: ['babel?cacheDirectory'],
           include: [
@@ -158,8 +154,8 @@ NamedModulesPlugin.prototype.apply = function(compiler) {
             context: this.options.context || compiler.options.context,
           });
 
-          // Skip CSS and LESS files since those go through ExtractTextPlugin
-          if(!id.endsWith('.css') && !id.endsWith('.less')) {
+          // Skip CSS files since those go through ExtractTextPlugin
+          if(!id.endsWith('.css')) {
             module.id = id;
           }
         }
@@ -187,7 +183,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
         verbose: false,
       }),
       extractCSS,
-      extractLESS,
       new webpack.DefinePlugin({
           // This affects the react lib size
         'process.env.NODE_ENV': '"production"',
@@ -224,10 +219,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
         {
           test: /\.css$/,
           loader: extractCSS.extract('style', 'css?sourceMap'),
-        },
-        {
-          test: /\.less$/,
-          loader: extractLESS.extract('style', 'css?SourceMap!less?sourceMap'),
         },
         {
           test: /\.jsx?$/,
@@ -281,7 +272,6 @@ const distCommon = {
     vendors: [
       'react',
     ],
-    style: STYLE_ENTRIES,
   },
   externals: {
     'react': {
@@ -294,19 +284,14 @@ const distCommon = {
   module: {
     loaders: [
       {
-        test: /\.css$/,
-        loader: extractCSS.extract('style', 'css?sourceMap'),
-      },
-      {
-        test: /\.less$/,
-        loader: extractLESS.extract('style', 'css?SourceMap!less?sourceMap'),
-      },
-      {
         test: /\.jsx?$/,
         loaders: ['babel'],
         include: config.paths.src
       },
-      { test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/, loader: 'file' },
+      {
+        test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/,
+        loader: 'file'
+      },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
@@ -314,8 +299,6 @@ const distCommon = {
     ]
   },
   plugins: [
-    extractCSS,
-    extractLESS,
     new SystemBellPlugin()
   ]
 };

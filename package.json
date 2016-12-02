@@ -23,6 +23,7 @@
   },
   "main": "dist-modules",
   "devDependencies": {
+    "admin-lte": "^2.3.8",
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-eslint": "^6.1.0",
