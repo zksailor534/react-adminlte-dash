@@ -5,7 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import HtmlWebpackRemarkPlugin from 'html-webpack-remark-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import SystemBellPlugin from 'system-bell-webpack-plugin';
-import CleanPlugin from 'clean-webpack-plugin';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 import merge from 'webpack-merge';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
@@ -42,9 +42,9 @@ let extractCSS = new ExtractTextPlugin('AdminLTE.css');
 
 process.env.BABEL_ENV = TARGET;
 
-const demoCommon = {
+const common = {
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css']
+    extensions: ['', '.js', '.jsx', '.css', '.png', '.jpg']
   },
   module: {
     preLoaders: [
@@ -86,8 +86,24 @@ const demoCommon = {
   ],
 };
 
+const siteCommon = {
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: require('html-webpack-template'), // eslint-disable-line global-require
+      inject: false,
+      title: pkg.name,
+      appMountId: 'app'
+    }),
+    new webpack.DefinePlugin({
+      NAME: JSON.stringify(pkg.name),
+      USER: JSON.stringify(pkg.user),
+      VERSION: JSON.stringify(pkg.version)
+    })
+  ]
+};
+
 if (TARGET === 'start') {
-  module.exports = merge(demoCommon, {
+  module.exports = merge(common, siteCommon, {
     devtool: 'eval-source-map',
     entry: {
       demo: [config.paths.demo].concat(STYLE_ENTRIES),
@@ -95,15 +111,6 @@ if (TARGET === 'start') {
     plugins: [
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': '"development"',
-      }),
-      new HtmlWebpackPlugin({
-        title: pkg.name + ' - ' + pkg.description,
-        template: 'lib/index_template.ejs',
-
-        // Context for the template
-        name: pkg.name,
-        description: pkg.description,
-        demonstration: '',
       }),
       new HtmlWebpackRemarkPlugin({
         key: 'documentation',
@@ -149,8 +156,9 @@ NamedModulesPlugin.prototype.apply = function(compiler) {
   compiler.plugin('compilation', function(compilation) {
     compilation.plugin('before-module-ids', function(modules) {
       modules.forEach(function(module) {
+        let id;
         if(module.id === null && module.libIdent) {
-          var id = module.libIdent({
+          id = module.libIdent({
             context: this.options.context || compiler.options.context,
           });
 
@@ -165,11 +173,12 @@ NamedModulesPlugin.prototype.apply = function(compiler) {
 };
 
 if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
-  module.exports = merge(demoCommon, {
+  module.exports = merge(common, siteCommon, {
     entry: {
       app: config.paths.demo,
       vendors: [
         'react',
+        'react-dom',
       ],
       style: STYLE_ENTRIES,
     },
@@ -179,22 +188,13 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
       chunkFilename: '[chunkhash].js',
     },
     plugins: [
-      new CleanPlugin(['gh-pages'], {
+      new CleanWebpackPlugin(['gh-pages'], {
         verbose: false,
       }),
       extractCSS,
       new webpack.DefinePlugin({
           // This affects the react lib size
         'process.env.NODE_ENV': '"production"',
-      }),
-      new HtmlWebpackPlugin({
-        title: pkg.name + ' - ' + pkg.description,
-        template: 'lib/index_template.ejs',
-
-        // Context for the template
-        name: pkg.name,
-        description: pkg.description,
-        demonstration: RENDER_UNIVERSAL ? ReactDOM.renderToString(<App />) : '',
       }),
       new HtmlWebpackRemarkPlugin({
         key: 'documentation',
@@ -235,7 +235,7 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
 
 // !TARGET === prepush hook for test
 if (TARGET === 'test' || TARGET === 'test:tdd' || !TARGET) {
-  module.exports = merge(demoCommon, {
+  module.exports = merge(common, {
     module: {
       preLoaders: [
         {
@@ -274,7 +274,7 @@ const distCommon = {
     ],
   },
   externals: {
-    'react': {
+    react: {
       commonjs: 'react',
       commonjs2: 'react',
       amd: 'React',
@@ -306,7 +306,7 @@ const distCommon = {
 if (TARGET === 'dist') {
   module.exports = merge(distCommon, {
     output: {
-      filename: config.filename + '.js'
+      filename: `${config.filename}.js`
     }
   });
 }
@@ -314,7 +314,7 @@ if (TARGET === 'dist') {
 if (TARGET === 'dist:min') {
   module.exports = merge(distCommon, {
     output: {
-      filename: config.filename + '.min.js'
+      filename: `${config.filename}.min.js`
     },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({

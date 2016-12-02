@@ -1,5 +1,3 @@
-'use strict';
-
 import AdminLTE from './components/AdminLTE';
 import Navbar from './components/Navbar';
 import DropdownMenu from './components/DropdownMenu';
