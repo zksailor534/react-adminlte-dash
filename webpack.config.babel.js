@@ -20,7 +20,6 @@ const config = {
     dist: path.join(ROOT_PATH, 'dist'),
     src: path.join(ROOT_PATH, 'src'),
     demo: path.join(ROOT_PATH, 'demo'),
-    tests: path.join(ROOT_PATH, 'tests'),
   },
   filename: 'AdminLTE',
   library: 'React-AdminLTE',
@@ -146,29 +145,6 @@ if (TARGET === 'start') {
   });
 }
 
-function NamedModulesPlugin(options) {
-  this.options = options || {};
-}
-NamedModulesPlugin.prototype.apply = function (compiler) {
-  compiler.plugin('compilation', function (compilation) {
-    compilation.plugin('before-module-ids', function (modules) {
-      modules.forEach(function (module) {
-        let id;
-        if (module.id === null && module.libIdent) {
-          id = module.libIdent({
-            context: this.options.context || compiler.options.context,
-          });
-
-          // Skip CSS files since those go through ExtractTextPlugin
-          if (!id.endsWith('.css')) {
-            module.id = id; // eslint-disable-line no-param-reassign
-          }
-        }
-      }, this);
-    }.bind(this));
-  }.bind(this));
-};
-
 if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
   module.exports = merge(common, siteCommon, {
     entry: {
@@ -200,16 +176,16 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
           js,
         },
       }),
-      new NamedModulesPlugin(),
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin({
         compress: {
           warnings: false,
         },
       }),
-      new webpack.optimize.CommonsChunkPlugin({
-        names: ['vendors', 'manifest'],
-      }),
+      new webpack.optimize.CommonsChunkPlugin(
+        'vendor',
+        '[name].[chunkhash].js',
+      ),
     ],
     module: {
       loaders: [
@@ -223,33 +199,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
           include: [
             config.paths.demo,
             config.paths.src,
-          ],
-        },
-      ],
-    },
-  });
-}
-
-// !TARGET === prepush hook for test
-if (TARGET.startsWith('test') || !TARGET) {
-  module.exports = merge(common, {
-    module: {
-      preLoaders: [
-        {
-          test: /\.jsx?$/,
-          loaders: ['eslint'],
-          include: [
-            config.paths.tests,
-          ],
-        },
-      ],
-      loaders: [
-        {
-          test: /\.jsx?$/,
-          loaders: ['babel?cacheDirectory'],
-          include: [
-            config.paths.src,
-            config.paths.tests,
           ],
         },
       ],
@@ -321,4 +270,8 @@ if (TARGET === 'dist:min') {
       }),
     ],
   });
+}
+
+if (!TARGET) {
+  module.exports = common;
 }
