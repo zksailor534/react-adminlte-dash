@@ -18,6 +18,7 @@ export default class App extends React.Component {
       sidebarCollapse: false,
       sidebarMini: true,
     };
+    this._sidebarToggle = this.sidebarToggle.bind(this);
   }
 
   sidebarToggle() {
@@ -29,7 +30,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Fork className="right" project={pkgInfo.user + '/' + pkgInfo.name} />
+        <Fork className="right" project={`${pkgInfo.user}/${pkgInfo.name}`} />
 
         <AdminLTE
           layout="fixed"
@@ -38,7 +39,7 @@ export default class App extends React.Component {
           skin="blue"
         >
           <Navbar
-            sidebarToggle={this.sidebarToggle.bind(this)}
+            sidebarToggle={this._sidebarToggle}
           />
 
           {/* Left side column. contains the logo and sidebar */}
@@ -52,7 +53,7 @@ export default class App extends React.Component {
 
             {/* search form */}
             <SidebarMenuSearch
-              onSearch={ (value) => (alert(`Searching for: ${value}`)) }
+              onSearch={value => (alert(`Searching for: ${value}`))}
             />
 
             <SidebarMenu title="MAIN NAVIGATION">

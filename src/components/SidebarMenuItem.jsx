@@ -23,6 +23,7 @@ class SidebarMenuItem extends React.Component {
     this.state = {
       active: this.props.active,
     };
+    this._toggleMenu = this.toggleMenu.bind(this);
   }
 
   toggleMenu() {
@@ -39,21 +40,21 @@ class SidebarMenuItem extends React.Component {
 
     switch (this.props.mainIcon) {
       case 'plain':
-        leftIcon = <i className="fa fa-circle-o"></i>;
+        leftIcon = <i className="fa fa-circle-o" />;
         break;
       case 'important':
-        leftIcon = <i className="fa fa-circle-o text-red"></i>;
+        leftIcon = <i className="fa fa-circle-o text-red" />;
         break;
       case 'warning':
-        leftIcon = <i className="fa fa-circle-o text-yellow"></i>;
+        leftIcon = <i className="fa fa-circle-o text-yellow" />;
         break;
       case 'information':
-        leftIcon = <i className="fa fa-circle-o text-aqua"></i>;
+        leftIcon = <i className="fa fa-circle-o text-aqua" />;
         break;
       case 'none':
         break;
       default:
-        leftIcon = <i className={classNames('fa', this.props.mainIcon)}></i>;
+        leftIcon = <i className={classNames('fa', this.props.mainIcon)} />;
     }
 
     // Deal with right icon
@@ -74,7 +75,7 @@ class SidebarMenuItem extends React.Component {
         break;
       default:
         if (this.props.children) {
-          rightIcon = <i className="fa fa-angle-left pull-right"></i>;
+          rightIcon = <i className="fa fa-angle-left pull-right" />;
         }
     }
 
@@ -90,11 +91,12 @@ class SidebarMenuItem extends React.Component {
     }
 
     return (
-      <li className={ classNames(
+      <li
+        className={classNames(
           { treeview: this.props.children },
-          { active: this.state.active }) }
+          { active: this.state.active })}
       >
-        <a href={this.props.link} onClick={this.toggleMenu.bind(this)}>
+        <a href={this.props.link} onClick={this._toggleMenu}>
           {leftIcon}
           <span>{this.props.title}</span>
           {rightIcon}

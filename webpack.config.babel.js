@@ -8,9 +8,9 @@ import SystemBellPlugin from 'system-bell-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import merge from 'webpack-merge';
 
-import pkg from './package.json';
-
 import js from 'highlight.js/lib/languages/javascript';
+
+import pkg from './package.json';
 
 const TARGET = process.env.npm_lifecycle_event;
 const ROOT_PATH = __dirname;
@@ -34,13 +34,13 @@ const STYLE_ENTRIES = [
   'react-ghfork/gh-fork-ribbon.ie.css',
   'react-ghfork/gh-fork-ribbon.css',
 ];
-let extractCSS = new ExtractTextPlugin('AdminLTE.css');
+const extractCSS = new ExtractTextPlugin('AdminLTE.css');
 
 process.env.BABEL_ENV = TARGET;
 
 const common = {
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css', '.png', '.jpg']
+    extensions: ['', '.js', '.jsx', '.css', '.png', '.jpg'],
   },
   module: {
     preLoaders: [
@@ -69,7 +69,7 @@ const common = {
       },
       {
         test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/,
-        loader: 'file'
+        loader: 'file',
       },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -88,14 +88,14 @@ const siteCommon = {
       template: require('html-webpack-template'), // eslint-disable-line global-require
       inject: false,
       title: pkg.name,
-      appMountId: 'app'
+      appMountId: 'app',
     }),
     new webpack.DefinePlugin({
       NAME: JSON.stringify(pkg.name),
       USER: JSON.stringify(pkg.user),
-      VERSION: JSON.stringify(pkg.version)
-    })
-  ]
+      VERSION: JSON.stringify(pkg.version),
+    }),
+  ],
 };
 
 if (TARGET === 'start') {
@@ -148,19 +148,19 @@ if (TARGET === 'start') {
 function NamedModulesPlugin(options) {
   this.options = options || {};
 }
-NamedModulesPlugin.prototype.apply = function(compiler) {
-  compiler.plugin('compilation', function(compilation) {
-    compilation.plugin('before-module-ids', function(modules) {
-      modules.forEach(function(module) {
+NamedModulesPlugin.prototype.apply = function (compiler) {
+  compiler.plugin('compilation', function (compilation) {
+    compilation.plugin('before-module-ids', function (modules) {
+      modules.forEach(function (module) {
         let id;
-        if(module.id === null && module.libIdent) {
+        if (module.id === null && module.libIdent) {
           id = module.libIdent({
             context: this.options.context || compiler.options.context,
           });
 
           // Skip CSS files since those go through ExtractTextPlugin
-          if(!id.endsWith('.css')) {
-            module.id = id;
+          if (!id.endsWith('.css')) {
+            module.id = id; // eslint-disable-line no-param-reassign
           }
         }
       }, this);
@@ -253,7 +253,7 @@ if (TARGET === 'test' || TARGET === 'test:tdd' || !TARGET) {
         },
       ],
     },
-  })
+  });
 }
 
 const distCommon = {
@@ -261,7 +261,7 @@ const distCommon = {
   output: {
     path: config.paths.dist,
     libraryTarget: 'umd',
-    library: config.library
+    library: config.library,
   },
   entry: {
     app: config.paths.src,
@@ -274,50 +274,50 @@ const distCommon = {
       commonjs: 'react',
       commonjs2: 'react',
       amd: 'React',
-      root: 'React'
-    }
+      root: 'React',
+    },
   },
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
         loaders: ['babel'],
-        include: config.paths.src
+        include: config.paths.src,
       },
       {
         test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/,
-        loader: 'file'
+        loader: 'file',
       },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
       },
-    ]
+    ],
   },
   plugins: [
-    new SystemBellPlugin()
-  ]
+    new SystemBellPlugin(),
+  ],
 };
 
 if (TARGET === 'dist') {
   module.exports = merge(distCommon, {
     output: {
-      filename: `${config.filename}.js`
-    }
+      filename: `${config.filename}.js`,
+    },
   });
 }
 
 if (TARGET === 'dist:min') {
   module.exports = merge(distCommon, {
     output: {
-      filename: `${config.filename}.min.js`
+      filename: `${config.filename}.min.js`,
     },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({
         compress: {
-          warnings: false
-        }
-      })
-    ]
+          warnings: false,
+        },
+      }),
+    ],
   });
 }

@@ -6,6 +6,8 @@ class SidebarMenuSearch extends React.Component {
     this.state = {
       value: this.props.initialValue,
     };
+    this._onSubmit = this.onSubmit.bind(this);
+    this._onInput = this.onInput.bind(this);
   }
 
   onInput(e) {
@@ -25,26 +27,26 @@ class SidebarMenuSearch extends React.Component {
         action="#"
         className="sidebar-form"
         method="get"
-        onSubmit={this.onSubmit.bind(this)}
+        onSubmit={this._onSubmit}
       >
         <div className="input-group">
           <input
             className="form-control"
             name="q"
-            onChange={this.onInput.bind(this)}
+            onChange={this._onInput}
             placeholder="Search..."
             type="text"
           />
-            <span className="input-group-btn">
-              <button
-                className="btn btn-flat"
-                id="search-btn"
-                name="search"
-                type="submit"
-              >
-                <i className="fa fa-search"></i>
-              </button>
-            </span>
+          <span className="input-group-btn">
+            <button
+              className="btn btn-flat"
+              id="search-btn"
+              name="search"
+              type="submit"
+            >
+              <i className="fa fa-search" />
+            </button>
+          </span>
         </div>
       </form>
     );
@@ -53,7 +55,6 @@ class SidebarMenuSearch extends React.Component {
 
 SidebarMenuSearch.propTypes = {
   initialValue: React.PropTypes.string,
-  // value: React.PropTypes.object,
   onSearch: React.PropTypes.func.isRequired,
 };
 

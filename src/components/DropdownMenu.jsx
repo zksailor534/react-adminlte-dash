@@ -17,6 +17,7 @@ class DropdownMenu extends React.Component {
     this.state = {
       open: false,
     };
+    this._toggleMenu = this.toggleMenu.bind(this);
   }
 
   toggleMenu() {
@@ -34,15 +35,15 @@ class DropdownMenu extends React.Component {
     switch (this.props.type) {
       case 'messages':
         menuClass = 'dropdown messages-menu';
-        menuIcon = <i className="fa fa-envelope-o"></i>;
+        menuIcon = <i className="fa fa-envelope-o" />;
         break;
       case 'notifications':
         menuClass = 'dropdown notifications-menu';
-        menuIcon = <i className="fa fa-bell-o"></i>;
+        menuIcon = <i className="fa fa-bell-o" />;
         break;
       case 'tasks':
         menuClass = 'dropdown tasks-menu';
-        menuIcon = <i className="fa fa-flag-o"></i>;
+        menuIcon = <i className="fa fa-flag-o" />;
         break;
       default:
         menuClass = '';
@@ -67,14 +68,15 @@ class DropdownMenu extends React.Component {
     }
 
     return (
-      <li className={classNames(menuClass,
+      <li
+        className={classNames(menuClass,
         { open: this.state.open })}
       >
         <a
           className="dropdown-toggle"
           data-toggle="dropdown"
           href={this.props.link}
-          onClick={this.toggleMenu.bind(this)}
+          onClick={this._toggleMenu}
         >
           {menuIcon}
           {label}
@@ -91,7 +93,6 @@ DropdownMenu.propTypes = {
   children: React.PropTypes.node,
   link: React.PropTypes.string,
   type: React.PropTypes.string,
-  userImage: React.PropTypes.string,
   labelColor: React.PropTypes.string,
   labelText: React.PropTypes.string,
 };
