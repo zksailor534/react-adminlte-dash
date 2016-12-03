@@ -12,7 +12,7 @@ import js from 'highlight.js/lib/languages/javascript';
 
 import pkg from './package.json';
 
-const TARGET = process.env.npm_lifecycle_event;
+const TARGET = process.env.npm_lifecycle_event || '';
 const ROOT_PATH = __dirname;
 const config = {
   paths: {
@@ -87,6 +87,7 @@ const siteCommon = {
     new HtmlWebpackPlugin({
       template: require('html-webpack-template'), // eslint-disable-line global-require
       inject: false,
+      mobile: true,
       title: pkg.name,
       appMountId: 'app',
     }),
@@ -230,13 +231,13 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
 }
 
 // !TARGET === prepush hook for test
-if (TARGET === 'test' || TARGET === 'test:tdd' || !TARGET) {
+if (TARGET.startsWith('test') || !TARGET) {
   module.exports = merge(common, {
     module: {
       preLoaders: [
         {
           test: /\.jsx?$/,
-          loaders: ['isparta', 'eslint'],
+          loaders: ['eslint'],
           include: [
             config.paths.tests,
           ],
