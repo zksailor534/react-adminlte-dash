@@ -24,7 +24,6 @@ class SidebarMenuSearch extends React.Component {
   render() {
     return (
       <form
-        action="#"
         className="sidebar-form"
         method="get"
         onSubmit={this._onSubmit}

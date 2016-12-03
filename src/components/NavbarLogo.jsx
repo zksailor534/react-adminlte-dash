@@ -19,7 +19,7 @@ NavbarLogo.propTypes = {
 };
 
 NavbarLogo.defaultProps = {
-  link: '#',
+  link: '/',
   logoLg: <span><b>Admin</b>LTE</span>,
   logoSm: <span><b>A</b>LT</span>,
 };

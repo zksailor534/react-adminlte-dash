@@ -78,7 +78,7 @@ SidebarMenuUser.defaultProps = {
   userName: 'User Name',
   showStatus: true,
   userStatus: null,
-  userLink: '#',
+  userLink: '/',
 };
 
 export default SidebarMenuUser;

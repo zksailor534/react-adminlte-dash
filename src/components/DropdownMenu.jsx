@@ -98,7 +98,7 @@ DropdownMenu.propTypes = {
 };
 
 DropdownMenu.defaultProps = {
-  link: '#',
+  link: '/',
   type: 'messages',
 };
 
