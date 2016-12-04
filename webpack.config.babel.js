@@ -2,7 +2,6 @@ import * as path from 'path';
 
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import HtmlWebpackRemarkPlugin from 'html-webpack-remark-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import SystemBellPlugin from 'system-bell-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
