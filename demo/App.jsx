@@ -9,9 +9,8 @@ import { AdminLTE,
   SidebarMenuSearch,
   SidebarMenuUser,
 } from '../src/index';
-import Documentation from './Documentation';
 
-export default class App extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -298,18 +297,15 @@ export default class App extends React.Component {
             </SidebarMenu>
           </MainSidebar>
 
-          <div className="content-wrapper">
-            <section className="content-header">
-              <h1>Documentation</h1>
-            </section>
-            <section className="content">
-
-              <Documentation />
-
-            </section>
-          </div>
+          {this.props.children}
         </AdminLTE>
       </div>
     );
   }
 }
+
+App.propTypes = {
+  children: React.PropTypes.node,
+};
+
+export default App;

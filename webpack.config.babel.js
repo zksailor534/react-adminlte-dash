@@ -8,8 +8,6 @@ import SystemBellPlugin from 'system-bell-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import merge from 'webpack-merge';
 
-import js from 'highlight.js/lib/languages/javascript';
-
 import pkg from './package.json';
 
 const TARGET = process.env.npm_lifecycle_event || '';
@@ -29,7 +27,6 @@ const STYLE_ENTRIES = [
   'font-awesome/css/font-awesome.css',
   'admin-lte/dist/css/AdminLTE.css',
   'admin-lte/dist/css/skins/_all-skins.css',
-  'highlight.js/styles/github.css',
   'react-ghfork/gh-fork-ribbon.ie.css',
   'react-ghfork/gh-fork-ribbon.css',
 ];
@@ -64,7 +61,6 @@ const common = {
       {
         test: /\.json$/,
         loader: 'json',
-        include: path.join(ROOT_PATH, 'package.json'),
       },
       {
         test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/,
@@ -73,6 +69,10 @@ const common = {
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+      },
+      {
+        test: /\.md$/,
+        loader: 'raw',
       },
     ],
   },
@@ -107,13 +107,6 @@ if (TARGET === 'start') {
     plugins: [
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': '"development"',
-      }),
-      new HtmlWebpackRemarkPlugin({
-        key: 'documentation',
-        file: config.paths.readme,
-        languages: {
-          js,
-        },
       }),
       new webpack.HotModuleReplacementPlugin(),
     ],
@@ -168,13 +161,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
       new webpack.DefinePlugin({
           // This affects the react lib size
         'process.env.NODE_ENV': '"production"',
-      }),
-      new HtmlWebpackRemarkPlugin({
-        key: 'documentation',
-        file: config.paths.readme,
-        languages: {
-          js,
-        },
       }),
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin({

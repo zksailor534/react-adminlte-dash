@@ -3,7 +3,6 @@
   "description": "React.js components for AdminLTE theme",
   "author": "Nate Greene <nate.greene@gmail.com>",
   "user": "zksailor534",
-  "version": "0.0.2",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest --",
@@ -51,17 +50,17 @@
     "font-awesome": "^4.6.3",
     "gh-pages": "^0.11.0",
     "git-prepush-hook": "^1.0.1",
-    "highlight.js": "^9.4.0",
     "html-webpack-plugin": "^2.22.0",
-    "html-webpack-remark-plugin": "^0.1.0",
     "html-webpack-template": "^5.4.1",
     "jest": "^16.0.1",
     "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.3.2",
     "react-ghfork": "^0.3.3",
+    "react-markdown": "^2.4.2",
     "react-router": "^3.0.0",
     "style-loader": "^0.13.1",
     "sync-exec": "^0.6.2",
@@ -84,8 +83,14 @@
   },
   "jest": {
     "collectCoverage": true,
-    "moduleFileExtensions": ["js", "jsx"],
-    "moduleDirectories": ["node_modules", "packages"]
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "packages"
+    ]
   },
   "keywords": [
     "react",
