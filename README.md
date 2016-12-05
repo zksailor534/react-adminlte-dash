@@ -16,7 +16,7 @@ This module does not come bundled with css,
 so the following peer dependencies will also need to be installed:
 
 ```bash
-npm install --save bootstrap admin-lte
+npm install --save bootstrap font-awesome admin-lte
 ```
 
 ## Usage
@@ -26,13 +26,14 @@ This module is in early development, usage is subject to change.
 First include the css for styles:
 ```javascript
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.css';
 import 'admin-lte/dist/css/AdminLTE.min.css';
 import 'admin-lte/dist/css/skins/_all-skins.min.css';
 ```
 
 Then (ES6):
 ```javascript
-const { AdminLTE, Navbar, MainSidebar } from 'react-adminlte-dash';
+import { AdminLTE, Navbar, MainSidebar } from 'react-adminlte-dash';
 
 const App = () => (
   <AdminLTE
