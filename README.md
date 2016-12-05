@@ -1,12 +1,12 @@
 [![build status](https://secure.travis-ci.org/zksailor534/react-adminlte.svg)](http://travis-ci.org/zksailor534/react-adminlte)
-[![Dependency Status](https://david-dm.org/zksailor534/react-adminlte.svg)](https://david-dm.org/zksailor534/react-adminlte)
+[![bitHound Score](https://www.bithound.io/github/zksailor534/react-adminlte-dash/badges/score.svg)](https://www.bithound.io/github/zksailor534/react-adminlte-dash)
 
 ## react-adminlte-dash
 > React.js components for AdminLTE themed dashboard
 This is a series of React components that make it easy to implement the AdminLTE theme.
 > Based off of [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
 
-## Installation (not yet published)
+## Installation
 
 ```bash
 npm install --save react-adminlte-dash
