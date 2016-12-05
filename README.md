@@ -1,15 +1,15 @@
 [![build status](https://secure.travis-ci.org/zksailor534/react-adminlte.svg)](http://travis-ci.org/zksailor534/react-adminlte)
 [![Dependency Status](https://david-dm.org/zksailor534/react-adminlte.svg)](https://david-dm.org/zksailor534/react-adminlte)
 
-## react-adminlte
-> React.js components for AdminLTE theme
+## react-adminlte-dash
+> React.js components for AdminLTE themed dashboard
 This is a series of React components that make it easy to implement the AdminLTE theme.
 > Based off of [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
 
 ## Installation (not yet published)
 
 ```bash
-npm install --save react-adminlte
+npm install --save react-adminlte-dash
 ```
 
 This module does not come bundled with css,
@@ -32,7 +32,7 @@ import 'admin-lte/dist/css/skins/_all-skins.min.css';
 
 Then (ES6):
 ```javascript
-const { AdminLTE, Navbar, MainSidebar } from 'react-adminlte';
+const { AdminLTE, Navbar, MainSidebar } from 'react-adminlte-dash';
 
 const App = () => (
   <AdminLTE
@@ -49,7 +49,7 @@ const App = () => (
 
 ## Demo (TBD)
 
-Static hosted [demo site][demo] on GitHub.
+Static hosted [demo](http://zksailor534.github.io/react-adminlte-dash/) on GitHub.
 
 This is a series of React components that make it easy to implement the AdminLTE theme.
 
