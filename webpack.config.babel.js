@@ -13,7 +13,6 @@ const TARGET = process.env.npm_lifecycle_event || '';
 const ROOT_PATH = __dirname;
 const config = {
   paths: {
-    readme: path.join(ROOT_PATH, 'README.md'),
     dist: path.join(ROOT_PATH, 'dist'),
     src: path.join(ROOT_PATH, 'src'),
     demo: path.join(ROOT_PATH, 'demo'),
@@ -27,7 +26,7 @@ const STYLE_ENTRIES = [
   'admin-lte/dist/css/AdminLTE.css',
   'admin-lte/dist/css/skins/_all-skins.css',
 ];
-const extractCSS = new ExtractTextPlugin('AdminLTE.css');
+const extractCSS = new ExtractTextPlugin(`${config.filename}.css`);
 
 process.env.BABEL_ENV = TARGET;
 
