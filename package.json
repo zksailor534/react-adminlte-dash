@@ -1,9 +1,9 @@
 {
-  "name": "react-adminlte",
-  "description": "React.js components for AdminLTE theme",
+  "name": "react-adminlte-dash",
+  "description": "React.js components for AdminLTE themed dashboard",
   "author": "Nate Greene <nate.greene@gmail.com>",
   "user": "zksailor534",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest --",
@@ -60,7 +60,7 @@
     "react-addons-test-utils": "^15.3.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.3.2",
-    "react-ghfork": "^0.3.3",
+    "react-github-corner": "^0.3.0",
     "react-markdown": "^2.4.2",
     "react-router": "^3.0.0",
     "style-loader": "^0.13.1",
@@ -72,6 +72,8 @@
     "webpack-merge": "^0.15.0"
   },
   "peerDependencies": {
+    "admin-lte": "^2.3.8",
+    "bootstrap": "^3.3.6",
     "react": ">= 15.0.0 < 16.0.0"
   },
   "repository": {

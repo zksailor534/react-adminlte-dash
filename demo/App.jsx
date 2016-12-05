@@ -1,5 +1,5 @@
 import React from 'react';
-import Fork from 'react-ghfork';
+import GithubCorner from 'react-github-corner';
 import pkgInfo from '../package.json';
 import { AdminLTE,
   Navbar,
@@ -29,7 +29,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Fork className="right" project={`${pkgInfo.user}/${pkgInfo.name}`} />
+        <GithubCorner
+          href={`https://github.com/${pkgInfo.user}/${pkgInfo.name}`}
+          bannerColor="#fff"
+          octoColor="#000"
+          width={80}
+          height={80}
+          direction="right"
+        />
 
         <AdminLTE
           layout="fixed"
