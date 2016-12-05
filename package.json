@@ -3,7 +3,7 @@
   "description": "React.js components for AdminLTE themed dashboard",
   "author": "Nate Greene <nate.greene@gmail.com>",
   "user": "zksailor534",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest --",
