@@ -11,5 +11,5 @@ ReactDOM.render(
       <IndexRoute component={Documentation} />
     </Route>
   </Router>,
-  document.getElementById('app')
+  document.getElementById('app') // eslint-disable-line comma-dangle
 );
