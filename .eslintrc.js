@@ -13,6 +13,7 @@ module.exports = {
     "prefer-arrow-callback": 0,
     "func-names": 0,
     "no-alert": 0,
+    "import/extensions": 0,
     "import/no-extraneous-dependencies": 0,
     "no-underscore-dangle": 0,
     "no-unused-expressions": 0,
