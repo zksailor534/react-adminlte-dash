@@ -26,8 +26,6 @@ const STYLE_ENTRIES = [
   'font-awesome/css/font-awesome.css',
   'admin-lte/dist/css/AdminLTE.css',
   'admin-lte/dist/css/skins/_all-skins.css',
-  'react-ghfork/gh-fork-ribbon.ie.css',
-  'react-ghfork/gh-fork-ribbon.css',
 ];
 const extractCSS = new ExtractTextPlugin('AdminLTE.css');
 
@@ -141,11 +139,11 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
   module.exports = merge(common, siteCommon, {
     entry: {
       app: config.paths.demo,
+      style: STYLE_ENTRIES,
       vendors: [
         'react',
         'react-dom',
       ],
-      style: STYLE_ENTRIES,
     },
     output: {
       path: './gh-pages',
@@ -193,6 +191,9 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
 
 const distCommon = {
   devtool: 'source-map',
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
   output: {
     path: config.paths.dist,
     libraryTarget: 'umd',
@@ -218,14 +219,6 @@ const distCommon = {
         test: /\.jsx?$/,
         loaders: ['babel'],
         include: config.paths.src,
-      },
-      {
-        test: /\.(ttf|eot|svg|gif)(\?[\s\S]+)?$/,
-        loader: 'file',
-      },
-      {
-        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
       },
     ],
   },
