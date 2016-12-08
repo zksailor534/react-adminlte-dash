@@ -82,11 +82,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zksailor534/react-adminlte.git"
+    "url": "https://github.com/zksailor534/react-adminlte-dash.git"
   },
-  "homepage": "https://zksailor534.github.io/react-adminlte/",
+  "homepage": "https://zksailor534.github.io/react-adminlte-dash/",
   "bugs": {
-    "url": "https://github.com/zksailor534/react-adminlte/issues"
+    "url": "https://github.com/zksailor534/react-adminlte-dash/issues"
   },
   "jest": {
     "collectCoverage": true,
