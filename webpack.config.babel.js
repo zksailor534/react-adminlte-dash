@@ -20,13 +20,7 @@ const config = {
   filename: 'AdminLTE',
   library: 'React-AdminLTE',
 };
-const STYLE_ENTRIES = [
-  'bootstrap/dist/css/bootstrap.css',
-  'font-awesome/css/font-awesome.css',
-  'admin-lte/dist/css/AdminLTE.css',
-  'admin-lte/dist/css/skins/_all-skins.css',
-];
-const extractCSS = new ExtractTextPlugin(`${config.filename}.css`);
+const extractCSS = new ExtractTextPlugin('bundle.css');
 
 process.env.BABEL_ENV = TARGET;
 
@@ -98,7 +92,7 @@ if (TARGET === 'start') {
   module.exports = merge(common, siteCommon, {
     devtool: 'eval-source-map',
     entry: {
-      demo: [config.paths.demo].concat(STYLE_ENTRIES),
+      demo: config.paths.demo,
     },
     plugins: [
       new webpack.DefinePlugin({
@@ -138,7 +132,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
   module.exports = merge(common, siteCommon, {
     entry: {
       app: config.paths.demo,
-      style: STYLE_ENTRIES,
       vendors: [
         'react',
         'react-dom',
