@@ -2,8 +2,10 @@
 [![bitHound Score](https://www.bithound.io/github/zksailor534/react-adminlte-dash/badges/score.svg)](https://www.bithound.io/github/zksailor534/react-adminlte-dash)
 
 ## react-adminlte-dash
-> React.js components for AdminLTE themed dashboard
+> React.js components for AdminLTE themed dashboard.
+
 This is a series of React components that make it easy to implement the AdminLTE theme.
+
 > Based off of [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
 
 ## Installation
@@ -48,7 +50,7 @@ const App = () => (
 );
 ```
 
-## Demo (TBD)
+## Demo
 
 Static hosted [demo](http://zksailor534.github.io/react-adminlte-dash/) on GitHub.
 
