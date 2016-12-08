@@ -20,13 +20,7 @@ const config = {
   filename: 'AdminLTE',
   library: 'React-AdminLTE',
 };
-const STYLE_ENTRIES = [
-  'bootstrap/dist/css/bootstrap.css',
-  'font-awesome/css/font-awesome.css',
-  'admin-lte/dist/css/AdminLTE.css',
-  'admin-lte/dist/css/skins/_all-skins.css',
-];
-const extractCSS = new ExtractTextPlugin(`${config.filename}.css`);
+const extractCSS = new ExtractTextPlugin('bundle.css');
 
 process.env.BABEL_ENV = TARGET;
 
@@ -79,13 +73,6 @@ const common = {
 
 const siteCommon = {
   plugins: [
-    new HtmlWebpackPlugin({
-      template: require('html-webpack-template'), // eslint-disable-line global-require
-      inject: false,
-      mobile: true,
-      title: pkg.name,
-      appMountId: 'app',
-    }),
     new webpack.DefinePlugin({
       NAME: JSON.stringify(pkg.name),
       USER: JSON.stringify(pkg.user),
@@ -98,10 +85,18 @@ if (TARGET === 'start') {
   module.exports = merge(common, siteCommon, {
     devtool: 'eval-source-map',
     entry: {
-      demo: [config.paths.demo].concat(STYLE_ENTRIES),
+      demo: config.paths.demo,
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        template: require('html-webpack-template'), // eslint-disable-line global-require
+        inject: false,
+        mobile: true,
+        title: pkg.name,
+        appMountId: 'app',
+      }),
       new webpack.DefinePlugin({
+        GH_PAGES: false,
         'process.env.NODE_ENV': '"development"',
       }),
       new webpack.HotModuleReplacementPlugin(),
@@ -138,7 +133,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
   module.exports = merge(common, siteCommon, {
     entry: {
       app: config.paths.demo,
-      style: STYLE_ENTRIES,
       vendors: [
         'react',
         'react-dom',
@@ -146,16 +140,33 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
     },
     output: {
       path: './gh-pages',
-      filename: '[name].[chunkhash].js',
-      chunkFilename: '[chunkhash].js',
+      filename: 'bundle.js',
     },
     plugins: [
       new CleanWebpackPlugin(['gh-pages'], {
         verbose: false,
       }),
       extractCSS,
+      new HtmlWebpackPlugin({
+        template: 'lib/index_template.ejs',
+        filename: 'index.html',
+
+        // Context for the template
+        title: pkg.name,
+        description: pkg.description,
+      }),
+      new HtmlWebpackPlugin({
+        template: 'lib/404_template.ejs',
+        filename: '404.html',
+        inject: false,
+
+        // Context for the template
+        title: pkg.name,
+        remote: true,
+      }),
       new webpack.DefinePlugin({
-          // This affects the react lib size
+        GH_PAGES: true,
+        // This affects the react lib size
         'process.env.NODE_ENV': '"production"',
       }),
       new webpack.optimize.DedupePlugin(),
@@ -164,10 +175,10 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
           warnings: false,
         },
       }),
-      new webpack.optimize.CommonsChunkPlugin(
-        'vendor',
-        '[name].[chunkhash].js',
-      ),
+      new webpack.optimize.CommonsChunkPlugin({
+        names: ['app', 'vendors'],
+        filename: '[name].bundle.js',
+      }),
     ],
     module: {
       loaders: [
