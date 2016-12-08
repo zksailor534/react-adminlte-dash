@@ -10,11 +10,18 @@ import 'admin-lte/dist/css/skins/_all-skins.min.css';
 import App from './App';
 import Documentation from './Documentation';
 
+let mainPath = '/';
+if (GH_PAGES) { // eslint-disable-line no-undef
+  mainPath = NAME; // eslint-disable-line no-undef
+}
+
+const routes = (
+  <Route path={mainPath} component={App}>
+    <IndexRoute component={Documentation} />
+  </Route>
+);
+
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Documentation} />
-    </Route>
-  </Router>,
+  <Router history={browserHistory} routes={routes} />,
   document.getElementById('app') // eslint-disable-line comma-dangle
 );

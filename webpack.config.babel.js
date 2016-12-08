@@ -96,6 +96,7 @@ if (TARGET === 'start') {
         appMountId: 'app',
       }),
       new webpack.DefinePlugin({
+        GH_PAGES: false,
         'process.env.NODE_ENV': '"development"',
       }),
       new webpack.HotModuleReplacementPlugin(),
@@ -164,7 +165,8 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
         remote: true,
       }),
       new webpack.DefinePlugin({
-          // This affects the react lib size
+        GH_PAGES: true,
+        // This affects the react lib size
         'process.env.NODE_ENV': '"production"',
       }),
       new webpack.optimize.DedupePlugin(),
