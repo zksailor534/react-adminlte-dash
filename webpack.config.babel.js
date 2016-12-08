@@ -139,8 +139,7 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
     },
     output: {
       path: './gh-pages',
-      filename: '[name].[chunkhash].js',
-      chunkFilename: '[chunkhash].js',
+      filename: 'bundle.js',
     },
     plugins: [
       new CleanWebpackPlugin(['gh-pages'], {
@@ -174,10 +173,10 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
           warnings: false,
         },
       }),
-      new webpack.optimize.CommonsChunkPlugin(
-        'vendor',
-        '[name].[chunkhash].js',
-      ),
+      new webpack.optimize.CommonsChunkPlugin({
+        names: ['app', 'vendors'],
+        filename: '[name].bundle.js',
+      }),
     ],
     module: {
       loaders: [
