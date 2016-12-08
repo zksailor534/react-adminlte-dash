@@ -1,63 +1,52 @@
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<!--[if lt IE 7 ]>             <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>                <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>                <html class="ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>                <html class="ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<html>
   <head>
     <meta charset="utf-8">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>react-adminlte-dash</title>
 
     
-
+    <meta name="description" content="React.js components for AdminLTE themed dashboard">
     
 
-    <title>react-adminlte</title>
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
 
-    
+      /////////////////////////////////////////////////////////////////////////
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string
+      // and converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      /////////////////////////////////////////////////////////////////////////
 
-    
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
 
-    
-
-    
-    <link href="AdminLTE.css" rel="stylesheet">
-    
-
-  </head>
+  <link href="bundle.css" rel="stylesheet"></head>
   <body>
-    
-
-    
-    
     <div id="app"></div>
-    
-
-    
-
-    
-
-    
-    <script src="vendor.62ae1dc37e9c3feaa9eb.js" type="text/javascript"></script>
-    
-    <script src="vendors.04f521c51114c3745e37.js" type="text/javascript"></script>
-    
-    <script src="style.e43ea744bfae2f3ec2c8.js" type="text/javascript"></script>
-    
-    <script src="app.7588f3cf10fa3dfcd983.js" type="text/javascript"></script>
-    
-
-    
-
-    
-  </body>
+  <script type="text/javascript" src="vendors.bundle.js"></script><script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
