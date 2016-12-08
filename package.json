@@ -25,7 +25,6 @@
   "module": "src",
   "jsnext:main": "src",
   "devDependencies": {
-    "admin-lte": "^2.3.8",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.1",
@@ -46,7 +45,6 @@
     "eslint-plugin-react": "^6.8.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "font-awesome": "^4.7.0",
     "gh-pages": "^0.12.0",
     "git-prepush-hook": "^1.0.1",
     "html-webpack-plugin": "^2.24.1",
@@ -70,7 +68,10 @@
     "webpack-merge": "^1.0.2"
   },
   "dependencies": {
+    "admin-lte": "^2.3.8",
+    "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+    "font-awesome": "^4.7.0",
     "react-bootstrap": "^0.30.7"
   },
   "peerDependencies": {
