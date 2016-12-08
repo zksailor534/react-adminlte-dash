@@ -73,13 +73,6 @@ const common = {
 
 const siteCommon = {
   plugins: [
-    new HtmlWebpackPlugin({
-      template: require('html-webpack-template'), // eslint-disable-line global-require
-      inject: false,
-      mobile: true,
-      title: pkg.name,
-      appMountId: 'app',
-    }),
     new webpack.DefinePlugin({
       NAME: JSON.stringify(pkg.name),
       USER: JSON.stringify(pkg.user),
@@ -95,6 +88,13 @@ if (TARGET === 'start') {
       demo: config.paths.demo,
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        template: require('html-webpack-template'), // eslint-disable-line global-require
+        inject: false,
+        mobile: true,
+        title: pkg.name,
+        appMountId: 'app',
+      }),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': '"development"',
       }),
