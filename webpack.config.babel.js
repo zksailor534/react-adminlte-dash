@@ -154,6 +154,23 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
         verbose: false,
       }),
       extractCSS,
+      new HtmlWebpackPlugin({
+        template: 'lib/index_template.ejs',
+        filename: 'index.html',
+
+        // Context for the template
+        title: pkg.name,
+        description: pkg.description,
+      }),
+      new HtmlWebpackPlugin({
+        template: 'lib/404_template.ejs',
+        filename: '404.html',
+        inject: false,
+
+        // Context for the template
+        title: pkg.name,
+        remote: true,
+      }),
       new webpack.DefinePlugin({
           // This affects the react lib size
         'process.env.NODE_ENV': '"production"',
