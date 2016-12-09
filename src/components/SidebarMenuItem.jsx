@@ -119,7 +119,7 @@ SidebarMenuItem.propTypes = {
 
 SidebarMenuItem.defaultProps = {
   title: 'Tree-View',
-  link: '/',
+  link: '#',
   mainIcon: 'plain',
   active: false,
   labelText: '',

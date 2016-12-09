@@ -98,7 +98,7 @@ HeaderMenu.propTypes = {
 };
 
 HeaderMenu.defaultProps = {
-  link: '/',
+  link: '#',
   type: 'messages',
 };
 

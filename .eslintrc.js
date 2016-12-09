@@ -15,6 +15,7 @@ module.exports = {
     "no-alert": 0,
     "import/extensions": 0,
     "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": [2, { caseSensitive: false }],
     "no-underscore-dangle": 0,
     "no-unused-expressions": 0,
     "no-use-before-define": 0,
