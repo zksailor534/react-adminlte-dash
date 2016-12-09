@@ -77,7 +77,7 @@ class App extends React.Component {
 
               <Sidebar.Menu.Item
                 labelText="4"
-                labelType="information"
+                labelType="primary"
                 mainIcon="fa-files-o"
                 title="Layout Options"
               >
@@ -101,7 +101,7 @@ class App extends React.Component {
 
               <Sidebar.Menu.Item
                 labelText="new"
-                labelType="green"
+                labelType="success"
                 link="#"
                 title="Widgets"
               />
@@ -204,7 +204,7 @@ class App extends React.Component {
 
               <Sidebar.Menu.Item
                 labelText="3"
-                labelType="important"
+                labelType="danger"
                 link="#"
                 title="Calendar"
               />
@@ -275,16 +275,16 @@ class App extends React.Component {
 
               <Sidebar.Menu.Item
                 labelType="none"
-                link="#"
                 mainIcon="fa-book"
                 title="Documentation"
+                active
               />
 
             </Sidebar.Menu>
             <Sidebar.Menu title="LABELS">
               <Sidebar.Menu.Item
                 labelType="none"
-                mainIcon="important"
+                mainIcon="danger"
                 title="Important"
               />
               <Sidebar.Menu.Item
