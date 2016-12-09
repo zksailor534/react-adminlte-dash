@@ -1,5 +1,7 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import Markdown from 'react-remarkable';
+
+import './Documentation.css';
 
 const readme = require('../README.md');
 
@@ -9,7 +11,7 @@ const Documentation = () => (
       <h1>Documentation</h1>
     </section>
     <section className="content">
-      <ReactMarkdown source={readme} />
+      <Markdown source={readme} />
     </section>
   </div>
 );
