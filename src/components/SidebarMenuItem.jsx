@@ -42,7 +42,7 @@ class SidebarMenuItem extends React.Component {
       case 'plain':
         leftIcon = <i className="fa fa-circle-o" />;
         break;
-      case 'important':
+      case 'danger':
         leftIcon = <i className="fa fa-circle-o text-red" />;
         break;
       case 'warning':
@@ -59,18 +59,18 @@ class SidebarMenuItem extends React.Component {
 
     // Deal with right icon
     switch (this.props.labelType) {
-      case 'important':
+      case 'danger':
         rightIcon = <small className="label pull-right bg-red">{this.props.labelText}</small>;
         break;
       case 'warning':
         rightIcon = <small className="label pull-right bg-yellow">{this.props.labelText}</small>;
         break;
-      case 'information':
+      case 'primary':
         rightIcon = (<small className="label label-primary pull-right">
           {this.props.labelText}
         </small>);
         break;
-      case 'green':
+      case 'success':
         rightIcon = <small className="label pull-right bg-green">{this.props.labelText}</small>;
         break;
       default:
@@ -119,7 +119,7 @@ SidebarMenuItem.propTypes = {
 
 SidebarMenuItem.defaultProps = {
   title: 'Tree-View',
-  link: '/',
+  link: '#',
   mainIcon: 'plain',
   active: false,
   labelText: '',
