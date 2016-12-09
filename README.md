@@ -50,72 +50,72 @@ const App = () => (
 
 ## Included Components
 
-### <AdminLTE />
+### *AdminLTE*
 
 Wrapper component for style.  Handles layout changes and theming.
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | skin | `string` | Choice of AdminLTE skin themes: `blue`, `black`, `purple`, `green`, `red`, `yellow`, `blue-light`, `black-light`, `purple-light`, `green-light`, `red-light`, `yellow-light` | `blue` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `true` |
 | layout | `string` | Choice of AdminLTE layouts: `fixed` (header fixed to top of screen), `boxed` (layout in Bootstrap container), `nav-on-top` (TBD: Bootstrap-style navbar) | `fixed` |
 | sidebarCollapsed | `bool` | Determines whether the sidebar is in an open (`false`) or collapsed state (`true`) | `false` |
 
-### <Header />
+### *Header*
 
 Header component.  Wrapper for logo component and any top-based navigation.
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | logo | `element` | A single React component to be rendered in the top left of screen, typically use `<HeaderLogo />` with options | `<HeaderLogo />` |
 | sidebarToggle | `func` | (Required) function passed to sidebar toggle component to handle sidebar state | `true` |
 
-### <HeaderLogo />
+### *HeaderLogo*
 
 Header Logo component.  Renders large or small logo in left side of header bar.
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | link | `string` | Link target for logo component | `'/'` |
 | logoLg | `element` | A single React component to be rendered when logo is in large state | `<span><b>Admin</b>LTE</span>` |
 | logoSm | `element` | A single React component to be rendered when logo is in small state | `<span><b>A</b>LT</span>` |
 
-### <HeaderMenu />
+### *HeaderMenu*
 
 Header menu component.  Renders link or dropdown component in header bar.
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | link | `string` | Link target for component | `'#'` |
 | type | `string` | Menu type: `messages`, `notifications`, `tasks`, `''` (generic dropdown menu) | `messages` |
 | labelText | `string` | Text for label | '' |
 | labelColor | `string` | Label color (does not render unless labelText provided): `red`, `yellow`, `green` | none |
 
-### <Sidebar />
+### *Sidebar*
 
 Sidebar component.  Wrapper for sidebar-based navigation.  Also provides subcomponents:
-* `Sidebar.Menu` - see <SidebarMenu />
-* `Sidebar.User` - see <SidebarUser />
-* `Sidebar.Search` - see <SidebarSearch />
+* `Sidebar.Menu` - see SidebarMenu
+* `Sidebar.User` - see SidebarUser
+* `Sidebar.Search` - see SidebarSearch
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 
-### <SidebarMenu />
+### *SidebarMenu*
 
 Sidebar navigation menu component.  Wrapper for SidebarMenuItem components, which are provided as subcomponent:
-* `SidebarMenu.Item` - see <SidebarMenuItem />
+* `SidebarMenu.Item` - see SidebarMenuItem
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | title | `string` | Header title for navigation component | none |
 
-### <SidebarMenuItem />
+### *SidebarMenuItem*
 
 Sidebar navigation menu item component.  Renders as link or dropdown menu.  Can be nested in itself to provided nested dropdown menus.
 
@@ -128,7 +128,7 @@ Sidebar navigation menu item component.  Renders as link or dropdown menu.  Can 
 ```
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | title | `string` | Title for component | none |
 | link | `string` | Link target for component | `'#'` |
@@ -137,21 +137,21 @@ Sidebar navigation menu item component.  Renders as link or dropdown menu.  Can 
 | labelType | `string` | Bootstrap colors for right label: `danger`, `warning`, `primary`, `success` | none |
 | labelText | `string` | Right label text | `''` |
 
-### <SidebarSearch />
+### *SidebarSearch*
 
 Sidebar search component.
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | initialValue | `string` | Initial value displayed in search field | `''` |
 | onSearch | `func` | (Required) Function to call on search submit, provided with value prop | none |
 
-### <SidebarUser />
+### *SidebarUser*
 
 Sidebar user component.
 
 | Property | Type | Description | Default |
-|:---|:---|:---|:---|
+|:--------:|:----:|:-----------:|:-------:|
 | userName | `string` | User name | `'User Name'` |
 | userImageSrc | `string` | String providing src location for user image | none |
 | userStatus | `string` | String providing user status: `online`, `offline`, `unknown` | `null` |
