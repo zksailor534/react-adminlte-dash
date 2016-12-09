@@ -6,25 +6,25 @@ import classNames from 'classnames';
 // offline: text-danger
 // unknown: text-muted
 
-const SidebarMenuUser = (props) => {
-  const { userName, userImage, showStatus, userStatus, userLink } = props;
+const SidebarUser = (props) => {
+  const { userName, userImageSrc, userStatus, userLink } = props;
 
   // Set default image if no user image available
-  let user = <i className="fa fa-user fa-3x" />;
+  let userImage = <i className="fa fa-user fa-3x" />;
   let statusLink = null;
 
-  if (userImage) {
-    user = (
+  if (userImageSrc) {
+    userImage = (
       <img
         alt="User"
         className="img-circle"
-        src={userImage}
+        src={userImageSrc}
       />
     );
   }
 
   // Deal with user status
-  if (showStatus) {
+  if (userStatus) {
     switch (userStatus.toLowerCase()) {
       case 'online':
         statusLink = (
@@ -56,7 +56,7 @@ const SidebarMenuUser = (props) => {
   return (
     <div className="user-panel">
       <div className="pull-left image">
-        {user}
+        {userImage}
       </div>
       <div className="pull-left info">
         <p>{userName}</p>
@@ -66,19 +66,17 @@ const SidebarMenuUser = (props) => {
   );
 };
 
-SidebarMenuUser.propTypes = {
+SidebarUser.propTypes = {
   userName: React.PropTypes.string,
-  userImage: React.PropTypes.string,
-  showStatus: React.PropTypes.bool,
+  userImageSrc: React.PropTypes.string,
   userStatus: React.PropTypes.string,
   userLink: React.PropTypes.string,
 };
 
-SidebarMenuUser.defaultProps = {
+SidebarUser.defaultProps = {
   userName: 'User Name',
-  showStatus: true,
   userStatus: null,
   userLink: '/',
 };
 
-export default SidebarMenuUser;
+export default SidebarUser;
