@@ -35,7 +35,7 @@ import 'admin-lte/dist/css/skins/_all-skins.min.css';
 
 Then (ES6):
 ```javascript
-import { AdminLTE, Navbar, MainSidebar } from 'react-adminlte-dash';
+import { AdminLTE, Header, Sidebar } from 'react-adminlte-dash';
 
 const App = () => (
   <AdminLTE
@@ -44,8 +44,8 @@ const App = () => (
     sidebarMini={true}
     skin="blue"
   >
-    <Navbar />
-    <MainSidebar />
+    <Header />
+    <Sidebar />
   </AdminLTE>
 );
 ```
