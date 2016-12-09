@@ -1,4 +1,4 @@
-[![build status](https://secure.travis-ci.org/zksailor534/react-adminlte.svg)](http://travis-ci.org/zksailor534/react-adminlte)
+[![build status](https://secure.travis-ci.org/zksailor534/react-adminlte-dash.svg)](http://travis-ci.org/zksailor534/react-adminlte-dash)
 [![bitHound Score](https://www.bithound.io/github/zksailor534/react-adminlte-dash/badges/score.svg)](https://www.bithound.io/github/zksailor534/react-adminlte-dash)
 
 ## react-adminlte-dash

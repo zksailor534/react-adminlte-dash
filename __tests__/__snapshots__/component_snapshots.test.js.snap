@@ -1,0 +1,177 @@
+exports[`Component Snapshots <AdminLTE /> renders correctly with default options 1`] = `
+<div
+  className="hold-transition skin-blue"
+  id="adminlte_core">
+  <div
+    className="wrapper" />
+</div>
+`;
+
+exports[`Component Snapshots <Header /> renders correctly with default options 1`] = `
+<header
+  className="main-header">
+  <a
+    className="logo"
+    href="/">
+    <div
+      className="logo-mini">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </div>
+    <div
+      className="logo-lg">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </div>
+  </a>
+  <nav
+    className="navbar navbar-static-top">
+    <button
+      className="sidebar-toggle"
+      onClick={[Function]}
+      style={
+        Object {
+          "border": "none",
+          "outline": "none",
+        }
+      }>
+      <span
+        className="sr-only">
+        Toggle navigation
+      </span>
+    </button>
+    <div
+      className="navbar-custom-menu">
+      <ul
+        className="nav navbar-nav" />
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`Component Snapshots <HeaderLogo /> renders correctly with default options 1`] = `
+<a
+  className="logo"
+  href="/">
+  <div
+    className="logo-mini">
+    <span>
+      <b>
+        A
+      </b>
+      LT
+    </span>
+  </div>
+  <div
+    className="logo-lg">
+    <span>
+      <b>
+        Admin
+      </b>
+      LTE
+    </span>
+  </div>
+</a>
+`;
+
+exports[`Component Snapshots <HeaderMenu /> renders correctly with default options 1`] = `
+<li
+  className="dropdown messages-menu">
+  <a
+    className="dropdown-toggle"
+    data-toggle="dropdown"
+    href="#"
+    onClick={[Function]}>
+    <i
+      className="fa fa-envelope-o" />
+  </a>
+  <ul
+    className="dropdown-menu" />
+</li>
+`;
+
+exports[`Component Snapshots <Sidebar /> renders correctly with default options 1`] = `
+<aside
+  className="main-sidebar">
+  <section
+    className="sidebar" />
+</aside>
+`;
+
+exports[`Component Snapshots <SidebarMenu /> renders correctly with default options 1`] = `
+<ul
+  className="sidebar-menu">
+  <li
+    className="header">
+    MENU
+  </li>
+</ul>
+`;
+
+exports[`Component Snapshots <SidebarMenuItem /> renders correctly with default options 1`] = `
+<li
+  className="">
+  <a
+    href="#"
+    onClick={[Function]}>
+    <i
+      className="fa fa-circle-o" />
+    <span>
+      Tree-View
+    </span>
+  </a>
+</li>
+`;
+
+exports[`Component Snapshots <SidebarSearch /> renders correctly with default options 1`] = `
+<form
+  className="sidebar-form"
+  method="get"
+  onSubmit={[Function]}>
+  <div
+    className="input-group">
+    <input
+      className="form-control"
+      name="q"
+      onChange={[Function]}
+      placeholder="Search..."
+      type="text" />
+    <span
+      className="input-group-btn">
+      <button
+        className="btn btn-flat"
+        id="search-btn"
+        name="search"
+        type="submit">
+        <i
+          className="fa fa-search" />
+      </button>
+    </span>
+  </div>
+</form>
+`;
+
+exports[`Component Snapshots <SidebarUser /> renders correctly with default options 1`] = `
+<div
+  className="user-panel">
+  <div
+    className="pull-left image">
+    <i
+      className="fa fa-user fa-3x" />
+  </div>
+  <div
+    className="pull-left info">
+    <p>
+      User Name
+    </p>
+  </div>
+</div>
+`;

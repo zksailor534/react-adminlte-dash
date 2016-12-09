@@ -1,5 +1,6 @@
 import AdminLTE from './components/AdminLTE';
 import Header from './components/Header';
+import HeaderLogo from './components/HeaderLogo';
 import HeaderMenu from './components/HeaderMenu';
 import Sidebar from './components/Sidebar';
 import SidebarMenu from './components/SidebarMenu';
@@ -11,10 +12,11 @@ import SidebarUser from './components/SidebarUser';
 module.exports = {
   AdminLTE,
   Header,
+  HeaderLogo,
+  HeaderMenu,
   Sidebar,
   SidebarMenu,
   SidebarMenuItem,
   SidebarSearch,
   SidebarUser,
-  HeaderMenu,
 };
