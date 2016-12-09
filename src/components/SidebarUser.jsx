@@ -6,7 +6,7 @@ import classNames from 'classnames';
 // offline: text-danger
 // unknown: text-muted
 
-const SidebarMenuUser = (props) => {
+const SidebarUser = (props) => {
   const { userName, userImage, showStatus, userStatus, userLink } = props;
 
   // Set default image if no user image available
@@ -66,7 +66,7 @@ const SidebarMenuUser = (props) => {
   );
 };
 
-SidebarMenuUser.propTypes = {
+SidebarUser.propTypes = {
   userName: React.PropTypes.string,
   userImage: React.PropTypes.string,
   showStatus: React.PropTypes.bool,
@@ -74,11 +74,11 @@ SidebarMenuUser.propTypes = {
   userLink: React.PropTypes.string,
 };
 
-SidebarMenuUser.defaultProps = {
+SidebarUser.defaultProps = {
   userName: 'User Name',
   showStatus: true,
   userStatus: null,
   userLink: '/',
 };
 
-export default SidebarMenuUser;
+export default SidebarUser;

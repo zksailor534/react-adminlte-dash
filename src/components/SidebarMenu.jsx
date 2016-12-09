@@ -1,6 +1,8 @@
 import React from 'react';
 
-const SidebarMenu = ({ children, title }) => (
+import SidebarMenuItem from './SidebarMenuItem';
+
+const SidebarMenu = ({ children, title = 'MENU' }) => (
   <ul className="sidebar-menu">
     <li className="header">{title}</li>
     {children}
@@ -12,8 +14,6 @@ SidebarMenu.propTypes = {
   title: React.PropTypes.string,
 };
 
-SidebarMenu.defaultProps = {
-  title: 'MENU',
-};
+SidebarMenu.Item = SidebarMenuItem;
 
 export default SidebarMenu;

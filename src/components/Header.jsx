@@ -1,7 +1,9 @@
 import React from 'react';
-import NavbarLogo from './NavbarLogo';
 
-const Navbar = ({ children, logo, sidebarToggle }) => (
+import HeaderLogo from './HeaderLogo';
+import HeaderMenu from './HeaderMenu';
+
+const Header = ({ children, logo, sidebarToggle }) => (
   <header className="main-header">
 
     {/* Logo */}
@@ -29,14 +31,17 @@ const Navbar = ({ children, logo, sidebarToggle }) => (
   </header>
 );
 
-Navbar.propTypes = {
+Header.propTypes = {
   children: React.PropTypes.node,
   logo: React.PropTypes.element,
   sidebarToggle: React.PropTypes.func.isRequired,
 };
 
-Navbar.defaultProps = {
-  logo: <NavbarLogo />,
+Header.defaultProps = {
+  logo: <HeaderLogo />,
 };
 
-export default Navbar;
+Header.Logo = HeaderLogo;
+Header.Menu = HeaderMenu;
+
+export default Header;

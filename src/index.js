@@ -1,20 +1,20 @@
 import AdminLTE from './components/AdminLTE';
-import Navbar from './components/Navbar';
-import DropdownMenu from './components/DropdownMenu';
-import MainSidebar from './components/MainSidebar';
+import Header from './components/Header';
+import HeaderMenu from './components/HeaderMenu';
+import Sidebar from './components/Sidebar';
 import SidebarMenu from './components/SidebarMenu';
 import SidebarMenuItem from './components/SidebarMenuItem';
-import SidebarMenuSearch from './components/SidebarMenuSearch';
-import SidebarMenuUser from './components/SidebarMenuUser';
+import SidebarSearch from './components/SidebarSearch';
+import SidebarUser from './components/SidebarUser';
 
 // this should be the entry point to your library
 module.exports = {
   AdminLTE,
-  Navbar,
-  MainSidebar,
+  Header,
+  Sidebar,
   SidebarMenu,
   SidebarMenuItem,
-  SidebarMenuSearch,
-  SidebarMenuUser,
-  DropdownMenu,
+  SidebarSearch,
+  SidebarUser,
+  HeaderMenu,
 };

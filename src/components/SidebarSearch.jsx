@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SidebarMenuSearch extends React.Component {
+class SidebarSearch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,13 +52,13 @@ class SidebarMenuSearch extends React.Component {
   }
 }
 
-SidebarMenuSearch.propTypes = {
+SidebarSearch.propTypes = {
   initialValue: React.PropTypes.string,
   onSearch: React.PropTypes.func.isRequired,
 };
 
-SidebarMenuSearch.defaultProps = {
+SidebarSearch.defaultProps = {
   initialValue: '',
 };
 
-export default SidebarMenuSearch;
+export default SidebarSearch;

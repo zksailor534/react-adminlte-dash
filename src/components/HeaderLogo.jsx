@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavbarLogo = ({ link, logoLg, logoSm }) => (
+const HeaderLogo = ({ link, logoLg, logoSm }) => (
   <a
     className="logo"
     href={link}
@@ -12,16 +12,16 @@ const NavbarLogo = ({ link, logoLg, logoSm }) => (
   </a>
 );
 
-NavbarLogo.propTypes = {
+HeaderLogo.propTypes = {
   link: React.PropTypes.string,
   logoLg: React.PropTypes.element,
   logoSm: React.PropTypes.element,
 };
 
-NavbarLogo.defaultProps = {
+HeaderLogo.defaultProps = {
   link: '/',
   logoLg: <span><b>Admin</b>LTE</span>,
   logoSm: <span><b>A</b>LT</span>,
 };
 
-export default NavbarLogo;
+export default HeaderLogo;

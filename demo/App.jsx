@@ -2,12 +2,8 @@ import React from 'react';
 import GithubCorner from 'react-github-corner';
 import pkgInfo from '../package.json';
 import { AdminLTE,
-  Navbar,
-  MainSidebar,
-  SidebarMenu,
-  SidebarMenuItem,
-  SidebarMenuSearch,
-  SidebarMenuUser,
+  Header,
+  Sidebar,
 } from '../src/index';
 
 class App extends React.Component {
@@ -44,265 +40,265 @@ class App extends React.Component {
           sidebarMini={this.state.sidebarMini}
           skin="blue"
         >
-          <Navbar
+          <Header
             sidebarToggle={this._sidebarToggle}
           />
 
           {/* Left side column. contains the logo and sidebar */}
-          <MainSidebar>
+          <Sidebar>
             {/* sidebar menu: : style can be found in sidebar.less */}
             {/* Sidebar user panel */}
-            <SidebarMenuUser
+            <Sidebar.User
               userName="Alexander Pierce"
               userStatus="online"
             />
 
             {/* search form */}
-            <SidebarMenuSearch
+            <Sidebar.Search
               onSearch={value => (alert(`Searching for: ${value}`))}
             />
 
-            <SidebarMenu title="MAIN NAVIGATION">
+            <Sidebar.Menu title="MAIN NAVIGATION">
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 mainIcon="fa-dashboard"
                 title="Dashboard"
               >
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Dashboard v1"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   active
                   link="#"
                   title="Dashboard v2"
                 />
-              </SidebarMenuItem>
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 labelText="4"
                 labelType="information"
                 mainIcon="fa-files-o"
                 title="Layout Options"
               >
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Top Navigation"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Boxed"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Fixed"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Collapsed Sidebar"
                 />
-              </SidebarMenuItem>
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 labelText="new"
                 labelType="green"
                 link="#"
                 title="Widgets"
               />
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 mainIcon="fa-pie-chart"
                 title="Charts"
               >
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="ChartJS"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Morris"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Flot"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Inline charts"
                 />
-              </SidebarMenuItem>
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 mainIcon="fa-laptop"
                 title="UI Elements"
               >
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="General"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Icons"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Buttons"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Sliders"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Timeline"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Modals"
                 />
-              </SidebarMenuItem>
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 mainIcon="fa-edit"
                 title="Forms"
               >
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="General Elements"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Advanced Elements"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Editors"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Sliders"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Timeline"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Modals"
                 />
-              </SidebarMenuItem>
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 mainIcon="fa-table"
                 title="Tables"
               >
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Simple tables"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Data tables"
                 />
-              </SidebarMenuItem>
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 labelText="3"
                 labelType="important"
                 link="#"
                 title="Calendar"
               />
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 labelText="12"
                 labelType="warning"
                 link="#"
                 title="Mailbox"
               />
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 mainIcon="fa-folder"
                 title="Examples"
               >
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Invoice"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Profile"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Login"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Register"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Lockscreen"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="404 Error"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="500 Error"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Blank Page"
                 />
-                <SidebarMenuItem
+                <Sidebar.Menu.Item
                   link="#"
                   title="Pace Page"
                 />
-              </SidebarMenuItem>
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 mainIcon="fa-share"
                 title="Multilevel"
               >
-                <SidebarMenuItem title="Level One" />
-                <SidebarMenuItem title="Level One">
-                  <SidebarMenuItem title="Level Two" />
-                  <SidebarMenuItem title="Level Two">
-                    <SidebarMenuItem title="Level Three" />
-                    <SidebarMenuItem title="Level Three" />
-                  </SidebarMenuItem>
-                </SidebarMenuItem>
-                <SidebarMenuItem title="Level One" />
-              </SidebarMenuItem>
+                <Sidebar.Menu.Item title="Level One" />
+                <Sidebar.Menu.Item title="Level One">
+                  <Sidebar.Menu.Item title="Level Two" />
+                  <Sidebar.Menu.Item title="Level Two">
+                    <Sidebar.Menu.Item title="Level Three" />
+                    <Sidebar.Menu.Item title="Level Three" />
+                  </Sidebar.Menu.Item>
+                </Sidebar.Menu.Item>
+                <Sidebar.Menu.Item title="Level One" />
+              </Sidebar.Menu.Item>
 
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 labelType="none"
                 link="#"
                 mainIcon="fa-book"
                 title="Documentation"
               />
 
-            </SidebarMenu>
-            <SidebarMenu title="LABELS">
-              <SidebarMenuItem
+            </Sidebar.Menu>
+            <Sidebar.Menu title="LABELS">
+              <Sidebar.Menu.Item
                 labelType="none"
                 mainIcon="important"
                 title="Important"
               />
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 labelType="none"
                 mainIcon="warning"
                 title="Warning"
               />
-              <SidebarMenuItem
+              <Sidebar.Menu.Item
                 labelType="none"
                 mainIcon="information"
                 title="Information"
               />
-            </SidebarMenu>
-          </MainSidebar>
+            </Sidebar.Menu>
+          </Sidebar>
 
           {this.props.children}
         </AdminLTE>

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-// Navbar Dropdown Type Options
+// Header Dropdown Type Options
 // messages: fa-envelope-o
 // notifications: fa-bell-o
 // tasks: fa-flag-o
@@ -11,7 +11,7 @@ import classNames from 'classnames';
 // yellow: label-warning
 // green: label-success
 
-class DropdownMenu extends React.Component {
+class HeaderMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -89,7 +89,7 @@ class DropdownMenu extends React.Component {
   }
 }
 
-DropdownMenu.propTypes = {
+HeaderMenu.propTypes = {
   children: React.PropTypes.node,
   link: React.PropTypes.string,
   type: React.PropTypes.string,
@@ -97,9 +97,9 @@ DropdownMenu.propTypes = {
   labelText: React.PropTypes.string,
 };
 
-DropdownMenu.defaultProps = {
+HeaderMenu.defaultProps = {
   link: '/',
   type: 'messages',
 };
 
-export default DropdownMenu;
+export default HeaderMenu;
