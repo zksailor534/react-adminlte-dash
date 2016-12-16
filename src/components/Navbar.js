@@ -34,6 +34,7 @@ const StyledNavbar = styled.nav`
 
   color: ${props => props.theme.fontColor || '#333'};
   display: block;
+  width: 100%
   font-weight: 400;
   position: relative;
   min-height: ${navbarHeight};
@@ -51,17 +52,21 @@ const StyledNavbar = styled.nav`
     margin: 0;
   }
   @media (min-width: ${screenSmMin}) {
-    margin-left: ${props => ((props.sidebarMini && props.collapse) && sidebarMiniWidth)};
+    margin-left: ${props => ((!props.topNav && props.sidebarMini && props.collapse) ?
+      sidebarMiniWidth :
+      sidebarWidth)};
   }
 `;
 
 const Navbar = props => (
   <StyledNavbar {...props}>
     <NavbarButton {...props} className="fa fa-bars" onClick={props.toggle} />
+    {props.children}
   </StyledNavbar>
 );
 
 Navbar.propTypes = {
+  children: React.PropTypes.node,
   toggle: React.PropTypes.func.isRequired,
 };
 

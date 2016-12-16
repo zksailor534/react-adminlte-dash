@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 // import pkgInfo from '../package.json';
 import {
   Header,
+  Sidebar,
 } from '../src/index';
 import theme from '../src/styles/skin-blue';
 
@@ -40,6 +41,13 @@ class App extends React.Component {
           <Header
             fixed
             sidebarToggle={this._sidebarToggle}
+            sidebarCollapse={this.state.sidebarCollapse}
+            sidebarMini={this.state.sidebarMini}
+          />
+        </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Sidebar
+            fixed
             sidebarCollapse={this.state.sidebarCollapse}
             sidebarMini={this.state.sidebarMini}
           />

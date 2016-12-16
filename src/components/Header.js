@@ -35,11 +35,14 @@ const Header = props => (
       toggle={props.sidebarToggle}
       collapse={props.sidebarCollapse}
       sidebarMini={props.sidebarMini}
-    />
+    >
+      {props.children}
+    </Navbar>
   </StyledHeader>
 );
 
 Header.propTypes = {
+  children: React.PropTypes.node,
   fixed: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
   sidebarCollapse: React.PropTypes.bool,

@@ -14,13 +14,13 @@ const NavbarButton = styled.button`
   padding: ${(parseInt(navbarPaddingVertical, 10) + 3)}px ${navbarPaddingHorizontal};
   text-decoration: none;
   color: ${props => props.theme.fontColor || '#fff'};
-  &:hover {
-    color: #fff;
-    background-color: ${props => props.theme.logoBgColor || '#fff'};
-  }
   &:focus,
   &:active {
     background: transparent;
+  }
+  &:hover {
+    color: #fff;
+    background-color: ${props => props.theme.logoBgColor || '#fff'};
   }
 `;
 
