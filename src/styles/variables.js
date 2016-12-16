@@ -236,3 +236,13 @@ export const sidebarVariant = (
     sidebarSubmenuLgBorderLeft: `1px solid ${gray}`,
   }
 );
+
+export const navbarItemVariant = (
+  color,
+  dividerColor = 'rgba(255, 255, 255, 0.1)',
+  itemLinkColor = '#fff',
+) => ({
+  navbarItemDividerBg: dividerColor,
+  navbarItemLinkColor: itemLinkColor,
+  navbarItemLinkHoverBg: tinycolor(color).darken(5).toString(),
+});
