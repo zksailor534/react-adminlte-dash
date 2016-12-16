@@ -6,7 +6,7 @@ import {
   Dashboard,
 } from '../src/index';
 
-const App = () => (
+const App = ({ children }) => (
   <div>
     {/* <GithubCorner
       href={`https://github.com/${pkgInfo.user}/${pkgInfo.name}`}
@@ -17,7 +17,9 @@ const App = () => (
       direction="right"
     /> */}
 
-    <Dashboard />
+    <Dashboard>
+      {children}
+    </Dashboard>
   </div>
 );
 
