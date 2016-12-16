@@ -14,7 +14,7 @@ import {
   sidebarMiniWidth,
   navbarHeight,
   screenHeaderCollapse,
-} from '../styles/variables';
+} from '../../styles/variables';
 
 const StyledNavbar = styled.nav`
   /* clearfix */

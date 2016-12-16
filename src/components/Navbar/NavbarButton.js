@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {
   navbarPaddingHorizontal,
   navbarPaddingVertical,
-} from '../styles/variables';
+} from '../../styles/variables';
 
 const NavbarButton = styled.button`
   float: left;

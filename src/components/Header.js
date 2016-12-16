@@ -2,8 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Navbar from './Navbar';
-import NavbarLogo from './NavbarLogo';
+import Navbar from './Navbar/Navbar';
+import NavbarLogo from './Navbar/NavbarLogo';
 
 const StyledHeader = styled.header`
   /* clearfix */
