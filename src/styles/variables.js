@@ -29,9 +29,8 @@ export const white = '#fff';
 // LAYOUT
 // --------------------------------------------------------
 
-// Bootstrap screen sizes
-// Extra small screen / phone
-
+// BOOTSTRAP
+// Screen sizes
 // Small screen / tablet
 export const screenSmMin = '768px';
 // Medium screen / desktop
@@ -42,10 +41,19 @@ export const screenLgMin = '1200px';
 export const screenXsMax = `${parseInt(screenSmMin, 10) - 1}px`;
 export const screenSmMax = `${parseInt(screenMdMin, 10) - 1}px`;
 export const screenMdMax = `${parseInt(screenLgMin, 10) - 1}px`;
-// Navbar height
+// Boostrap sizing
+export const fontSizeBase = '14px';
+export const lineHeightBase = 1.428571429;
+export const lineHeightComputed = `${Math.floor(parseInt(fontSizeBase, 10) * lineHeightBase)}px`;
+export const gridGutterWidth = '30px';
+
+// Navbar heights
 export const navbarHeight = '50px';
+export const navbarPaddingHorizontal = `${Math.floor(parseInt(gridGutterWidth, 10) / 2)}px`;
+export const navbarPaddingVertical = `${(parseInt(navbarHeight, 10) - parseInt(lineHeightComputed, 10)) / 2}px`;
 // Side bar and logo width
 export const sidebarWidth = '230px';
+export const sidebarMiniWidth = '50px';
 // Boxed layout maximum width
 export const boxedLayoutMaxWidth = '1024px';
 // When the logo should go to the top of the screen

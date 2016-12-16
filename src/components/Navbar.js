@@ -1,13 +1,22 @@
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
 import styled from 'styled-components';
+
+import 'font-awesome/css/font-awesome.min.css';
+
+import NavbarButton from './NavbarButton';
+
 import {
   transitionSpeed,
   transitionFn,
+  screenSmMin,
   sidebarWidth,
+  sidebarMiniWidth,
   navbarHeight,
   screenHeaderCollapse,
 } from '../styles/variables';
 
-const Navbar = styled.nav`
+const StyledNavbar = styled.nav`
   /* clearfix */
   &:before, &:after {
     display: table;
@@ -23,7 +32,7 @@ const Navbar = styled.nav`
   -o-transition: margin-left ${transitionSpeed} ${transitionFn};
   transition: margin-left ${transitionSpeed} ${transitionFn};
 
-  color: #333;
+  color: ${props => props.theme.fontColor || '#333'};
   display: block;
   font-weight: 400;
   position: relative;
@@ -41,6 +50,19 @@ const Navbar = styled.nav`
     float: none;
     margin: 0;
   }
+  @media (min-width: ${screenSmMin}) {
+    margin-left: ${props => ((props.sidebarMini && props.collapse) && sidebarMiniWidth)};
+  }
 `;
+
+const Navbar = props => (
+  <StyledNavbar {...props}>
+    <NavbarButton {...props} className="fa fa-bars" onClick={props.toggle} />
+  </StyledNavbar>
+);
+
+Navbar.propTypes = {
+  toggle: React.PropTypes.func.isRequired,
+};
 
 export default Navbar;

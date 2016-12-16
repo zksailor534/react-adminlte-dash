@@ -1,12 +1,10 @@
 import React from 'react';
-import GithubCorner from 'react-github-corner';
+// import GithubCorner from 'react-github-corner';
 import { ThemeProvider } from 'styled-components';
 
-import pkgInfo from '../package.json';
+// import pkgInfo from '../package.json';
 import {
   Header,
-  Navbar,
-  NavbarLogo,
 } from '../src/index';
 import theme from '../src/styles/skin-blue';
 
@@ -29,22 +27,22 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <GithubCorner
+        {/* <GithubCorner
           href={`https://github.com/${pkgInfo.user}/${pkgInfo.name}`}
           bannerColor="#fff"
           octoColor="#000"
           width={80}
           height={80}
           direction="right"
-        />
+        /> */}
 
         <ThemeProvider theme={theme}>
-          <Header>
-            <NavbarLogo collapse>
-              AdminLTE
-            </NavbarLogo>
-            <Navbar />
-          </Header>
+          <Header
+            fixed
+            sidebarToggle={this._sidebarToggle}
+            sidebarCollapse={this.state.sidebarCollapse}
+            sidebarMini={this.state.sidebarMini}
+          />
         </ThemeProvider>
       </div>
     );
