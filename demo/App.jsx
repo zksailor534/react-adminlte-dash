@@ -1,10 +1,21 @@
+/* eslint-disable no-alert */
 import React from 'react';
 // import GithubCorner from 'react-github-corner';
 
 // import pkgInfo from '../package.json';
 import {
   Dashboard,
+  UserMenu,
 } from '../src/index';
+
+const navMenu = () => (
+  <UserMenu
+    name="Alexander Pierce"
+    image="/demo/img/user2-160x160.jpg"
+    profileAction={() => alert('Go to profile')}
+    signOutAction={() => alert('Sign out')}
+  />
+);
 
 const App = ({ children }) => (
   <div>
@@ -17,7 +28,9 @@ const App = ({ children }) => (
       direction="right"
     /> */}
 
-    <Dashboard>
+    <Dashboard
+      navbarChildren={navMenu()}
+    >
       {children}
     </Dashboard>
   </div>

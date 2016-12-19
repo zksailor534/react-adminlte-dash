@@ -10,6 +10,8 @@ const StyledHeader = styled.header`
   &:before, &:after {
     display: table;
     content: " ";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   &:after {

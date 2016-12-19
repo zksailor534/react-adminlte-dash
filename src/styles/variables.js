@@ -3,6 +3,7 @@ import tinycolor from 'tinycolor2';
 
 // COLORS
 // --------------------------------------------------------
+export const baseColor = '#333';
 // Primary
 export const lightBlue = '#3c8dbc';
 // Danger
@@ -42,8 +43,10 @@ export const screenXsMax = `${parseInt(screenSmMin, 10) - 1}px`;
 export const screenSmMax = `${parseInt(screenMdMin, 10) - 1}px`;
 export const screenMdMax = `${parseInt(screenLgMin, 10) - 1}px`;
 // Boostrap sizing
+export const fontFamilyBase = "'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif";
 export const fontSizeBase = '14px';
 export const lineHeightBase = 1.428571429;
+export const fontWeightBase = '400';
 export const lineHeightComputed = `${Math.floor(parseInt(fontSizeBase, 10) * lineHeightBase)}px`;
 export const gridGutterWidth = '30px';
 
@@ -149,10 +152,9 @@ export const navbarVariant = (
   hoverBg = 'rgba(0, 0, 0, 0.1)',
 ) => ({
   backgroundColor: color,
-  fontColor,
-  navbarLinkColor: fontColor,
-  hoverColor,
-  hoverBg,
+  navbarFontColor: fontColor,
+  navbarHoverColor: hoverColor,
+  navbarHoverBg: hoverBg,
 });
 
 export const logoVariant = (

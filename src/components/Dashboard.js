@@ -16,6 +16,8 @@ const StyledDashboard = styled.div`
   &:before, &:after {
     display: table;
     content: " ";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   &:after {
@@ -63,7 +65,9 @@ class Dashboard extends React.Component {
             sidebarToggle={this._sidebarToggle}
             sidebarCollapse={this.state.sidebarCollapse}
             sidebarMini={this.props.sidebarMini}
-          />
+          >
+            {this.props.navbarChildren}
+          </Header>
         </ThemeProvider>
         <ThemeProvider theme={theme}>
           <Sidebar
@@ -88,6 +92,7 @@ class Dashboard extends React.Component {
 
 Dashboard.propTypes = {
   children: React.PropTypes.node,
+  navbarChildren: React.PropTypes.node,
   fixed: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
   theme: React.PropTypes.string,

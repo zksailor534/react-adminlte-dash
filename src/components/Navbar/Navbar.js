@@ -16,6 +16,33 @@ import {
   screenHeaderCollapse,
 } from '../../styles/variables';
 
+const StyledNavbarMenuList = styled.ul`
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+  box-sizing: border-box;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* media queries */
+  @media (max-width: ${screenHeaderCollapse}) {
+    float: left;
+  }
+  @media (min-width: ${screenSmMin}) {
+    float: right;
+  }
+`;
+
+const StyledNavbarMenu = styled.div`
+  box-sizing: border-box;
+  display: block;
+  float: right;
+`;
+
 const StyledNavbar = styled.nav`
   /* clearfix */
   &:before, &:after {
@@ -32,9 +59,8 @@ const StyledNavbar = styled.nav`
   -o-transition: margin-left ${transitionSpeed} ${transitionFn};
   transition: margin-left ${transitionSpeed} ${transitionFn};
 
-  color: ${props => props.theme.fontColor || '#333'};
+  color: ${props => props.theme.navbarFontColor || '#333'};
   display: block;
-  width: 100%
   font-weight: 400;
   position: relative;
   min-height: ${navbarHeight};
@@ -59,9 +85,14 @@ const StyledNavbar = styled.nav`
 `;
 
 const Navbar = props => (
-  <StyledNavbar {...props}>
-    <NavbarButton {...props} className="fa fa-bars" onClick={props.toggle} />
-    {props.children}
+  <StyledNavbar>
+    <NavbarButton className="fa fa-bars" onClick={props.toggle} />
+
+    <StyledNavbarMenu>
+      <StyledNavbarMenuList>
+        {props.children}
+      </StyledNavbarMenuList>
+    </StyledNavbarMenu>
   </StyledNavbar>
 );
 
