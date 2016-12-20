@@ -85,7 +85,11 @@ const StyledNavbar = styled.nav`
 `;
 
 const Navbar = props => (
-  <StyledNavbar>
+  <StyledNavbar
+    topNav={props.topNav}
+    sidebarMini={props.sidebarMini}
+    collapse={props.collapse}
+  >
     <NavbarButton className="fa fa-bars" onClick={props.toggle} />
 
     <StyledNavbarMenu>
@@ -99,6 +103,9 @@ const Navbar = props => (
 Navbar.propTypes = {
   children: React.PropTypes.node,
   toggle: React.PropTypes.func.isRequired,
+  topNav: React.PropTypes.bool,
+  sidebarMini: React.PropTypes.bool,
+  collapse: React.PropTypes.bool,
 };
 
 export default Navbar;

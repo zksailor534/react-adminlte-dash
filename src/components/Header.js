@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Navbar from './Navbar/Navbar';
 import NavbarLogo from './Navbar/NavbarLogo';
+import NavbarUserMenu from './Navbar/NavbarUserMenu';
 
 const StyledHeader = styled.header`
   /* clearfix */
@@ -30,8 +31,8 @@ const Header = props => (
       collapse={props.sidebarCollapse}
       sidebarMini={props.sidebarMini}
       href="#"
-      logoLg={<span><b>Admin</b>LTE</span>}
-      logoSm={<span><b>A</b>LT</span>}
+      logoLg={props.logoLg}
+      logoSm={props.logoSm}
     />
     <Navbar
       toggle={props.sidebarToggle}
@@ -46,6 +47,8 @@ const Header = props => (
 Header.propTypes = {
   children: React.PropTypes.node,
   fixed: React.PropTypes.bool,
+  logoLg: React.PropTypes.element,
+  logoSm: React.PropTypes.element,
   sidebarMini: React.PropTypes.bool,
   sidebarCollapse: React.PropTypes.bool,
   sidebarToggle: React.PropTypes.func.isRequired,
@@ -55,6 +58,10 @@ Header.defaultProps = {
   fixed: false,
   sidebarMini: false,
   sidebarCollapse: false,
+  logoLg: <span><b>Admin</b>LTE</span>,
+  logoSm: <span><b>A</b>LT</span>,
 };
+
+Header.UserMenu = NavbarUserMenu;
 
 export default Header;

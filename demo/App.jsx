@@ -5,11 +5,11 @@ import React from 'react';
 // import pkgInfo from '../package.json';
 import {
   Dashboard,
-  UserMenu,
+  Header,
 } from '../src/index';
 
 const navMenu = () => (
-  <UserMenu
+  <Header.UserMenu
     name="Alexander Pierce"
     image="/demo/img/user2-160x160.jpg"
     profileAction={() => alert('Go to profile')}
@@ -30,6 +30,7 @@ const App = ({ children }) => (
 
     <Dashboard
       navbarChildren={navMenu()}
+      sidebarMini
     >
       {children}
     </Dashboard>
