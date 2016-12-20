@@ -88,19 +88,28 @@ const StyledItem = styled.li`
   }
 `;
 
-const NavbarLink = ({ children, href = '#', image }) => (
+const NavbarItem = ({ children, onClick, href, image }) => (
   <StyledItem>
-    <StyledLink href={href}>
-      {image && <StyledImage src={image} />}
-      {children}
-    </StyledLink>
+    {onClick &&
+      <StyledLink onClick={onClick} href="#">
+        {image && <StyledImage src={image} />}
+        {children}
+      </StyledLink>
+    }
+    {(!onClick && href) &&
+      <StyledLink href={href}>
+        {image && <StyledImage src={image} />}
+        {children}
+      </StyledLink>
+    }
   </StyledItem>
 );
 
-NavbarLink.propTypes = {
+NavbarItem.propTypes = {
   children: React.PropTypes.node,
+  onClick: React.PropTypes.func,
   href: React.PropTypes.string,
   image: React.PropTypes.string,
 };
 
-export default NavbarLink;
+export default NavbarItem;

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Navbar from './Navbar/Navbar';
 import NavbarLogo from './Navbar/NavbarLogo';
 import NavbarUserMenu from './Navbar/NavbarUserMenu';
-import NavbarLink from './Navbar/NavbarLink';
+import NavbarItem from './Navbar/NavbarItem';
 
 const StyledHeader = styled.header`
   /* clearfix */
@@ -64,6 +64,6 @@ Header.defaultProps = {
 };
 
 Header.UserMenu = NavbarUserMenu;
-Header.Link = NavbarLink;
+Header.Item = NavbarItem;
 
 export default Header;

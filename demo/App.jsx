@@ -8,16 +8,18 @@ import {
 } from '../src/index';
 
 const navMenu = () => ([
-  <Header.Link
+  <Header.Item
     href={`https://github.com/${pkgInfo.user}/${pkgInfo.name}`}
     image="/demo/img/GitHub-Mark-120px-plus.png"
+    key={1}
   >
     Github
-  </Header.Link>,
+  </Header.Item>,
   <Header.UserMenu
     name="Alexander Pierce"
     image="/demo/img/user2-160x160.jpg"
     signOutAction={() => alert('Sign out')}
+    key={2}
   />,
 ]);
 
