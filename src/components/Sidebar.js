@@ -2,6 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import UserPanel from './Sidebar/UserPanel';
+
 import {
   screenXsMax,
   screenSmMin,
@@ -78,14 +80,18 @@ const StyledSidebar = styled.aside`
   }
 `;
 
-const Sidebar = props => (
+const Sidebar = ({
+  children,
+  fixed = false,
+  sidebarMini = false,
+  sidebarCollapse = false,
+}) => (
   <StyledSidebar
-    fixed={props.fixed}
-    collapse={props.sidebarCollapse}
-    mini={props.sidebarMini}
-    {...props}
+    fixed={fixed}
+    collapse={sidebarCollapse}
+    mini={sidebarMini}
   >
-    {props.children}
+    {children}
   </StyledSidebar>
 );
 
@@ -96,10 +102,6 @@ Sidebar.propTypes = {
   sidebarCollapse: React.PropTypes.bool,
 };
 
-Sidebar.defaultProps = {
-  fixed: false,
-  sidebarMini: false,
-  sidebarCollapse: false,
-};
+Sidebar.UserPanel = UserPanel;
 
 export default Sidebar;

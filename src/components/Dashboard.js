@@ -76,7 +76,9 @@ class Dashboard extends React.Component {
             fixed={this.props.fixed}
             sidebarCollapse={this.state.sidebarCollapse}
             sidebarMini={this.props.sidebarMini}
-          />
+          >
+            {this.props.sidebarChildren}
+          </Sidebar>
         </ThemeProvider>
         <ThemeProvider theme={theme}>
           <Content
@@ -97,6 +99,7 @@ Dashboard.propTypes = {
   logoLg: React.PropTypes.element,
   logoSm: React.PropTypes.element,
   navbarChildren: React.PropTypes.node,
+  sidebarChildren: React.PropTypes.node,
   fixed: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
   theme: React.PropTypes.string,

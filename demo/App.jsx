@@ -5,6 +5,7 @@ import pkgInfo from '../package.json';
 import {
   Dashboard,
   Header,
+  Sidebar,
 } from '../src/index';
 
 const navMenu = () => ([
@@ -23,10 +24,20 @@ const navMenu = () => ([
   />,
 ]);
 
+const sbMenu = () => ([
+  <Sidebar.UserPanel
+    name="Alexander Pierce"
+    image="/demo/img/user2-160x160.jpg"
+    online
+    key={1}
+  />,
+]);
+
 const App = ({ children }) => (
   <div>
     <Dashboard
       navbarChildren={navMenu()}
+      sidebarChildren={sbMenu()}
       sidebarMini
       theme="skin-blue"
     >
