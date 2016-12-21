@@ -2,6 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import MenuItem from './MenuItem';
+
 const StyledHeader = styled.li`
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -47,5 +49,7 @@ Menu.propTypes = {
   children: React.PropTypes.node,
   header: React.PropTypes.string,
 };
+
+Menu.Item = MenuItem;
 
 export default Menu;

@@ -52,6 +52,12 @@ const sidebarCollapseProperties = `
       margin-top: -7px;
     }
   }
+
+  @media (min-width: ${screenSmMin}) {
+    & .menu-item > a {
+      margin-right: 0;
+    }
+  }
 `;
 
 const StyledSidebar = styled.aside`

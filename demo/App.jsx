@@ -32,7 +32,9 @@ const sb = () => ([
     key={1}
   />,
   <Sidebar.Search key={2} />,
-  <Sidebar.Menu header="MAIN NAVIGATION" key={3} />,
+  <Sidebar.Menu header="MAIN NAVIGATION" key={3}>
+    <Sidebar.Menu.Item active icon="fa-book" title="Documentation" />
+  </Sidebar.Menu>,
 ]);
 
 const App = ({ children }) => (
