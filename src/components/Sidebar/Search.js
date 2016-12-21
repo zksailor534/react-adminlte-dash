@@ -157,7 +157,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <StyledForm>
+      <StyledForm className="sidebar-form">
         <InputGroup>
           <StyledInput
             type="text"

@@ -100,9 +100,9 @@ const StyledPanel = styled.div`
 `;
 
 const UserPanel = ({ name, image, href = '#', online }) => (
-  <StyledPanel>
+  <StyledPanel className="user-panel" >
     <StyledImage src={image} />
-    <StyledInfo>
+    <StyledInfo className="user-info" >
       <StyledP>{name}</StyledP>
       <StyledLink href={href}>
         <StyledIcon className="fa fa-circle" online={online} />

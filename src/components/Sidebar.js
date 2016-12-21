@@ -14,6 +14,45 @@ import {
   transitionFn,
 } from '../styles/variables';
 
+const sidebarCollapseProperties = `
+  & .sidebar-form,
+  & .user-info,
+  & .menu-header,
+  & .link-text,
+  & .treeview-menu,
+  & .link-right-icon {
+    display: none!important;
+    -webkit-transform: translateZ(0);
+  }
+
+  & .sidebar-menu,
+  & .user-panel,
+  & .menu-header {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  & .sidebar-menu:hover {
+    overflow: visible;
+  }
+
+  & .sidebar-form,
+  & .menu-header {
+    overflow: hidden;
+    text-overflow: clip;
+  }
+
+  & .menu-item {
+    position: relative;
+    .link-right-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -7px;
+    }
+  }
+`;
+
 const StyledSidebar = styled.aside`
   &:before, &:after {
     -webkit-box-sizing: border-box;
@@ -36,6 +75,9 @@ const StyledSidebar = styled.aside`
   -moz-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   -o-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
+
+  /* collapse sidebar */
+  ${props => props.collapse && sidebarCollapseProperties}
 
   /* media queries */
   /* sidebar on large screens */
