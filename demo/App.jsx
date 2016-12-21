@@ -32,6 +32,7 @@ const sb = () => ([
     key={1}
   />,
   <Sidebar.Search key={2} />,
+  <Sidebar.Menu header="MAIN NAVIGATION" key={3} />,
 ]);
 
 const App = ({ children }) => (

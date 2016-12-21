@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import UserPanel from './Sidebar/UserPanel';
 import Search from './Sidebar/Search';
+import Menu from './Sidebar/Menu';
 
 import {
   screenXsMax,
@@ -147,5 +148,6 @@ Sidebar.propTypes = {
 
 Sidebar.UserPanel = UserPanel;
 Sidebar.Search = Search;
+Sidebar.Menu = Menu;
 
 export default Sidebar;
