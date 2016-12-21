@@ -197,12 +197,12 @@ export const sidebarVariant = (
     sidebarFormInputBorder: '1px solid transparent',
     sidebarFormInputHeight: '35px',
     sidebarFormInputColor: '#666',
-    sidebarFormInputBorderRadius: '2px 0 2px 0',
+    sidebarFormInputBorderRadius: '2px 0 0 2px',
     sidebarFormInputFocusBg: '#fff',
     sidebarFormInputFocusColor: '#666',
     sidebarFormInputFocusBorderLeftColor: '#fff',
     sidebarFormButtonColor: '#999',
-    sidebarFormButtonBorderRadius: '0 2px 0 2px',
+    sidebarFormButtonBorderRadius: '0 2px 2px 0',
   } :
   {
     sidebarBg: sidebarLightBg,

@@ -24,20 +24,21 @@ const navMenu = () => ([
   />,
 ]);
 
-const sbMenu = () => ([
+const sb = () => ([
   <Sidebar.UserPanel
     name="Alexander Pierce"
     image="/demo/img/user2-160x160.jpg"
     online
     key={1}
   />,
+  <Sidebar.Search key={2} />,
 ]);
 
 const App = ({ children }) => (
   <div>
     <Dashboard
       navbarChildren={navMenu()}
-      sidebarChildren={sbMenu()}
+      sidebarChildren={sb()}
       sidebarMini
       theme="skin-blue"
     >

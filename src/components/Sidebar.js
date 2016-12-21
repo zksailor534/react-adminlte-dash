@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import UserPanel from './Sidebar/UserPanel';
+import Search from './Sidebar/Search';
 
 import {
   screenXsMax,
@@ -103,5 +104,6 @@ Sidebar.propTypes = {
 };
 
 Sidebar.UserPanel = UserPanel;
+Sidebar.Search = Search;
 
 export default Sidebar;
