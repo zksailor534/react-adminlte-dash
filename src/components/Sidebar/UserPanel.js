@@ -40,12 +40,15 @@ const StyledInfo = styled.div`
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: ${props => props.theme.userPanelColor || '#fff'};
-  display: block;
-  float: left!important;
+  display: ${props => (props.collapse ? 'none !important' : 'block')};
+  float: left !important;
   padding: 5px 5px 5px 15px;
   line-height: 1;
   position: absolute;
   left: 55px;
+
+  /* collapse transform */
+  ${props => props.collapse && '-webkit-transform: translateZ(0);'}
 `;
 
 const StyledImage = styled.img`
@@ -99,10 +102,10 @@ const StyledPanel = styled.div`
   white-space: nowrap;
 `;
 
-const UserPanel = ({ name, image, href = '#', online }) => (
-  <StyledPanel className="user-panel" >
+const UserPanel = ({ name, image, href = '#', online, collapse }) => (
+  <StyledPanel collapse={collapse} >
     <StyledImage src={image} />
-    <StyledInfo className="user-info" >
+    <StyledInfo collapse={collapse} >
       <StyledP>{name}</StyledP>
       <StyledLink href={href}>
         <StyledIcon className="fa fa-circle" online={online} />
@@ -117,6 +120,7 @@ UserPanel.propTypes = {
   image: React.PropTypes.string,
   href: React.PropTypes.string,
   online: React.PropTypes.bool,
+  collapse: React.PropTypes.bool,
 };
 
 export default UserPanel;

@@ -8,7 +8,7 @@ const StyledHeader = styled.li`
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: list-item;
+  display: ${props => (props.collapse ? 'none !important' : 'list-item')};
   text-align: -webkit-match-parent;
   position: relative;
   margin: 0;
@@ -25,6 +25,9 @@ const StyledHeader = styled.li`
   background-size: initial;
   text-overflow: clip;
 
+  /* collapse transform */
+  ${props => props.collapse && '-webkit-transform: translateZ(0);'}
+
   /* theme */
   color: ${props => props.theme.sidebarHeaderColor || '#fff'}
   background-color: ${props => props.theme.sidebarHeaderBg || '#fff'}
@@ -36,18 +39,31 @@ const StyledMenu = styled.ul`
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
+
+  &:hover {
+    overflow: visible;
+  }
 `;
 
-const Menu = props => (
-  <StyledMenu className="sidebar-menu" >
-    <StyledHeader className="menu-header" >{props.header}</StyledHeader>
-    {props.children}
+const renderChildren = (children, sidebarCollapse) => (
+  React.Children.map(children, child =>
+    React.cloneElement(child, {
+      collapse: sidebarCollapse,
+    }),
+  )
+);
+
+const Menu = ({ children, header, collapse }) => (
+  <StyledMenu collapse={collapse} >
+    <StyledHeader collapse={collapse} >{header}</StyledHeader>
+    {renderChildren(children, collapse)}
   </StyledMenu>
 );
 
 Menu.propTypes = {
   children: React.PropTypes.node,
   header: React.PropTypes.string,
+  collapse: React.PropTypes.bool,
 };
 
 Menu.Item = MenuItem;

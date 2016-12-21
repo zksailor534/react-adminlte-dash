@@ -16,31 +16,20 @@ import {
 } from '../styles/variables';
 
 const sidebarCollapseProperties = `
-  & .sidebar-form,
-  & .user-info,
-  & .menu-header,
   & .link-text,
   & .treeview-menu,
   & .link-right-icon {
-    display: none!important;
+    display: none !important;
     -webkit-transform: translateZ(0);
   }
 
-  & .sidebar-menu,
-  & .user-panel,
-  & .menu-header {
+  & .sidebar-menu {
     white-space: nowrap;
     overflow: hidden;
   }
 
   & .sidebar-menu:hover {
     overflow: visible;
-  }
-
-  & .sidebar-form,
-  & .menu-header {
-    overflow: hidden;
-    text-overflow: clip;
   }
 
   & .menu-item {
@@ -53,9 +42,54 @@ const sidebarCollapseProperties = `
     }
   }
 
+  & .sidebar-menu > li {
+    position: relative;
+    > a {
+      margin-right: 0;
+    }
+
+    > .treeview-menu {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom-right-radius: 4px;
+    }
+
+    &:hover {
+      > .treeview-menu {
+        display: block !important;
+        position: absolute;
+        width: @sidebar-width - 50;
+        left: 50px;
+      }
+      > a > span {
+        top: 0;
+        margin-left: -3px;
+        padding: 12px 5px 12px 20px;
+        background-color: inherit;
+      }
+      > a > .pull-right-container {
+        float: right;
+        width: auto !important;
+        left: 200px !important;
+        top: 10px !important;
+        > .label:not(:first-of-type) {
+          display: none;
+        }
+      }
+      > .treeview-menu {
+        top: 44px;
+        margin-left: 0;
+      }
+    }
+  }
+
   @media (min-width: ${screenSmMin}) {
     & .menu-item > a {
       margin-right: 0;
+    }
+    & > li > .treeview-menu {
+      ${props => props.theme.sidebarSubmenuLgBorderLeft &&
+        `border-left: ${props.theme.sidebarSubmenuLgBorderLeft}`}
     }
   }
 `;
@@ -130,6 +164,14 @@ const StyledSidebar = styled.aside`
   }
 `;
 
+const renderChildren = (children, sidebarCollapse) => (
+  React.Children.map(children, child =>
+    React.cloneElement(child, {
+      collapse: sidebarCollapse,
+    }),
+  )
+);
+
 const Sidebar = ({
   children,
   fixed = false,
@@ -141,7 +183,7 @@ const Sidebar = ({
     collapse={sidebarCollapse}
     mini={sidebarMini}
   >
-    {children}
+    {renderChildren(children, sidebarCollapse)}
   </StyledSidebar>
 );
 

@@ -134,6 +134,12 @@ const StyledForm = styled.form`
   border-radius: ${props => props.theme.sidebarFormBorderRadius || '0'};
   border: ${props => props.theme.sidebarFormBorder || '0'};
   margin: ${props => props.theme.sidebarFormMargin || '0'};
+
+  /* collapse */
+  ${props => props.collapse && `
+    display: none !important;
+    -webkit-transform: translateZ(0);
+  `}
 `;
 
 class Search extends React.Component {
@@ -157,7 +163,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <StyledForm className="sidebar-form">
+      <StyledForm collapse={this.props.collapse} >
         <InputGroup>
           <StyledInput
             type="text"
@@ -181,11 +187,13 @@ Search.propTypes = {
   name: React.PropTypes.string,
   placeholder: React.PropTypes.string,
   onClick: React.PropTypes.func,
+  collapse: React.PropTypes.bool,
 };
 
 Search.defaultProps = {
   placeholder: 'Search...',
   onClick: v => alert(`Searching for ${v}`),
+  collapse: false,
 };
 
 export default Search;
