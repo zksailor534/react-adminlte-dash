@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 import {
+  fontFamilyBase,
+  fontSizeBase,
+  lineHeightBase,
+  fontWeightBase,
   screenXsMax,
   screenSmMin,
   navbarHeight,
@@ -23,6 +27,15 @@ const Content = styled.div`
   &:after {
     clear: both;
   }
+
+  /* shared */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: ${fontFamilyBase};
+  font-weight: ${fontWeightBase};
+  font-size: ${fontSizeBase};
+  line-height: ${lineHeightBase};
+  box-sizing: border-box;
 
   /* theme */
   ${props => (props.theme.contentLeftBorder && `border-left: ${props.theme.contentLeftBorder};`)}
