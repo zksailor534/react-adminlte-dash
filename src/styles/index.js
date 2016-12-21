@@ -1,3 +1,5 @@
+import 'font-awesome/css/font-awesome.min.css';
+
 import blue from './skin-blue';
 import red from './skin-red';
 

@@ -2,8 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import 'font-awesome/css/font-awesome.min.css';
-
 import NavbarButton from './NavbarButton';
 
 import {
