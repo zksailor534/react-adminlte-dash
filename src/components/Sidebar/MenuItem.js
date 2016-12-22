@@ -219,7 +219,7 @@ class MenuItem extends React.Component {
 
   toggleHover(state) {
     this.setState({ hover: state });
-    (!this.props.level) && this.toggleMenu();
+    (!this.props.level && this.props.collapse) && this.toggleMenu();
   }
 
   render() {
