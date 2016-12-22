@@ -15,85 +15,6 @@ import {
   transitionFn,
 } from '../styles/variables';
 
-const sidebarCollapseProperties = `
-  & .link-text,
-  & .treeview-menu,
-  & .link-right-icon {
-    display: none !important;
-    -webkit-transform: translateZ(0);
-  }
-
-  & .sidebar-menu {
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  & .sidebar-menu:hover {
-    overflow: visible;
-  }
-
-  & .menu-item {
-    position: relative;
-    .link-right-icon {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      margin-top: -7px;
-    }
-  }
-
-  & .sidebar-menu > li {
-    position: relative;
-    > a {
-      margin-right: 0;
-    }
-
-    > .treeview-menu {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-bottom-right-radius: 4px;
-    }
-
-    &:hover {
-      > .treeview-menu {
-        display: block !important;
-        position: absolute;
-        width: @sidebar-width - 50;
-        left: 50px;
-      }
-      > a > span {
-        top: 0;
-        margin-left: -3px;
-        padding: 12px 5px 12px 20px;
-        background-color: inherit;
-      }
-      > a > .pull-right-container {
-        float: right;
-        width: auto !important;
-        left: 200px !important;
-        top: 10px !important;
-        > .label:not(:first-of-type) {
-          display: none;
-        }
-      }
-      > .treeview-menu {
-        top: 44px;
-        margin-left: 0;
-      }
-    }
-  }
-
-  @media (min-width: ${screenSmMin}) {
-    & .menu-item > a {
-      margin-right: 0;
-    }
-    & > li > .treeview-menu {
-      ${props => props.theme.sidebarSubmenuLgBorderLeft &&
-        `border-left: ${props.theme.sidebarSubmenuLgBorderLeft}`}
-    }
-  }
-`;
-
 const StyledSidebar = styled.aside`
   &:before, &:after {
     -webkit-box-sizing: border-box;
@@ -116,9 +37,6 @@ const StyledSidebar = styled.aside`
   -moz-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   -o-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
-
-  /* collapse sidebar */
-  ${props => props.collapse && sidebarCollapseProperties}
 
   /* media queries */
   /* sidebar on large screens */

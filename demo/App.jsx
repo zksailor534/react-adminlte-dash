@@ -33,6 +33,16 @@ const sb = () => ([
   />,
   <Sidebar.Search key={2} />,
   <Sidebar.Menu header="MAIN NAVIGATION" key={3}>
+    <Sidebar.Menu.Item icon="fa-share" title="Multilevel">
+      <Sidebar.Menu.Item icon="fa-circle-o" title="Level One" />
+      <Sidebar.Menu.Item icon="fa-circle-o" title="Level One" >
+        <Sidebar.Menu.Item icon="fa-circle-o" title="Level Two" />
+        <Sidebar.Menu.Item icon="fa-circle-o" title="Level Two" >
+          <Sidebar.Menu.Item icon="fa-circle-o" title="Level Three" />
+        </Sidebar.Menu.Item>
+      </Sidebar.Menu.Item>
+      <Sidebar.Menu.Item icon="fa-circle-o" title="Level One" />
+    </Sidebar.Menu.Item>
     <Sidebar.Menu.Item active icon="fa-book" title="Documentation" />
   </Sidebar.Menu>,
 ]);
