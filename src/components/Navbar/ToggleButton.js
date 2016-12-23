@@ -7,7 +7,7 @@ import {
   navbarPaddingVertical,
 } from '../../styles/variables';
 
-const NavbarButton = styled.button`
+const ToggleButton = styled.button`
   /* shared */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,4 +35,4 @@ const NavbarButton = styled.button`
   }
 `;
 
-export default NavbarButton;
+export default ToggleButton;

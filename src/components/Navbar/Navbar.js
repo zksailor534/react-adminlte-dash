@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import NavbarButton from './NavbarButton';
+import ToggleButton from './ToggleButton';
 
 import {
   transitionSpeed,
@@ -88,7 +88,7 @@ const Navbar = props => (
     sidebarMini={props.sidebarMini}
     collapse={props.collapse}
   >
-    <NavbarButton className="fa fa-bars" onClick={props.toggle} />
+    <ToggleButton className="fa fa-bars" onClick={props.toggle} />
 
     <StyledNavbarMenu>
       <StyledNavbarMenuList>

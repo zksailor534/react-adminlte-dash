@@ -88,7 +88,7 @@ const StyledItem = styled.li`
   }
 `;
 
-const NavbarItem = ({ children, onClick, href, image }) => (
+const NavItem = ({ children, onClick, href, image }) => (
   <StyledItem>
     {onClick &&
       <StyledLink onClick={onClick} href="#">
@@ -105,11 +105,11 @@ const NavbarItem = ({ children, onClick, href, image }) => (
   </StyledItem>
 );
 
-NavbarItem.propTypes = {
+NavItem.propTypes = {
   children: React.PropTypes.node,
   onClick: React.PropTypes.func,
   href: React.PropTypes.string,
   image: React.PropTypes.string,
 };
 
-export default NavbarItem;
+export default NavItem;

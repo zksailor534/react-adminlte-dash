@@ -167,7 +167,7 @@ const StyledUserMenu = styled.li`
   }
 `;
 
-class NavbarUserMenu extends React.Component {
+class UserMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -208,11 +208,11 @@ class NavbarUserMenu extends React.Component {
   }
 }
 
-NavbarUserMenu.propTypes = {
+UserMenu.propTypes = {
   name: React.PropTypes.string,
   image: React.PropTypes.string,
   profileAction: React.PropTypes.func,
   signOutAction: React.PropTypes.func,
 };
 
-export default NavbarUserMenu;
+export default UserMenu;

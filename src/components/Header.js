@@ -3,9 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Navbar from './Navbar/Navbar';
-import NavbarLogo from './Navbar/NavbarLogo';
-import NavbarUserMenu from './Navbar/NavbarUserMenu';
-import NavbarItem from './Navbar/NavbarItem';
+import Logo from './Navbar/Logo';
+import UserMenu from './Navbar/UserMenu';
+import NavItem from './Navbar/NavItem';
 
 const StyledHeader = styled.header`
   /* clearfix */
@@ -28,7 +28,7 @@ const StyledHeader = styled.header`
 
 const Header = props => (
   <StyledHeader fixed={props.fixed} >
-    <NavbarLogo
+    <Logo
       collapse={props.sidebarCollapse}
       sidebarMini={props.sidebarMini}
       href="#"
@@ -63,7 +63,7 @@ Header.defaultProps = {
   logoSm: <span><b>A</b>LT</span>,
 };
 
-Header.UserMenu = NavbarUserMenu;
-Header.Item = NavbarItem;
+Header.UserMenu = UserMenu;
+Header.Item = NavItem;
 
 export default Header;

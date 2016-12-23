@@ -63,16 +63,16 @@ const SmallLogo = styled.span`
   }
 `;
 
-const NavbarLogo = props => (
+const Logo = props => (
   <StyledLogo {...props} >
     <LargeLogo {...props}>{props.logoLg}</LargeLogo>
     <SmallLogo {...props}>{props.logoSm}</SmallLogo>
   </StyledLogo>
 );
 
-NavbarLogo.propTypes = {
+Logo.propTypes = {
   logoLg: React.PropTypes.element,
   logoSm: React.PropTypes.element,
 };
 
-export default NavbarLogo;
+export default Logo;
