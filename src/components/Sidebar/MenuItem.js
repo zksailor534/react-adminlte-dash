@@ -210,7 +210,7 @@ class MenuItem extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     (nextProps.collapse !== this.props.collapse) &&
-      this.setState({ open: nextProps.collapse });
+      this.setState({ open: false });
   }
 
   toggleMenu() {
@@ -228,7 +228,6 @@ class MenuItem extends React.Component {
         collapse={this.props.collapse}
         hover={this.props.parentHover}
         level={this.props.level}
-        onMouseEnter={() => this._toggleHover(true)}
         onMouseLeave={() => this._toggleHover(false)}
       >
         <StyledLink
@@ -237,6 +236,7 @@ class MenuItem extends React.Component {
           hover={this.state.hover}
           level={this.props.level}
           onClick={this._toggleMenu}
+          onMouseEnter={() => this._toggleHover(true)}
         >
           <StyledLeftIcon className={`fa ${this.props.icon}`} />
           <StyledTitle
