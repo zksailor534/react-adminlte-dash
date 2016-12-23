@@ -142,6 +142,24 @@ const StyledRightIcon = styled.i`
 
 const StyledLeftIcon = styled.i`
   width: 20px;
+
+  /* ----- color ----- */
+  ${(props) => {
+    switch (props.color) {
+      case 'primary':
+        return `color: ${lightBlue};`;
+      case 'success':
+        return `color: ${green};`;
+      case 'danger':
+        return `color: ${red};`;
+      case 'warning':
+        return `color: ${yellow};`;
+      case 'information':
+        return `color: ${aqua};`;
+      default:
+        return null;
+    }
+  }};
 `;
 
 const StyledLink = styled.a`
@@ -322,7 +340,10 @@ class MenuItem extends React.Component {
           onClick={this._toggleMenu}
           onMouseEnter={() => this._toggleHover(true)}
         >
-          <StyledLeftIcon className={`fa ${this.props.icon}`} />
+          <StyledLeftIcon
+            className={`fa ${this.props.icon.className || 'fa-circle-o'}`}
+            color={this.props.icon.color || 'none'}
+          />
           <StyledTitle
             collapse={this.props.collapse}
             hover={this.state.hover}
@@ -373,7 +394,7 @@ MenuItem.propTypes = {
   children: React.PropTypes.node,
   active: React.PropTypes.bool,
   collapse: React.PropTypes.bool,
-  icon: React.PropTypes.string,
+  icon: React.PropTypes.objectOf(React.PropTypes.string),
   labels: React.PropTypes.arrayOf(React.PropTypes.object),
   level: React.PropTypes.number,
   parentHover: React.PropTypes.bool,
@@ -382,7 +403,7 @@ MenuItem.propTypes = {
 
 MenuItem.defaultProps = {
   collapse: false,
-  icon: 'fa-circle-o',
+  icon: { className: 'fa-circle-o' },
   level: 0,
   parentHover: false,
   title: 'Title',

@@ -33,12 +33,12 @@ const sb = () => ([
   />,
   <Sidebar.Search key={2} />,
   <Sidebar.Menu header="MAIN NAVIGATION" key={3}>
-    <Sidebar.Menu.Item icon="fa-dashboard" title="Dashboard" >
+    <Sidebar.Menu.Item icon={{ className: 'fa-dashboard' }} title="Dashboard" >
       <Sidebar.Menu.Item title="Dashboard v1" />
       <Sidebar.Menu.Item title="Dashboard v2" />
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item
-      icon="fa-files-o"
+      icon={{ className: 'fa-files-o' }}
       labels={[{ key: 1, type: 'primary', text: '4' }]}
       title="Layout Options"
     >
@@ -48,17 +48,17 @@ const sb = () => ([
       <Sidebar.Menu.Item title="Collapsed Sidebar" />
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item
-      icon="fa-th"
+      icon={{ className: 'fa-th' }}
       labels={[{ key: 1, type: 'success', text: 'new' }]}
       title="Widgets"
     />
-    <Sidebar.Menu.Item icon="fa-pie-chart" title="Charts" >
+    <Sidebar.Menu.Item icon={{ className: 'fa-pie-chart' }} title="Charts" >
       <Sidebar.Menu.Item title="ChartJS" />
       <Sidebar.Menu.Item title="Morris" />
       <Sidebar.Menu.Item title="Flot" />
       <Sidebar.Menu.Item title="Inline Charts" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon="fa-laptop" title="UI Elements" >
+    <Sidebar.Menu.Item icon={{ className: 'fa-laptop' }} title="UI Elements" >
       <Sidebar.Menu.Item title="General" />
       <Sidebar.Menu.Item title="Icons" />
       <Sidebar.Menu.Item title="Buttons" />
@@ -66,17 +66,17 @@ const sb = () => ([
       <Sidebar.Menu.Item title="Timeline" />
       <Sidebar.Menu.Item title="Modals" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon="fa-edit" title="Forms" >
+    <Sidebar.Menu.Item icon={{ className: 'fa-edit' }} title="Forms" >
       <Sidebar.Menu.Item title="General Elements" />
       <Sidebar.Menu.Item title="Advanced Elements" />
       <Sidebar.Menu.Item title="Editors" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon="fa-table" title="Tables" >
+    <Sidebar.Menu.Item icon={{ className: 'fa-table' }} title="Tables" >
       <Sidebar.Menu.Item title="Simple tables" />
       <Sidebar.Menu.Item title="Data tables" />
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item
-      icon="fa-calendar"
+      icon={{ className: 'fa-calendar' }}
       labels={[
         { key: 1, type: 'primary', text: '17' },
         { key: 2, type: 'danger', text: '3' },
@@ -84,7 +84,7 @@ const sb = () => ([
       title="Calendar"
     />
     <Sidebar.Menu.Item
-      icon="fa-envelope"
+      icon={{ className: 'fa-envelope' }}
       labels={[
         { key: 2, type: 'success', text: '16' },
         { key: 1, type: 'warning', text: '12' },
@@ -92,7 +92,7 @@ const sb = () => ([
       ]}
       title="Mailbox"
     />
-    <Sidebar.Menu.Item icon="fa-folder" title="Examples" >
+    <Sidebar.Menu.Item icon={{ className: 'fa-folder' }} title="Examples" >
       <Sidebar.Menu.Item title="Invoice" />
       <Sidebar.Menu.Item title="Profile" />
       <Sidebar.Menu.Item title="Login" />
@@ -103,22 +103,22 @@ const sb = () => ([
       <Sidebar.Menu.Item title="Blank Page" />
       <Sidebar.Menu.Item title="Pace Page" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon="fa-share" title="Multilevel">
-      <Sidebar.Menu.Item icon="fa-circle-o" title="Level One" />
-      <Sidebar.Menu.Item icon="fa-circle-o" title="Level One" >
-        <Sidebar.Menu.Item icon="fa-circle-o" title="Level Two" />
-        <Sidebar.Menu.Item icon="fa-circle-o" title="Level Two" >
-          <Sidebar.Menu.Item icon="fa-circle-o" title="Level Three" />
+    <Sidebar.Menu.Item icon={{ className: 'fa-share' }} title="Multilevel">
+      <Sidebar.Menu.Item title="Level One" />
+      <Sidebar.Menu.Item title="Level One" >
+        <Sidebar.Menu.Item title="Level Two" />
+        <Sidebar.Menu.Item title="Level Two" >
+          <Sidebar.Menu.Item title="Level Three" />
         </Sidebar.Menu.Item>
       </Sidebar.Menu.Item>
-      <Sidebar.Menu.Item icon="fa-circle-o" title="Level One" />
+      <Sidebar.Menu.Item title="Level One" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item active icon="fa-book" title="Documentation" />
+    <Sidebar.Menu.Item active icon={{ className: 'fa-book' }} title="Documentation" />
   </Sidebar.Menu>,
   <Sidebar.Menu header="LABELS" key={4}>
-    <Sidebar.Menu.Item title="Important" />
-    <Sidebar.Menu.Item title="Warning" />
-    <Sidebar.Menu.Item title="Information" />
+    <Sidebar.Menu.Item icon={{ color: 'danger' }} title="Danger" />
+    <Sidebar.Menu.Item icon={{ color: 'warning' }} title="Warning" />
+    <Sidebar.Menu.Item icon={{ color: 'information' }} title="Information" />
   </Sidebar.Menu>,
 ]);
 
