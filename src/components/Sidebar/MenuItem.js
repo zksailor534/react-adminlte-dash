@@ -290,7 +290,7 @@ MenuItem.propTypes = {
 };
 
 MenuItem.defaultProps = {
-  icon: 'fa-th',
+  icon: 'fa-circle-o',
   title: 'Title',
   collapse: false,
   level: 0,
