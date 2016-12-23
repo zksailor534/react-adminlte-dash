@@ -10,7 +10,67 @@ import {
   sidebarWidth,
   sidebarMiniWidth,
   screenSmMin,
+  lightBlue,
+  green,
+  yellow,
+  red,
+  aqua,
 } from '../../styles/variables';
+
+const Label = styled.div`
+  /* shared */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: ${fontFamilyBase};
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  display: inline;
+  padding: .2em .6em .3em .6em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  float: right!important;
+  color: #fff;
+  margin-right: 5px;
+
+  /* ----- color ----- */
+  background-color: ${(props) => {
+    switch (props.type) {
+      case 'primary':
+        return lightBlue;
+      case 'success':
+        return green;
+      case 'danger':
+        return red;
+      case 'warning':
+        return yellow;
+      case 'information':
+        return aqua;
+      default:
+        return lightBlue;
+    }
+  }};
+
+  /* ----- collapse ----- */
+  ${props => props.collapse && `
+    display: ${props.hover ? 'block' : 'none'};
+    float: right;
+  `}
+`;
 
 const RightSpan = styled.span`
   position: absolute;
@@ -23,12 +83,12 @@ const RightSpan = styled.span`
   /* ----- hover ----- */
   ${props => (props.collapse && props.hover && !props.level) && `
     display: block;
-    width: auto;
     left: ${parseInt(sidebarWidth, 10) - 30}px;
     top: 10px!important;
     margin-left: -3px;
     padding: 12px 5px 12px 20px;
     float: right;
+    overflow-x: visible;
   `}
 `;
 
@@ -197,6 +257,33 @@ const renderChildren = (children, sidebarCollapse, level, hover) => {
   ));
 };
 
+const renderLabels = (labels, collapse, hover) => (
+  labels.map((l) => {
+    if (l.key && l.type && l.text) {
+      if (l.key === 1) {
+        return (<Label
+          collapse={collapse}
+          hover={hover}
+          key={l.key}
+          type={l.type}
+        >
+          {l.text}
+        </Label>);
+      } else if (!collapse) {
+        return (<Label
+          collapse={collapse}
+          hover={hover}
+          key={l.key}
+          type={l.type}
+        >
+          {l.text}
+        </Label>);
+      }
+    }
+    return null;
+  })
+);
+
 class MenuItem extends React.Component {
   constructor(props) {
     super(props);
@@ -217,10 +304,7 @@ class MenuItem extends React.Component {
     this.props.children && this.setState({ open: !this.state.open });
   }
 
-  toggleHover(state) {
-    this.setState({ hover: state });
-    (!this.props.level && this.props.collapse) && this.toggleMenu();
-  }
+  toggleHover(state) { this.setState({ hover: state }); }
 
   render() {
     return (
@@ -251,11 +335,17 @@ class MenuItem extends React.Component {
             hover={this.state.hover}
             level={this.props.level}
           >
-            {this.props.children && (
-              <StyledRightIcon
-                className="fa fa-angle-left"
-                open={this.state.open}
-              />
+            {(this.props.labels ?
+              renderLabels(
+                this.props.labels,
+                this.props.collapse,
+                this.state.hover,
+              ) :
+              this.props.children &&
+                (<StyledRightIcon
+                  className="fa fa-angle-left"
+                  open={this.state.open}
+                />)
             )}
           </RightSpan>
         </StyledLink>
@@ -282,19 +372,20 @@ class MenuItem extends React.Component {
 MenuItem.propTypes = {
   children: React.PropTypes.node,
   active: React.PropTypes.bool,
-  icon: React.PropTypes.string,
-  title: React.PropTypes.string,
   collapse: React.PropTypes.bool,
+  icon: React.PropTypes.string,
+  labels: React.PropTypes.arrayOf(React.PropTypes.object),
   level: React.PropTypes.number,
   parentHover: React.PropTypes.bool,
+  title: React.PropTypes.string,
 };
 
 MenuItem.defaultProps = {
-  icon: 'fa-circle-o',
-  title: 'Title',
   collapse: false,
+  icon: 'fa-circle-o',
   level: 0,
   parentHover: false,
+  title: 'Title',
 };
 
 export default MenuItem;

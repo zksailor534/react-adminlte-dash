@@ -37,13 +37,21 @@ const sb = () => ([
       <Sidebar.Menu.Item title="Dashboard v1" />
       <Sidebar.Menu.Item title="Dashboard v2" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon="fa-files-o" title="Layout Options" >
+    <Sidebar.Menu.Item
+      icon="fa-files-o"
+      labels={[{ key: 1, type: 'primary', text: '4' }]}
+      title="Layout Options"
+    >
       <Sidebar.Menu.Item title="Top Navigation" />
       <Sidebar.Menu.Item title="Boxed" />
       <Sidebar.Menu.Item title="Fixed" />
       <Sidebar.Menu.Item title="Collapsed Sidebar" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon="fa-th" title="Widgets" />
+    <Sidebar.Menu.Item
+      icon="fa-th"
+      labels={[{ key: 1, type: 'success', text: 'new' }]}
+      title="Widgets"
+    />
     <Sidebar.Menu.Item icon="fa-pie-chart" title="Charts" >
       <Sidebar.Menu.Item title="ChartJS" />
       <Sidebar.Menu.Item title="Morris" />
@@ -67,8 +75,23 @@ const sb = () => ([
       <Sidebar.Menu.Item title="Simple tables" />
       <Sidebar.Menu.Item title="Data tables" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon="fa-calendar" title="Calendar" />
-    <Sidebar.Menu.Item icon="fa-envelope" title="Mailbox" />
+    <Sidebar.Menu.Item
+      icon="fa-calendar"
+      labels={[
+        { key: 1, type: 'primary', text: '17' },
+        { key: 2, type: 'danger', text: '3' },
+      ]}
+      title="Calendar"
+    />
+    <Sidebar.Menu.Item
+      icon="fa-envelope"
+      labels={[
+        { key: 2, type: 'success', text: '16' },
+        { key: 1, type: 'warning', text: '12' },
+        { key: 3, type: 'danger', text: '5' },
+      ]}
+      title="Mailbox"
+    />
     <Sidebar.Menu.Item icon="fa-folder" title="Examples" >
       <Sidebar.Menu.Item title="Invoice" />
       <Sidebar.Menu.Item title="Profile" />
