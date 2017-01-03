@@ -256,12 +256,6 @@ const StyledMenuItem = styled.li`
   white-space: nowrap;
   display: list-item;
   text-align: -webkit-match-parent;
-
-  /* sublevel */
-  ${props => props.level &&
-    `
-    }`
-  }
 `;
 
 const renderChildren = (children, sidebarCollapse, level, hover) => {
