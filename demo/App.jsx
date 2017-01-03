@@ -12,7 +12,7 @@ const navMenu = () => ([
   <Header.Item
     href={`https://github.com/${pkgInfo.user}/${pkgInfo.name}`}
     image="/demo/img/GitHub-Mark-120px-plus.png"
-    key={1}
+    key="1"
   >
     Github
   </Header.Item>,
@@ -20,7 +20,7 @@ const navMenu = () => ([
     name="Alexander Pierce"
     image="/demo/img/user2-160x160.jpg"
     signOutAction={() => alert('Sign out')}
-    key={2}
+    key="2"
   />,
 ]);
 
@@ -29,10 +29,10 @@ const sb = () => ([
     name="Alexander Pierce"
     image="/demo/img/user2-160x160.jpg"
     online
-    key={1}
+    key="1"
   />,
-  <Sidebar.Search key={2} />,
-  <Sidebar.Menu header="MAIN NAVIGATION" key={3}>
+  <Sidebar.Search key="2" />,
+  <Sidebar.Menu header="MAIN NAVIGATION" key="3">
     <Sidebar.Menu.Item icon={{ className: 'fa-dashboard' }} title="Dashboard" >
       <Sidebar.Menu.Item title="Dashboard v1" />
       <Sidebar.Menu.Item title="Dashboard v2" />
@@ -115,7 +115,7 @@ const sb = () => ([
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item active icon={{ className: 'fa-book' }} title="Documentation" />
   </Sidebar.Menu>,
-  <Sidebar.Menu header="LABELS" key={4}>
+  <Sidebar.Menu header="LABELS" key="4">
     <Sidebar.Menu.Item icon={{ color: 'danger' }} title="Danger" />
     <Sidebar.Menu.Item icon={{ color: 'warning' }} title="Warning" />
     <Sidebar.Menu.Item icon={{ color: 'information' }} title="Information" />

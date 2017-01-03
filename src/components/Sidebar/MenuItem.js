@@ -260,8 +260,9 @@ const StyledMenuItem = styled.li`
 
 const renderChildren = (children, sidebarCollapse, level, hover) => {
   const newLevel = level + 1;
-  return React.Children.map(children, child => (
+  return React.Children.map(children, (child, index) => (
     React.cloneElement(child, {
+      key: index.toString(),
       collapse: sidebarCollapse,
       level: newLevel,
       parentHover: hover,
@@ -276,7 +277,7 @@ const renderLabels = (labels, collapse, hover) => (
         return (<Label
           collapse={collapse}
           hover={hover}
-          key={l.key}
+          key={l.key.toString()}
           type={l.type}
         >
           {l.text}
@@ -285,7 +286,7 @@ const renderLabels = (labels, collapse, hover) => (
         return (<Label
           collapse={collapse}
           hover={hover}
-          key={l.key}
+          key={l.key.toString()}
           type={l.type}
         >
           {l.text}
