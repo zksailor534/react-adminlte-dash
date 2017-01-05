@@ -138,6 +138,9 @@ const StyledRightIcon = styled.i`
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
   `}
+
+  /* ----- collapse ----- */
+  ${props => (props.collapse && !props.hover) && 'display: none !important;'};
 `;
 
 const StyledLeftIcon = styled.i`
@@ -361,6 +364,8 @@ class MenuItem extends React.Component {
                 (<StyledRightIcon
                   className="fa fa-angle-left"
                   open={this.state.open}
+                  collapse={this.props.collapse}
+                  hover={this.state.hover}
                 />)
             )}
           </RightSpan>
