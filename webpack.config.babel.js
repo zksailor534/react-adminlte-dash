@@ -41,11 +41,7 @@ const common = {
     ],
     loaders: [
       {
-        test: /\.png$/,
-        loader: 'url?limit=100000&mimetype=image/png',
-      },
-      {
-        test: /\.jpg$/,
+        test: /\.(jpg|png)$/,
         loader: 'file',
       },
       {
