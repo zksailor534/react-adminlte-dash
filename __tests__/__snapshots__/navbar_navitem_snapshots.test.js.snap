@@ -1,0 +1,23 @@
+exports[`<NavItem /> renders correctly with default options 1`] = `
+<li
+  className="Kgaea" />
+`;
+
+exports[`<NavItem /> renders correctly with image 1`] = `
+<li
+  className="Kgaea" />
+`;
+
+exports[`<NavItem /> renders correctly with link 1`] = `
+<li
+  className="Kgaea">
+  <a
+    className="dfofQy"
+    href="/a/link" />
+</li>
+`;
+
+exports[`<NavItem /> renders correctly with theme 1`] = `
+<li
+  className="efjKxO" />
+`;

@@ -1,13 +1,23 @@
 /* eslint-env jest */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import renderer from 'react-test-renderer';
 
+import red from '../src/styles/skin-red';
 import UserMenu from '../src/components/Navbar/UserMenu';
 
 describe('<UserMenu />', () => {
   it('renders correctly with default options', () => {
     const component = renderer.create(<UserMenu />);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('renders correctly with theme', () => {
+    const component = renderer.create(<ThemeProvider theme={red}>
+      <UserMenu />
+    </ThemeProvider>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

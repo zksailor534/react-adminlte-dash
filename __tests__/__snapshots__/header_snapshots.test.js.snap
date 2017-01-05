@@ -237,3 +237,44 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
   </nav>
 </header>
 `;
+
+exports[`<Header /> renders correctly with theme 1`] = `
+<header
+  className="jzbJlV">
+  <a
+    className="iRprqu"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </span>
+  </a>
+  <nav
+    className="rOyox">
+    <button
+      className="fa fa-bars ieFzZM"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
