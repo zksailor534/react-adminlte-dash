@@ -43,7 +43,7 @@ const sb = () => ([
       title="Layout Options"
     >
       <Sidebar.Menu.Item title="Top Navigation" />
-      <Sidebar.Menu.Item title="Boxed" />
+      <Sidebar.Menu.Item title="Boxed" href="/boxed" />
       <Sidebar.Menu.Item title="Fixed" />
       <Sidebar.Menu.Item title="Collapsed Sidebar" />
     </Sidebar.Menu.Item>

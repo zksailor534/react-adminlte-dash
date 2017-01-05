@@ -334,6 +334,7 @@ class MenuItem extends React.Component {
           active={this.props.active}
           collapse={this.props.collapse}
           hover={this.state.hover}
+          href={this.props.children ? null : this.props.href}
           level={this.props.level}
           onClick={this._toggleMenu}
           onMouseEnter={() => this._toggleHover(true)}
@@ -395,6 +396,7 @@ MenuItem.propTypes = {
   active: React.PropTypes.bool,
   collapse: React.PropTypes.bool,
   icon: React.PropTypes.objectOf(React.PropTypes.string),
+  href: React.PropTypes.string,
   labels: React.PropTypes.arrayOf(React.PropTypes.object),
   level: React.PropTypes.number,
   parentHover: React.PropTypes.bool,
@@ -404,6 +406,7 @@ MenuItem.propTypes = {
 MenuItem.defaultProps = {
   collapse: false,
   icon: { className: 'fa-circle-o' },
+  href: null,
   level: 0,
   parentHover: false,
   title: 'Title',
