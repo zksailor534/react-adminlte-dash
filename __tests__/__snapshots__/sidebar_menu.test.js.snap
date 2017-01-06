@@ -1,0 +1,45 @@
+exports[`<Menu /> renders children correctly 1`] = `
+<ul
+  className="jHSOkj">
+  <li
+    className="hhsfIK" />
+  <span
+    collapse={undefined}>
+    Child
+  </span>
+</ul>
+`;
+
+exports[`<Menu /> renders correctly with collapse option 1`] = `
+<ul
+  className="jHSOkj">
+  <li
+    className="gaPufh" />
+</ul>
+`;
+
+exports[`<Menu /> renders correctly with default options 1`] = `
+<ul
+  className="jHSOkj">
+  <li
+    className="hhsfIK" />
+</ul>
+`;
+
+exports[`<Menu /> renders correctly with header 1`] = `
+<ul
+  className="jHSOkj">
+  <li
+    className="hhsfIK">
+    A Header
+  </li>
+</ul>
+`;
+
+exports[`<Menu /> renders correctly with theme 1`] = `
+<ul
+  className="jHSOkj">
+  <li
+    className="cCzeVt" />
+</ul>
+`;

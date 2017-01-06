@@ -1,0 +1,129 @@
+exports[`<Search /> renders correctly with collapse option 1`] = `
+<form
+  className="fYGkSh">
+  <div
+    className="cpFzdp">
+    <input
+      className="cHCFFC"
+      name={undefined}
+      onChange={[Function]}
+      placeholder="Search..."
+      type="text"
+      value="" />
+    <span
+      className="fCSDnh">
+      <button
+        className="dcZpol"
+        name="searchButton"
+        onClick={[Function]}>
+        <i
+          className="fa fa-search dzIkgv" />
+      </button>
+    </span>
+  </div>
+</form>
+`;
+
+exports[`<Search /> renders correctly with default options 1`] = `
+<form
+  className="bgmSUP">
+  <div
+    className="cpFzdp">
+    <input
+      className="cHCFFC"
+      name={undefined}
+      onChange={[Function]}
+      placeholder="Search..."
+      type="text"
+      value="" />
+    <span
+      className="fCSDnh">
+      <button
+        className="dcZpol"
+        name="searchButton"
+        onClick={[Function]}>
+        <i
+          className="fa fa-search dzIkgv" />
+      </button>
+    </span>
+  </div>
+</form>
+`;
+
+exports[`<Search /> renders correctly with input field name 1`] = `
+<form
+  className="bgmSUP">
+  <div
+    className="cpFzdp">
+    <input
+      className="cHCFFC"
+      name="Field"
+      onChange={[Function]}
+      placeholder="Search..."
+      type="text"
+      value="" />
+    <span
+      className="fCSDnh">
+      <button
+        className="dcZpol"
+        name="searchButton"
+        onClick={[Function]}>
+        <i
+          className="fa fa-search dzIkgv" />
+      </button>
+    </span>
+  </div>
+</form>
+`;
+
+exports[`<Search /> renders correctly with placeholder 1`] = `
+<form
+  className="bgmSUP">
+  <div
+    className="cpFzdp">
+    <input
+      className="cHCFFC"
+      name={undefined}
+      onChange={[Function]}
+      placeholder="???"
+      type="text"
+      value="" />
+    <span
+      className="fCSDnh">
+      <button
+        className="dcZpol"
+        name="searchButton"
+        onClick={[Function]}>
+        <i
+          className="fa fa-search dzIkgv" />
+      </button>
+    </span>
+  </div>
+</form>
+`;
+
+exports[`<Search /> renders correctly with theme 1`] = `
+<form
+  className="ushJz">
+  <div
+    className="cpFzdp">
+    <input
+      className="kNBdgX"
+      name={undefined}
+      onChange={[Function]}
+      placeholder="Search..."
+      type="text"
+      value="" />
+    <span
+      className="fCSDnh">
+      <button
+        className="jdntdv"
+        name="searchButton"
+        onClick={[Function]}>
+        <i
+          className="fa fa-search dzIkgv" />
+      </button>
+    </span>
+  </div>
+</form>
+`;

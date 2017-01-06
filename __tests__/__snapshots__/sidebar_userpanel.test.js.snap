@@ -1,0 +1,169 @@
+exports[`<UserPanel /> renders children correctly 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src={undefined} />
+  <div
+    className="cJYUpA">
+    <p
+      className="bjsuPH" />
+    <a
+      className="gPDcRu"
+      href="#">
+      <i
+        className="fa fa-circle imGDoo" />
+       Offline
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<UserPanel /> renders correctly with collapse option 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src={undefined} />
+  <div
+    className="foAVXO">
+    <p
+      className="bjsuPH" />
+    <a
+      className="gPDcRu"
+      href="#">
+      <i
+        className="fa fa-circle imGDoo" />
+       Offline
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<UserPanel /> renders correctly with default options 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src={undefined} />
+  <div
+    className="cJYUpA">
+    <p
+      className="bjsuPH" />
+    <a
+      className="gPDcRu"
+      href="#">
+      <i
+        className="fa fa-circle imGDoo" />
+       Offline
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<UserPanel /> renders correctly with image 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src="/some/path" />
+  <div
+    className="cJYUpA">
+    <p
+      className="bjsuPH" />
+    <a
+      className="gPDcRu"
+      href="#">
+      <i
+        className="fa fa-circle imGDoo" />
+       Offline
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<UserPanel /> renders correctly with link 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src={undefined} />
+  <div
+    className="cJYUpA">
+    <p
+      className="bjsuPH" />
+    <a
+      className="gPDcRu"
+      href="/a/link">
+      <i
+        className="fa fa-circle imGDoo" />
+       Offline
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<UserPanel /> renders correctly with name 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src={undefined} />
+  <div
+    className="cJYUpA">
+    <p
+      className="bjsuPH">
+      My Name
+    </p>
+    <a
+      className="gPDcRu"
+      href="#">
+      <i
+        className="fa fa-circle imGDoo" />
+       Offline
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<UserPanel /> renders correctly with online status option 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src={undefined} />
+  <div
+    className="cJYUpA">
+    <p
+      className="bjsuPH" />
+    <a
+      className="gPDcRu"
+      href="#">
+      <i
+        className="fa fa-circle kjiaUJ" />
+       Online
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<UserPanel /> renders correctly with theme 1`] = `
+<div
+  className="kQgkAT">
+  <img
+    className="efDOAf"
+    src={undefined} />
+  <div
+    className="cJYUpA">
+    <p
+      className="bjsuPH" />
+    <a
+      className="gPDcRu"
+      href="#">
+      <i
+        className="fa fa-circle imGDoo" />
+       Offline
+    </a>
+  </div>
+</div>
+`;

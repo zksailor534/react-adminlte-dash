@@ -38,6 +38,8 @@
     "chai": "^3.5.0",
     "clean-webpack-plugin": "^0.1.14",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.7.0",
+    "enzyme-to-json": "^1.4.5",
     "eslint": "^3.11.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-loader": "^1.6.1",
