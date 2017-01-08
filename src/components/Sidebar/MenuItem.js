@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import styled from 'styled-components';
+import tinycolor from 'tinycolor2';
 
 import {
   fontFamilyBase,
@@ -159,8 +160,12 @@ const StyledLeftIcon = styled.i`
         return `color: ${yellow};`;
       case 'information':
         return `color: ${aqua};`;
-      default:
-        return null;
+      default: {
+        const c = tinycolor(props.color);
+        return c.isValid() ?
+          `color: ${c.toString()};` :
+          null;
+      }
     }
   }};
 `;
@@ -334,9 +339,11 @@ class MenuItem extends React.Component {
           active={this.props.active}
           collapse={this.props.collapse}
           hover={this.state.hover}
-          href={this.props.children ? null : this.props.href}
+          href={(this.props.children || this.props.onClick) ?
+            null : this.props.href}
           level={this.props.level}
-          onClick={this._toggleMenu}
+          onClick={this.props.children ?
+            this._toggleMenu : this.props.onClick}
           onMouseEnter={() => this._toggleHover(true)}
         >
           <StyledLeftIcon
@@ -399,6 +406,7 @@ MenuItem.propTypes = {
   href: React.PropTypes.string,
   labels: React.PropTypes.arrayOf(React.PropTypes.object),
   level: React.PropTypes.number,
+  onClick: React.PropTypes.func,
   parentHover: React.PropTypes.bool,
   title: React.PropTypes.string,
 };

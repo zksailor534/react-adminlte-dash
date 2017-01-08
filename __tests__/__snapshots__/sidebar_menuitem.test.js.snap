@@ -23,12 +23,10 @@ exports[`<MenuItem /> changes properties on hover (level 1) 1`] = `
         hover={true}
         href={null}
         level={0}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="eGrrOt"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
@@ -85,12 +83,10 @@ exports[`<MenuItem /> changes properties on hover (level 1) 2`] = `
         hover={false}
         href={null}
         level={0}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="erKlVY"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
@@ -221,12 +217,10 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
                   hover={true}
                   href={null}
                   level={1}
-                  onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
                     className="bJKzDN"
                     href={null}
-                    onClick={[Function]}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
@@ -362,12 +356,10 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
                   hover={false}
                   href={null}
                   level={1}
-                  onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
                     className="knnAH"
                     href={null}
-                    onClick={[Function]}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
@@ -503,12 +495,10 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
                   hover={false}
                   href={null}
                   level={1}
-                  onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
                     className="knnAH"
                     href={null}
-                    onClick={[Function]}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
@@ -644,12 +634,10 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
                   hover={false}
                   href={null}
                   level={1}
-                  onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
                     className="knnAH"
                     href={null}
-                    onClick={[Function]}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
@@ -711,12 +699,10 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 1`] 
         hover={true}
         href={null}
         level={1}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="bJKzDN"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
@@ -773,12 +759,10 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 2`] 
         hover={false}
         href={null}
         level={1}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="knnAH"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
@@ -909,12 +893,10 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
                   hover={false}
                   href={null}
                   level={1}
-                  onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
                     className="knnAH"
                     href={null}
-                    onClick={[Function]}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
@@ -1050,12 +1032,10 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
                   hover={false}
                   href={null}
                   level={1}
-                  onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
                     className="knnAH"
                     href={null}
-                    onClick={[Function]}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
@@ -1191,12 +1171,10 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
                   hover={false}
                   href={null}
                   level={1}
-                  onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
                     className="knnAH"
                     href={null}
-                    onClick={[Function]}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
@@ -1240,7 +1218,7 @@ exports[`<MenuItem /> renders correctly with active option 1`] = `
   <a
     className="eGrrOt"
     href={null}
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
@@ -1262,7 +1240,7 @@ exports[`<MenuItem /> renders correctly with collapse option 1`] = `
   <a
     className="erKlVY"
     href={null}
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
@@ -1284,7 +1262,7 @@ exports[`<MenuItem /> renders correctly with default options 1`] = `
   <a
     className="erKlVY"
     href={null}
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
@@ -1325,12 +1303,10 @@ exports[`<MenuItem /> renders correctly with icon options 1`] = `
         hover={false}
         href={null}
         level={0}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="erKlVY"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
@@ -1388,12 +1364,10 @@ exports[`<MenuItem /> renders correctly with icon options 2`] = `
         hover={false}
         href={null}
         level={0}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="erKlVY"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
@@ -1451,12 +1425,10 @@ exports[`<MenuItem /> renders correctly with icon options 3`] = `
         hover={false}
         href={null}
         level={0}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="erKlVY"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
@@ -1514,12 +1486,10 @@ exports[`<MenuItem /> renders correctly with icon options 4`] = `
         hover={false}
         href={null}
         level={0}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="erKlVY"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
@@ -1577,12 +1547,10 @@ exports[`<MenuItem /> renders correctly with icon options 5`] = `
         hover={false}
         href={null}
         level={0}
-        onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
           className="erKlVY"
           href={null}
-          onClick={[Function]}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
@@ -1621,7 +1589,7 @@ exports[`<MenuItem /> renders correctly with labels 1`] = `
   <a
     className="erKlVY"
     href={null}
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
@@ -1669,7 +1637,7 @@ exports[`<MenuItem /> renders correctly with labels while collapsed 1`] = `
   <a
     className="erKlVY"
     href={null}
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
@@ -1697,7 +1665,7 @@ exports[`<MenuItem /> renders correctly with link 1`] = `
   <a
     className="erKlVY"
     href="/some/link"
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
@@ -1885,12 +1853,10 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                             hover={false}
                             href={null}
                             level={2}
-                            onClick={[Function]}
                             onMouseEnter={[Function]}>
                             <a
                               className="knnAH"
                               href={null}
-                              onClick={[Function]}
                               onMouseEnter={[Function]}>
                               <styled.i
                                 className="fa fa-circle-o"
@@ -1939,7 +1905,7 @@ exports[`<MenuItem /> renders correctly with theme 1`] = `
   <a
     className="DJLBF"
     href={null}
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
@@ -1961,7 +1927,7 @@ exports[`<MenuItem /> renders correctly with title 1`] = `
   <a
     className="erKlVY"
     href={null}
-    onClick={[Function]}
+    onClick={undefined}
     onMouseEnter={[Function]}>
     <i
       className="fa fa-circle-o dIWQSm"
