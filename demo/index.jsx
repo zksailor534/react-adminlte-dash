@@ -8,9 +8,6 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 import App, { reducer } from './AppContainer';
 import Documentation from './Documentation';
 
-// import css
-import '../src/main.css';
-
 // Make allowances for gh-pages routing
 // main path is project name
 let mainPath = '/';
