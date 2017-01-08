@@ -22,6 +22,7 @@ const StyledLogo = styled.a`
   background-color: ${props => props.theme.logoBgColor || '#fff'};
   color: ${props => props.theme.logoColor || '#000'};
   border-bottom: ${props => props.theme.logoBorderBottom || 'none'};
+  border-right: ${props => props.theme.navbarItemBorder || 'none'};
   &:hover {
     background-color: ${props => props.theme.logoHover || '#f6f6f6'};
   }
@@ -42,6 +43,7 @@ const StyledLogo = styled.a`
   @media (max-width: ${screenHeaderCollapse}) {
     width: 100%;
     float: none;
+    ${props => props.theme.logoSmallVariant || ''}
   }
   @media (min-width: ${screenSmMin}) {
     width: ${props => ((props.sidebarMini && props.collapse) ? sidebarMiniWidth : sidebarWidth)};

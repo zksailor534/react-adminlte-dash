@@ -1,6 +1,6 @@
 exports[`<UserMenu /> opens and closes when clicked 1`] = `
 <li
-  className="Kgaea"
+  className="dzjnOV"
   onClick={[Function]}>
   <img
     className="guSIJB"
@@ -26,7 +26,7 @@ exports[`<UserMenu /> opens and closes when clicked 1`] = `
 
 exports[`<UserMenu /> opens and closes when clicked 2`] = `
 <li
-  className="Kgaea"
+  className="dzjnOV"
   onClick={[Function]}>
   <img
     className="guSIJB"
@@ -52,7 +52,7 @@ exports[`<UserMenu /> opens and closes when clicked 2`] = `
 
 exports[`<UserMenu /> renders correctly with default options 1`] = `
 <li
-  className="Kgaea"
+  className="dzjnOV"
   onClick={[Function]}>
   <img
     className="guSIJB"
@@ -78,7 +78,7 @@ exports[`<UserMenu /> renders correctly with default options 1`] = `
 
 exports[`<UserMenu /> renders correctly with image 1`] = `
 <li
-  className="Kgaea"
+  className="dzjnOV"
   onClick={[Function]}>
   <img
     className="guSIJB"
@@ -104,7 +104,7 @@ exports[`<UserMenu /> renders correctly with image 1`] = `
 
 exports[`<UserMenu /> renders correctly with name 1`] = `
 <li
-  className="Kgaea"
+  className="dzjnOV"
   onClick={[Function]}>
   <img
     className="guSIJB"
@@ -134,7 +134,7 @@ exports[`<UserMenu /> renders correctly with name 1`] = `
 
 exports[`<UserMenu /> renders correctly with theme 1`] = `
 <li
-  className="efjKxO"
+  className="gDCOpn"
   onClick={[Function]}>
   <img
     className="guSIJB"

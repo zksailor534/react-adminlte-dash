@@ -1,8 +1,8 @@
 exports[`<Header /> renders correctly with collapsed option 1`] = `
 <header
-  className="jzbJlV">
+  className="Sdzae">
   <a
-    className="bpusXA"
+    className="fBazcr"
     href="#">
     <span
       className="ibQovi"
@@ -28,7 +28,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
   <nav
     className="kHaBoX">
     <button
-      className="fa fa-bars aWzRa"
+      className="fa fa-bars iXEfD"
       onClick={[Function]} />
     <div
       className="cTsgzF">
@@ -41,9 +41,9 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
 
 exports[`<Header /> renders correctly with default options 1`] = `
 <header
-  className="jzbJlV">
+  className="Sdzae">
   <a
-    className="bpusXA"
+    className="fBazcr"
     href="#">
     <span
       className="ibQovi"
@@ -69,7 +69,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
   <nav
     className="kHaBoX">
     <button
-      className="fa fa-bars aWzRa"
+      className="fa fa-bars iXEfD"
       onClick={[Function]} />
     <div
       className="cTsgzF">
@@ -82,9 +82,9 @@ exports[`<Header /> renders correctly with default options 1`] = `
 
 exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 <header
-  className="iGucSM">
+  className="glmcVm">
   <a
-    className="bpusXA"
+    className="fBazcr"
     href="#">
     <span
       className="ibQovi"
@@ -110,7 +110,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
   <nav
     className="kHaBoX">
     <button
-      className="fa fa-bars aWzRa"
+      className="fa fa-bars iXEfD"
       onClick={[Function]} />
     <div
       className="cTsgzF">
@@ -123,9 +123,9 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 
 exports[`<Header /> renders correctly with fixed option 1`] = `
 <header
-  className="iGucSM">
+  className="glmcVm">
   <a
-    className="bpusXA"
+    className="fBazcr"
     href="#">
     <span
       className="ibQovi"
@@ -151,7 +151,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
   <nav
     className="kHaBoX">
     <button
-      className="fa fa-bars aWzRa"
+      className="fa fa-bars iXEfD"
       onClick={[Function]} />
     <div
       className="cTsgzF">
@@ -164,9 +164,9 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
 
 exports[`<Header /> renders correctly with given large logo 1`] = `
 <header
-  className="jzbJlV">
+  className="Sdzae">
   <a
-    className="bpusXA"
+    className="fBazcr"
     href="#">
     <span
       className="ibQovi"
@@ -189,7 +189,7 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
   <nav
     className="kHaBoX">
     <button
-      className="fa fa-bars aWzRa"
+      className="fa fa-bars iXEfD"
       onClick={[Function]} />
     <div
       className="cTsgzF">
@@ -202,9 +202,9 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
 
 exports[`<Header /> renders correctly with given small logo 1`] = `
 <header
-  className="jzbJlV">
+  className="Sdzae">
   <a
-    className="bpusXA"
+    className="fBazcr"
     href="#">
     <span
       className="ibQovi"
@@ -227,7 +227,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
   <nav
     className="kHaBoX">
     <button
-      className="fa fa-bars aWzRa"
+      className="fa fa-bars iXEfD"
       onClick={[Function]} />
     <div
       className="cTsgzF">
@@ -240,9 +240,9 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
 
 exports[`<Header /> renders correctly with theme 1`] = `
 <header
-  className="jzbJlV">
+  className="Sdzae">
   <a
-    className="iRprqu"
+    className="deZxax"
     href="#">
     <span
       className="ibQovi"
@@ -268,7 +268,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
   <nav
     className="rOyox">
     <button
-      className="fa fa-bars ieFzZM"
+      className="fa fa-bars jatJFQ"
       onClick={[Function]} />
     <div
       className="cTsgzF">

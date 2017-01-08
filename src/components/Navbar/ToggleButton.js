@@ -24,14 +24,19 @@ const ToggleButton = styled.button`
   outline: none;
   padding: ${(parseInt(navbarPaddingVertical, 10) + 3)}px ${navbarPaddingHorizontal};
   text-decoration: none;
-  color: ${props => props.theme.navbarFontColor || '#fff'};
   &:focus,
   &:active {
     background: transparent;
   }
+
+  /* theme */
+  color: ${props => props.theme.navbarFontColor || '#fff'};
+  ${props => props.theme.navbarItemBorder && `
+    border-right: ${props.theme.navbarItemBorder};
+  `};
   &:hover {
     color: ${props => props.theme.navbarHoverColor || '#fff'};
-    background-color: ${props => props.theme.logoBgColor || '#fff'};
+    background-color: ${props => props.theme.logoBgColor || 'transparent'};
   }
 `;
 

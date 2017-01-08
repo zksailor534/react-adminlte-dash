@@ -58,7 +58,7 @@ const StyledUserName = styled.span`
 `;
 
 const UserMenuHeader = styled.li`
-  background-color: ${props => props.theme.backgroundColor};
+  background-color: ${props => props.theme.navbarUserMenuHeaderBg || props.theme.backgroundColor};
   padding: 10px;
   text-align: center;
 `;
@@ -155,15 +155,15 @@ const StyledUserMenu = styled.li`
   padding: ${navbarPaddingVertical} ${navbarPaddingHorizontal};
   position: relative;
   text-decoration: none;
-  color: ${props => props.theme.navbarFontColor || '#fff'};
   cursor: pointer;
-  &:focus,
-  &:active {
-    background: transparent;
-  }
+  &:focus, &:active { background: transparent; }
+
+  /* theme */
+  color: ${props => props.theme.navbarFontColor || '#fff'};
+  border-left: ${props => props.theme.navbarItemBorder || 'none'};
   &:hover {
-    color: #fff;
-    background-color: ${props => props.theme.logoBgColor || '#fff'};
+    color: ${props => props.theme.navbarHoverColor || '#fff'};
+    background-color: ${props => props.theme.logoBgColor || 'transparent'};
   }
 `;
 

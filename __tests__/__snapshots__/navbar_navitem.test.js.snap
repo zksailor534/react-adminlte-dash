@@ -1,16 +1,16 @@
 exports[`<NavItem /> renders correctly with default options 1`] = `
 <li
-  className="Kgaea" />
+  className="dzjnOV" />
 `;
 
 exports[`<NavItem /> renders correctly with image 1`] = `
 <li
-  className="Kgaea" />
+  className="dzjnOV" />
 `;
 
 exports[`<NavItem /> renders correctly with link 1`] = `
 <li
-  className="Kgaea">
+  className="dzjnOV">
   <a
     className="dfofQy"
     href="/a/link" />
@@ -19,5 +19,5 @@ exports[`<NavItem /> renders correctly with link 1`] = `
 
 exports[`<NavItem /> renders correctly with theme 1`] = `
 <li
-  className="efjKxO" />
+  className="gDCOpn" />
 `;

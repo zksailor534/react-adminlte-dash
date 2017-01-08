@@ -24,6 +24,12 @@ const StyledHeader = styled.header`
   width: ${props => (props.boxed ? '1024px' : '100%')};
   max-height: 100px;
   z-index: 1030;
+
+  /* theme */
+  ${props => props.theme.headerBoxShadow && `
+    -webkit-box-shadow: ${props.theme.headerBoxShadow};
+    box-shadow: ${props.theme.headerBoxShadow};
+  `}
 `;
 
 const Header = props => (
