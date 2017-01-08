@@ -1,5 +1,6 @@
 /* eslint-disable no-alert */
 import React from 'react';
+import tinycolor from 'tinycolor2';
 
 import pkgInfo from '../package.json';
 import {
@@ -24,7 +25,7 @@ const navMenu = () => ([
   />,
 ]);
 
-const sb = () => ([
+const sb = pickTheme => ([
   <Sidebar.UserPanel
     name="Alexander Pierce"
     image="/demo/img/user2-160x160.jpg"
@@ -33,9 +34,67 @@ const sb = () => ([
   />,
   <Sidebar.Search key="2" />,
   <Sidebar.Menu header="MAIN NAVIGATION" key="3">
-    <Sidebar.Menu.Item icon={{ className: 'fa-dashboard' }} title="Dashboard" >
-      <Sidebar.Menu.Item title="Dashboard v1" />
-      <Sidebar.Menu.Item title="Dashboard v2" />
+    <Sidebar.Menu.Item icon={{ className: 'fa-dashboard' }} title="Dashboard Colors" >
+      <Sidebar.Menu.Item
+        icon={{ color: tinycolor('black').toString() }}
+        onClick={() => pickTheme('skin-black')}
+        title="Black"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: tinycolor('black').lighten(10).toString() }}
+        onClick={() => pickTheme('skin-black-light')}
+        title="Black Light"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: '#3c8dbc' }}
+        onClick={() => pickTheme('skin-blue')}
+        title="Blue"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: tinycolor('#3c8dbc').lighten(10).toString() }}
+        onClick={() => pickTheme('skin-blue-light')}
+        title="Blue Light"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: '#00a65a' }}
+        onClick={() => pickTheme('skin-green')}
+        title="Green"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: tinycolor('#00a65a').lighten(10).toString() }}
+        onClick={() => pickTheme('skin-green-light')}
+        title="Green Light"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: '#605ca8' }}
+        onClick={() => pickTheme('skin-purple')}
+        title="Purple"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: tinycolor('#605ca8').lighten(10).toString() }}
+        onClick={() => pickTheme('skin-purple-light')}
+        title="Purple Light"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: '#dd4b39' }}
+        onClick={() => pickTheme('skin-red')}
+        title="Red"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: tinycolor('#dd4b39').lighten(10).toString() }}
+        onClick={() => pickTheme('skin-red-light')}
+        title="Red Light"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: '#f39c12' }}
+        onClick={() => pickTheme('skin-yellow')}
+        title="Yellow"
+      />
+      <Sidebar.Menu.Item
+        icon={{ color: tinycolor('#f39c12').lighten(10).toString() }}
+        onClick={() => pickTheme('skin-yellow-light')}
+        title="Yellow Light"
+      />
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item
       icon={{ className: 'fa-files-o' }}
@@ -122,13 +181,13 @@ const sb = () => ([
   </Sidebar.Menu>,
 ]);
 
-const App = ({ children }) => (
+const App = ({ children, theme, pickTheme }) => (
   <div>
     <Dashboard
       navbarChildren={navMenu()}
-      sidebarChildren={sb()}
+      sidebarChildren={sb(pickTheme)}
       sidebarMini
-      theme="skin-blue"
+      theme={theme}
     >
       {children}
     </Dashboard>
@@ -137,6 +196,8 @@ const App = ({ children }) => (
 
 App.propTypes = {
   children: React.PropTypes.node,
+  pickTheme: React.PropTypes.func,
+  theme: React.PropTypes.string,
 };
 
 export default App;
