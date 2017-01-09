@@ -16,9 +16,8 @@
     "gh-pages:stats": "webpack --profile --json > stats.json",
     "dist": "webpack",
     "dist:min": "webpack",
-    "dist:modules": "rm -rf ./dist-modules && babel ./src --out-dir ./dist-modules",
     "preversion": "npm run test && npm run dist && npm run dist:min",
-    "prepublish": "npm run dist:modules",
+    "prepublish": "npm run dist:min",
     "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
     "postinstall": "node lib/post_install.js"
   },
@@ -36,6 +35,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-react-hmre": "^1.1.1",
     "clean-webpack-plugin": "^0.1.14",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
     "enzyme": "^2.7.0",
     "enzyme-to-json": "^1.4.5",
@@ -100,7 +100,9 @@
   "keywords": [
     "react",
     "reactjs",
-    "adminlte"
+    "adminlte",
+    "admin",
+    "dashboard"
   ],
   "license": "MIT",
   "pre-push": [
