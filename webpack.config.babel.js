@@ -34,7 +34,6 @@ const common = {
         test: /\.jsx?$/,
         loaders: ['eslint'],
         include: [
-          config.paths.demo,
           config.paths.src,
         ],
       },
@@ -68,6 +67,17 @@ const common = {
 };
 
 const siteCommon = {
+  module: {
+    preLoaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['eslint'],
+        include: [
+          config.paths.demo,
+        ],
+      },
+    ],
+  },
   plugins: [
     new webpack.DefinePlugin({
       NAME: JSON.stringify(pkg.name),
@@ -197,9 +207,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
 
 const distCommon = {
   devtool: 'source-map',
-  resolve: {
-    extensions: ['', '.js', '.jsx'],
-  },
   output: {
     path: config.paths.dist,
     libraryTarget: 'umd',
@@ -219,22 +226,10 @@ const distCommon = {
       root: 'React',
     },
   },
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: config.paths.src,
-      },
-    ],
-  },
-  plugins: [
-    new SystemBellPlugin(),
-  ],
 };
 
 if (TARGET === 'dist') {
-  module.exports = merge(distCommon, {
+  module.exports = merge(common, distCommon, {
     output: {
       filename: `${config.filename}.js`,
     },
@@ -242,7 +237,7 @@ if (TARGET === 'dist') {
 }
 
 if (TARGET === 'dist:min') {
-  module.exports = merge(distCommon, {
+  module.exports = merge(common, distCommon, {
     output: {
       filename: `${config.filename}.min.js`,
     },

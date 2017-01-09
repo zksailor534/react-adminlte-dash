@@ -182,16 +182,14 @@ const sb = pickTheme => ([
 ]);
 
 const App = ({ children, theme, pickTheme }) => (
-  <div>
-    <Dashboard
-      navbarChildren={navMenu()}
-      sidebarChildren={sb(pickTheme)}
-      sidebarMini
-      theme={theme}
-    >
-      {children}
-    </Dashboard>
-  </div>
+  <Dashboard
+    navbarChildren={navMenu()}
+    sidebarChildren={sb(pickTheme)}
+    sidebarMini
+    theme={theme}
+  >
+    {children}
+  </Dashboard>
 );
 
 App.propTypes = {
