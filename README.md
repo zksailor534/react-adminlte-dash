@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/v/react-adminlte-dash.svg)](https://www.npmjs.com/package/react-adminlte-dash)
 [![build status](https://secure.travis-ci.org/zksailor534/react-adminlte-dash.svg)](http://travis-ci.org/zksailor534/react-adminlte-dash)
 [![bitHound Score](https://www.bithound.io/github/zksailor534/react-adminlte-dash/badges/score.svg)](https://www.bithound.io/github/zksailor534/react-adminlte-dash)
 
@@ -6,157 +7,177 @@ React.js components for AdminLTE themed dashboard.
 
 > Based off of [AdminLTE](https://github.com/almasaeed2010/AdminLTE). Static hosted [demo](http://zksailor534.github.io/react-adminlte-dash/) on GitHub Pages.
 
+### Todo (path to 1.0)
+
+- [ ] Right sidebar
+- [ ] Content formatting
+- [ ] Generic Navbar dropdowns
+- [ ] Messaging Navbar dropdown
+- [ ] Notifications Navbar dropdown
+- [ ] Tasks Navbar dropdown
+- [ ] Top-nav formatting option
+- [ ] Boxed formatting option
+
 ## Installation
 
 ```bash
 npm install --save react-adminlte-dash
 ```
 
-This module does not come bundled with css,
-so the following peer dependencies will also need to be installed:
-
-```bash
-npm install --save bootstrap font-awesome admin-lte
-```
+This module uses [Styled Components](https://github.com/styled-components/styled-components), so all css styling is included when the module is called.
 
 ## Usage
 
 This module is in development, usage is subject to change.  Not all components are fully functional.
 
-First include the css for styles:
+In ES6:
 ```javascript
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.css';
-import 'admin-lte/dist/css/AdminLTE.min.css';
-import 'admin-lte/dist/css/skins/_all-skins.min.css';
-```
+import { Dashboard, Header, Sidebar } from 'react-adminlte-dash';
 
-Then (ES6):
-```javascript
-import { AdminLTE, Header, Sidebar } from 'react-adminlte-dash';
+const nav = () => ([
+  <Header.Item href="/some/link" key="1" />
+]);
 
-const App = () => (
-  <AdminLTE
-    layout="fixed"
-    sidebarCollapsed={false}
-    sidebarMini={true}
-    skin="blue"
+const sb = () => ([
+  <Sidebar.Menu header="NAVIGATION" key="1">
+    <Sidebar.Menu.Item title="Home" href="/" />
+  </Sidebar.Menu>
+]);
+
+const App = ({ children }) => (
+  <Dashboard
+    navbarChildren={nav()}
+    sidebarChildren={sb()}
+    theme="skin-blue"
   >
-    <Header />
-    <Sidebar />
-  </AdminLTE>
+    {children}
+  </Dashboard>
 );
 ```
 
 ## Included Components
 
-### *AdminLTE*
+### *Dashboard*
 
-Wrapper component for style.  Handles layout changes and theming.
+Main component for theme.  Handles theming, layout options, and tracks state.
+Provides a default empty header and sidebar.
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
-| children | `node` | Any React child components to be rendered | n/a |
-| skin | `string` | Choice of AdminLTE skin themes: `blue`, `black`, `purple`, `green`, `red`, `yellow`, `blue-light`, `black-light`, `purple-light`, `green-light`, `red-light`, `yellow-light` | `blue` |
+| children | `node` | Any React child components to be rendered in content fields | n/a |
+| navbarChildren | `node` | Any React child components to be rendered in the Header's navbar | n/a |
+| sidebarChildren | `node` | Any React child components to be rendered in the Sidebar | n/a |
+| theme | `string` | Choice of AdminLTE skin themes: `skin-blue`, `skin-black`, `skin-purple`, `skin-green`, `skin-red`, `skin-yellow`, `skin-blue-light`, `skin-black-light`, `skin-purple-light`, `skin-green-light`, `skin-red-light`, `skin-yellow-light` | `skin-blue` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `true` |
-| layout | `string` | Choice of AdminLTE layouts: `fixed` (header fixed to top of screen), `boxed` (layout in Bootstrap container), `nav-on-top` (TBD: Bootstrap-style navbar) | `fixed` |
-| sidebarCollapsed | `bool` | Determines whether the sidebar is in an open (`false`) or collapsed state (`true`) | `false` |
-
-### *Header*
-
-Header component.  Wrapper for logo component and any top-based navigation.
-
-| Property | Type | Description | Default |
-|:--------:|:----:|:-----------:|:-------:|
-| children | `node` | Any React child components to be rendered | n/a |
-| logo | `element` | A single React component to be rendered in the top left of screen, typically use `<HeaderLogo />` with options | `<HeaderLogo />` |
-| sidebarToggle | `func` | (Required) function passed to sidebar toggle component to handle sidebar state | `true` |
-
-### *HeaderLogo*
-
-Header Logo component.  Renders large or small logo in left side of header bar.
-
-| Property | Type | Description | Default |
-|:--------:|:----:|:-----------:|:-------:|
-| link | `string` | Link target for logo component | `'/'` |
+| fixed | `bool` | Determines whether the Header is fixed | `false` |
 | logoLg | `element` | A single React component to be rendered when logo is in large state | `<span><b>Admin</b>LTE</span>` |
 | logoSm | `element` | A single React component to be rendered when logo is in small state | `<span><b>A</b>LT</span>` |
 
-### *HeaderMenu*
+### *Header*
 
-Header menu component.  Renders link or dropdown component in header bar.
+Header component which can be used independently of Dashboard (TBD).  Wrapper for any top-based navigation components.  Provides the following subcomponents:
+* `Header.Item`
+* `Header.User`
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
-| link | `string` | Link target for component | `'#'` |
-| type | `string` | Menu type: `messages`, `notifications`, `tasks`, `''` (generic dropdown menu) | `messages` |
-| labelText | `string` | Text for label | '' |
-| labelColor | `string` | Label color (does not render unless labelText provided): `red`, `yellow`, `green` | none |
+| fixed | `bool` | Determines whether the Header is fixed | `false` |
+| logoLg | `element` | A single React component to be rendered when logo is in large state | `<span><b>Admin</b>LTE</span>` |
+| logoSm | `element` | A single React component to be rendered when logo is in small state | `<span><b>A</b>LT</span>` |
+| sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `false` |
+| sidebarCollapse | `bool` | Determines whether sidebar is in a collapsed state | `false` |
+| sidebarToggle | `func` | (Required) function passed to sidebar toggle component to handle sidebar collapse state | n/a |
+
+### *Header.Item*
+
+Header navbar menu item component.  Renders links with images in header.
+
+| Property | Type | Description | Default |
+|:--------:|:----:|:-----------:|:-------:|
+| children | `node` | Any React child components to be rendered (TBD) | n/a |
+| onClick | `func` | Function to be called on item click | n/a |
+| link | `string` | Link target for logo component, overridden by `onClick` | n/a |
+| image | `string` | Path to image object | n/a |
+
+### *Header.UserMenu*
+
+Header user menu component.  Renders user menu dropdown component in header bar.
+
+| Property | Type | Description | Default |
+|:--------:|:----:|:-----------:|:-------:|
+| name | `string` | User Name | n/a |
+| image | `string` | Path to user image object | n/a |
+| profileAction | `func` | Function to perform on selection of `Profile` button, button only displayed if action provided | n/a |
+| signOutAction | `func` | Function to perform on selection of `Sign Out` button, button only displayed if action provided | n/a |
 
 ### *Sidebar*
 
-Sidebar component.  Wrapper for sidebar-based navigation.  Also provides subcomponents:
-* `Sidebar.Menu` - see SidebarMenu
-* `Sidebar.User` - see SidebarUser
-* `Sidebar.Search` - see SidebarSearch
+Sidebar component which can be used independently of Dashboard (TBD).  Wrapper for any sidebar navigation components.  Provides the following subcomponents:
+* `Sidebar.Menu`
+* `Sidebar.UserPanel`
+* `Sidebar.Search`
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
+| fixed | `bool` | Determines whether the Header is fixed | `false` |
+| sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `false` |
+| sidebarCollapse | `bool` | Determines whether sidebar is in a collapsed state | `false` |
 
-### *SidebarMenu*
+### *Sidebar.Menu*
 
 Sidebar navigation menu component.  Wrapper for SidebarMenuItem components, which are provided as subcomponent:
-* `SidebarMenu.Item` - see SidebarMenuItem
+* `Sidebar.Menu.Item`
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
-| title | `string` | Header title for navigation component | none |
+| header | `string` | Header title for navigation component | none |
 
-### *SidebarMenuItem*
+### *Sidebar.Menu.Item*
 
 Sidebar navigation menu item component.  Renders as link or dropdown menu.  Can be nested in itself to provided nested dropdown menus.
 
 ```javascript
-<SidebarMenuItem title="Level 1">
-  <SidebarMenuItem title="Level 2">
-    <SidebarMenuItem title="Level 3" />
-  </SidebarMenuItem>
-</SidebarMenuItem>
+<Sidebar.Menu.Item title="Level 1">
+  <Sidebar.Menu.Item title="Level 2">
+    <Sidebar.Menu.Item title="Level 3" />
+  </Sidebar.Menu.Item>
+</Sidebar.Menu.Item>
 ```
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | title | `string` | Title for component | none |
-| link | `string` | Link target for component | `'#'` |
-| mainIcon | `string` | Several built-in circle font awesome components: `plain` (`fa-circle-o`), `danger` (red `fa-circle-o`), `warning` (yellow `fa-circle-o`), `information` (aqua `fa-circle-o`), `none`, or any other font-awesome class name | `plain` |
 | active | `bool` | Determines if item is considered active | `false` |
-| labelType | `string` | Bootstrap colors for right label: `danger`, `warning`, `primary`, `success` | none |
-| labelText | `string` | Right label text | `''` |
+| href | `string` | Link target for component, unused if onClick or children provided | `null` |
+| onClick | `func` | Action for component, unused if children provided, overrides href | `null` |
+| icon | `object` | Expects a `className` key which accepts a string describing any font-awesome icon (i.e. `fa-th`) and/or a `color` key which accepts any Bootstrap style type (i.e. `danger`) or CSS color string (hex, name, or rgb) | `{ className: 'fa-circle-o' }` |
+| labels | `[objects]` | Array of objects, each requires a React `key` string, a `type` key which accepts a string describing any Bootstrap style type (i.e. `danger`) and a `text` key of any string to display | n/a |
 
-### *SidebarSearch*
+### *Sidebar.Search*
 
 Sidebar search component.
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
-| initialValue | `string` | Initial value displayed in search field | `''` |
-| onSearch | `func` | (Required) Function to call on search submit, provided with value prop | none |
+| name | `string` | Initial value displayed in search field | `''` |
+| placeholder | `string` | Initial value displayed in search field | `'Search...'` |
+| onClick | `func` | Function to call on search submit, provided with value prop | `v => alert(`Searching for ${v}`)` |
 
-### *SidebarUser*
+### *Sidebar.UserPanel*
 
 Sidebar user component.
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
-| userName | `string` | User name | `'User Name'` |
-| userImageSrc | `string` | String providing src location for user image | none |
-| userStatus | `string` | String providing user status: `online`, `offline`, `unknown` | `null` |
-| userLink | `string` | Link target for user status | `'/'` |
+| name | `string` | User name | n/a |
+| image | `string` | String providing source path for user image | n/a |
+| online | `bool` | User status: online = `true`, offline = `false` | `false` |
+| href | `string` | Target for user status link | n/a |
 
 ### License
 
-*react-adminlte* is available under MIT. See LICENSE for more details.
+*react-adminlte-dash* is available under MIT. See LICENSE for more details.
