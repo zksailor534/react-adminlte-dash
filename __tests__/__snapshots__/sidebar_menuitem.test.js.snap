@@ -1,0 +1,1943 @@
+exports[`<MenuItem /> changes properties on hover (level 1) 1`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={true}
+        href={null}
+        level={0}
+        onMouseEnter={[Function]}>
+        <a
+          className="eGrrOt"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={true}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={true}
+            level={0}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> changes properties on hover (level 1) 2`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={false}
+                hover={false}
+                open={false}>
+                <i
+                  className="fa fa-angle-left lnEeZG"
+                  open={false} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={false}
+        hover={false}
+        level={0}
+        open={false}>
+        <ul
+          className="bHwOxX"
+          open={false}>
+          <MenuItem
+            collapse={false}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={false}
+            title="Title">
+            <styled.li
+              collapse={false}
+              hover={false}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={false}
+                  hover={true}
+                  href={null}
+                  level={1}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="bJKzDN"
+                    href={null}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={false}
+                      hover={true}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Title
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={false}
+                      hover={true}
+                      level={1}>
+                      <span
+                        className="iDlnxw" />
+                    </styled.span>
+                  </a>
+                </styled.a>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={false}
+                hover={false}
+                open={false}>
+                <i
+                  className="fa fa-angle-left lnEeZG"
+                  open={false} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={false}
+        hover={false}
+        level={0}
+        open={false}>
+        <ul
+          className="bHwOxX"
+          open={false}>
+          <MenuItem
+            collapse={false}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={false}
+            title="Title">
+            <styled.li
+              collapse={false}
+              hover={false}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={false}
+                  hover={false}
+                  href={null}
+                  level={1}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="knnAH"
+                    href={null}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Title
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="iDlnxw" />
+                    </styled.span>
+                  </a>
+                </styled.a>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] = `
+<MenuItem
+  collapse={true}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={true}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={true}
+        hover={true}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="eGrrOt"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={true}
+            hover={true}
+            level={0}>
+            <span
+              className="faDDsz">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={true}
+            hover={true}
+            level={0}>
+            <span
+              className="jRTxgl">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={true}
+                hover={true}
+                open={false}>
+                <i
+                  className="fa fa-angle-left lnEeZG"
+                  open={false} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={true}
+        hover={true}
+        level={0}
+        open={false}>
+        <ul
+          className="giTliU"
+          open={false}>
+          <MenuItem
+            collapse={true}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={true}
+            title="Title">
+            <styled.li
+              collapse={true}
+              hover={true}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={true}
+                  hover={false}
+                  href={null}
+                  level={1}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="knnAH"
+                    href={null}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={true}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Title
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={true}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="iDlnxw" />
+                    </styled.span>
+                  </a>
+                </styled.a>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] = `
+<MenuItem
+  collapse={true}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={true}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={true}
+        hover={false}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={true}
+            hover={false}
+            level={0}>
+            <span
+              className="dBfQfb">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={true}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={true}
+                hover={false}
+                open={false}>
+                <i
+                  className="fa fa-angle-left bwXLtf"
+                  open={false} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={true}
+        hover={false}
+        level={0}
+        open={false}>
+        <ul
+          className="giTliU"
+          open={false}>
+          <MenuItem
+            collapse={true}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={false}
+            title="Title">
+            <styled.li
+              collapse={true}
+              hover={false}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={true}
+                  hover={false}
+                  href={null}
+                  level={1}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="knnAH"
+                    href={null}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={true}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Title
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={true}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="iDlnxw" />
+                    </styled.span>
+                  </a>
+                </styled.a>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 1`] = `
+<MenuItem
+  collapse={true}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={1}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={true}
+    hover={false}
+    level={1}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={true}
+        hover={true}
+        href={null}
+        level={1}
+        onMouseEnter={[Function]}>
+        <a
+          className="bJKzDN"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={true}
+            hover={true}
+            level={1}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={true}
+            hover={true}
+            level={1}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 2`] = `
+<MenuItem
+  collapse={true}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={1}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={true}
+    hover={false}
+    level={1}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={true}
+        hover={false}
+        href={null}
+        level={1}
+        onMouseEnter={[Function]}>
+        <a
+          className="knnAH"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={true}
+            hover={false}
+            level={1}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={true}
+            hover={false}
+            level={1}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> opens and closes on click 1`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={false}
+                hover={false}
+                open={true}>
+                <i
+                  className="fa fa-angle-left hPfrBs"
+                  open={true} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={false}
+        hover={false}
+        level={0}
+        open={true}>
+        <ul
+          className="dYyCpJ"
+          open={true}>
+          <MenuItem
+            collapse={false}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={false}
+            title="Title">
+            <styled.li
+              collapse={false}
+              hover={false}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={false}
+                  hover={false}
+                  href={null}
+                  level={1}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="knnAH"
+                    href={null}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Title
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="iDlnxw" />
+                    </styled.span>
+                  </a>
+                </styled.a>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> opens and closes on click 2`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={false}
+                hover={false}
+                open={false}>
+                <i
+                  className="fa fa-angle-left lnEeZG"
+                  open={false} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={false}
+        hover={false}
+        level={0}
+        open={false}>
+        <ul
+          className="bHwOxX"
+          open={false}>
+          <MenuItem
+            collapse={false}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={false}
+            title="Title">
+            <styled.li
+              collapse={false}
+              hover={false}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={false}
+                  hover={false}
+                  href={null}
+                  level={1}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="knnAH"
+                    href={null}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Title
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="iDlnxw" />
+                    </styled.span>
+                  </a>
+                </styled.a>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
+<MenuItem
+  collapse={true}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={true}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={true}
+        hover={false}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={true}
+            hover={false}
+            level={0}>
+            <span
+              className="dBfQfb">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={true}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={true}
+                hover={false}
+                open={false}>
+                <i
+                  className="fa fa-angle-left bwXLtf"
+                  open={false} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={true}
+        hover={false}
+        level={0}
+        open={false}>
+        <ul
+          className="giTliU"
+          open={false}>
+          <MenuItem
+            collapse={true}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={false}
+            title="Title">
+            <styled.li
+              collapse={true}
+              hover={false}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={true}
+                  hover={false}
+                  href={null}
+                  level={1}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="knnAH"
+                    href={null}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={true}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Title
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={true}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="iDlnxw" />
+                    </styled.span>
+                  </a>
+                </styled.a>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly with active option 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="eGrrOt"
+    href={null}
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="eIMDyQ">
+      Title
+    </span>
+    <span
+      className="iDlnxw" />
+  </a>
+</li>
+`;
+
+exports[`<MenuItem /> renders correctly with collapse option 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="erKlVY"
+    href={null}
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="dBfQfb">
+      Title
+    </span>
+    <span
+      className="iDlnxw" />
+  </a>
+</li>
+`;
+
+exports[`<MenuItem /> renders correctly with default options 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="erKlVY"
+    href={null}
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="eIMDyQ">
+      Title
+    </span>
+    <span
+      className="iDlnxw" />
+  </a>
+</li>
+`;
+
+exports[`<MenuItem /> renders correctly with icon options 1`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-dashboard",
+      "color": "primary",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-dashboard"
+            color="primary">
+            <i
+              className="fa fa-dashboard iRZUGg"
+              color="primary" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly with icon options 2`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-dashboard",
+      "color": "success",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-dashboard"
+            color="success">
+            <i
+              className="fa fa-dashboard jNsFFj"
+              color="success" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly with icon options 3`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-dashboard",
+      "color": "danger",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-dashboard"
+            color="danger">
+            <i
+              className="fa fa-dashboard cPsLNM"
+              color="danger" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly with icon options 4`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-dashboard",
+      "color": "warning",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-dashboard"
+            color="warning">
+            <i
+              className="fa fa-dashboard kheFvg"
+              color="warning" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly with icon options 5`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-dashboard",
+      "color": "information",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Title">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-dashboard"
+            color="information">
+            <i
+              className="fa fa-dashboard llWRJU"
+              color="information" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Title
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw" />
+          </styled.span>
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly with labels 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="erKlVY"
+    href={null}
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="eIMDyQ">
+      Title
+    </span>
+    <span
+      className="iDlnxw">
+      <div
+        className="xAaMi"
+        type="danger">
+        10
+      </div>
+      <div
+        className="ekrxEo"
+        type="warning">
+        12
+      </div>
+      <div
+        className="eqRcwW"
+        type="information">
+        8
+      </div>
+      <div
+        className="cjptwd"
+        type="success">
+        12
+      </div>
+      <div
+        className="FyFvV"
+        type="other">
+        8
+      </div>
+    </span>
+  </a>
+</li>
+`;
+
+exports[`<MenuItem /> renders correctly with labels while collapsed 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="erKlVY"
+    href={null}
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="dBfQfb">
+      Title
+    </span>
+    <span
+      className="iDlnxw">
+      <div
+        className="hBixlm"
+        type="primary">
+        10
+      </div>
+    </span>
+  </a>
+</li>
+`;
+
+exports[`<MenuItem /> renders correctly with link 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="erKlVY"
+    href="/some/link"
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="eIMDyQ">
+      Title
+    </span>
+    <span
+      className="iDlnxw" />
+  </a>
+</li>
+`;
+
+exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
+<MenuItem
+  collapse={false}
+  href={null}
+  icon={
+    Object {
+      "className": "fa-circle-o",
+    }
+  }
+  level={0}
+  parentHover={false}
+  title="Level 1">
+  <styled.li
+    collapse={false}
+    hover={false}
+    level={0}
+    onMouseLeave={[Function]}>
+    <li
+      className="iglJgb"
+      onMouseLeave={[Function]}>
+      <styled.a
+        collapse={false}
+        hover={false}
+        href={null}
+        level={0}
+        onClick={[Function]}
+        onMouseEnter={[Function]}>
+        <a
+          className="erKlVY"
+          href={null}
+          onClick={[Function]}
+          onMouseEnter={[Function]}>
+          <styled.i
+            className="fa fa-circle-o"
+            color="none">
+            <i
+              className="fa fa-circle-o dIWQSm"
+              color="none" />
+          </styled.i>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="eIMDyQ">
+              Level 1
+            </span>
+          </styled.span>
+          <styled.span
+            collapse={false}
+            hover={false}
+            level={0}>
+            <span
+              className="iDlnxw">
+              <styled.i
+                className="fa fa-angle-left"
+                collapse={false}
+                hover={false}
+                open={false}>
+                <i
+                  className="fa fa-angle-left lnEeZG"
+                  open={false} />
+              </styled.i>
+            </span>
+          </styled.span>
+        </a>
+      </styled.a>
+      <styled.ul
+        collapse={false}
+        hover={false}
+        level={0}
+        open={false}>
+        <ul
+          className="bHwOxX"
+          open={false}>
+          <MenuItem
+            collapse={false}
+            href={null}
+            icon={
+              Object {
+                "className": "fa-circle-o",
+              }
+            }
+            level={1}
+            parentHover={false}
+            title="Level 2">
+            <styled.li
+              collapse={false}
+              hover={false}
+              level={1}
+              onMouseLeave={[Function]}>
+              <li
+                className="iglJgb"
+                onMouseLeave={[Function]}>
+                <styled.a
+                  collapse={false}
+                  hover={false}
+                  href={null}
+                  level={1}
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}>
+                  <a
+                    className="knnAH"
+                    href={null}
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}>
+                    <styled.i
+                      className="fa fa-circle-o"
+                      color="none">
+                      <i
+                        className="fa fa-circle-o dIWQSm"
+                        color="none" />
+                    </styled.i>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="eIMDyQ">
+                        Level 2
+                      </span>
+                    </styled.span>
+                    <styled.span
+                      collapse={false}
+                      hover={false}
+                      level={1}>
+                      <span
+                        className="iDlnxw">
+                        <styled.i
+                          className="fa fa-angle-left"
+                          collapse={false}
+                          hover={false}
+                          open={false}>
+                          <i
+                            className="fa fa-angle-left lnEeZG"
+                            open={false} />
+                        </styled.i>
+                      </span>
+                    </styled.span>
+                  </a>
+                </styled.a>
+                <styled.ul
+                  collapse={false}
+                  hover={false}
+                  level={1}
+                  open={false}>
+                  <ul
+                    className="hmWEpk"
+                    open={false}>
+                    <MenuItem
+                      collapse={false}
+                      href={null}
+                      icon={
+                        Object {
+                          "className": "fa-circle-o",
+                        }
+                      }
+                      level={2}
+                      parentHover={false}
+                      title="Level 3">
+                      <styled.li
+                        collapse={false}
+                        hover={false}
+                        level={2}
+                        onMouseLeave={[Function]}>
+                        <li
+                          className="iglJgb"
+                          onMouseLeave={[Function]}>
+                          <styled.a
+                            collapse={false}
+                            hover={false}
+                            href={null}
+                            level={2}
+                            onMouseEnter={[Function]}>
+                            <a
+                              className="knnAH"
+                              href={null}
+                              onMouseEnter={[Function]}>
+                              <styled.i
+                                className="fa fa-circle-o"
+                                color="none">
+                                <i
+                                  className="fa fa-circle-o dIWQSm"
+                                  color="none" />
+                              </styled.i>
+                              <styled.span
+                                collapse={false}
+                                hover={false}
+                                level={2}>
+                                <span
+                                  className="eIMDyQ">
+                                  Level 3
+                                </span>
+                              </styled.span>
+                              <styled.span
+                                collapse={false}
+                                hover={false}
+                                level={2}>
+                                <span
+                                  className="iDlnxw" />
+                              </styled.span>
+                            </a>
+                          </styled.a>
+                        </li>
+                      </styled.li>
+                    </MenuItem>
+                  </ul>
+                </styled.ul>
+              </li>
+            </styled.li>
+          </MenuItem>
+        </ul>
+      </styled.ul>
+    </li>
+  </styled.li>
+</MenuItem>
+`;
+
+exports[`<MenuItem /> renders correctly with theme 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="DJLBF"
+    href={null}
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="eIMDyQ">
+      Title
+    </span>
+    <span
+      className="eEWqfs" />
+  </a>
+</li>
+`;
+
+exports[`<MenuItem /> renders correctly with title 1`] = `
+<li
+  className="iglJgb"
+  onMouseLeave={[Function]}>
+  <a
+    className="erKlVY"
+    href={null}
+    onClick={undefined}
+    onMouseEnter={[Function]}>
+    <i
+      className="fa fa-circle-o dIWQSm"
+      color="none" />
+    <span
+      className="eIMDyQ">
+      My Title
+    </span>
+    <span
+      className="iDlnxw" />
+  </a>
+</li>
+`;

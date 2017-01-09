@@ -1,0 +1,54 @@
+exports[`<Sidebar /> renders children correctly 1`] = `
+<aside
+  className="itKvVN">
+  <span
+    collapse={false}>
+    Child
+  </span>
+</aside>
+`;
+
+exports[`<Sidebar /> renders correctly with collapsed option 1`] = `
+<aside
+  className="gJZgmQ" />
+`;
+
+exports[`<Sidebar /> renders correctly with default options 1`] = `
+<aside
+  className="itKvVN" />
+`;
+
+exports[`<Sidebar /> renders correctly with fixed and collapsed options 1`] = `
+<aside
+  className="frzhoO" />
+`;
+
+exports[`<Sidebar /> renders correctly with fixed option 1`] = `
+<aside
+  className="lODyp" />
+`;
+
+exports[`<Sidebar /> renders correctly with mini and collapsed options 1`] = `
+<aside
+  className="xdNdT" />
+`;
+
+exports[`<Sidebar /> renders correctly with mini and fixed options 1`] = `
+<aside
+  className="lODyp" />
+`;
+
+exports[`<Sidebar /> renders correctly with mini option 1`] = `
+<aside
+  className="itKvVN" />
+`;
+
+exports[`<Sidebar /> renders correctly with mini, fixed, and collapsed options 1`] = `
+<aside
+  className="dyNUTN" />
+`;
+
+exports[`<Sidebar /> renders correctly with theme 1`] = `
+<aside
+  className="eMTNN" />
+`;

@@ -1,0 +1,280 @@
+exports[`<Header /> renders correctly with collapsed option 1`] = `
+<header
+  className="Sdzae">
+  <a
+    className="fBazcr"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </span>
+  </a>
+  <nav
+    className="kHaBoX">
+    <button
+      className="fa fa-bars iXEfD"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`<Header /> renders correctly with default options 1`] = `
+<header
+  className="Sdzae">
+  <a
+    className="fBazcr"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </span>
+  </a>
+  <nav
+    className="kHaBoX">
+    <button
+      className="fa fa-bars iXEfD"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
+<header
+  className="glmcVm">
+  <a
+    className="fBazcr"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </span>
+  </a>
+  <nav
+    className="kHaBoX">
+    <button
+      className="fa fa-bars iXEfD"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`<Header /> renders correctly with fixed option 1`] = `
+<header
+  className="glmcVm">
+  <a
+    className="fBazcr"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </span>
+  </a>
+  <nav
+    className="kHaBoX">
+    <button
+      className="fa fa-bars iXEfD"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`<Header /> renders correctly with given large logo 1`] = `
+<header
+  className="Sdzae">
+  <a
+    className="fBazcr"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        Large
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </span>
+  </a>
+  <nav
+    className="kHaBoX">
+    <button
+      className="fa fa-bars iXEfD"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`<Header /> renders correctly with given small logo 1`] = `
+<header
+  className="Sdzae">
+  <a
+    className="fBazcr"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        Small
+      </span>
+    </span>
+  </a>
+  <nav
+    className="kHaBoX">
+    <button
+      className="fa fa-bars iXEfD"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`<Header /> renders correctly with theme 1`] = `
+<header
+  className="Sdzae">
+  <a
+    className="deZxax"
+    href="#">
+    <span
+      className="ibQovi"
+      href="#">
+      <span>
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+    </span>
+    <span
+      className="hboVZB"
+      href="#">
+      <span>
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </span>
+  </a>
+  <nav
+    className="rOyox">
+    <button
+      className="fa fa-bars jatJFQ"
+      onClick={[Function]} />
+    <div
+      className="cTsgzF">
+      <ul
+        className="bAXwxe" />
+    </div>
+  </nav>
+</header>
+`;
