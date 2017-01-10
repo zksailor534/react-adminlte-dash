@@ -3,7 +3,7 @@
   "description": "React.js components for AdminLTE themed dashboard",
   "author": "Nate Greene <nate.greene@gmail.com>",
   "user": "zksailor534",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest --",
@@ -16,13 +16,12 @@
     "gh-pages:stats": "webpack --profile --json > stats.json",
     "dist": "webpack",
     "dist:min": "webpack",
-    "dist:modules": "rm -rf ./dist-modules && babel ./src --out-dir ./dist-modules",
     "preversion": "npm run test && npm run dist && npm run dist:min",
-    "prepublish": "npm run dist:modules",
+    "prepublish": "npm run dist",
     "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
     "postinstall": "node lib/post_install.js"
   },
-  "main": "dist-modules",
+  "main": "dist",
   "module": "src",
   "jsnext:main": "src",
   "devDependencies": {
@@ -36,6 +35,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-react-hmre": "^1.1.1",
     "clean-webpack-plugin": "^0.1.14",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
     "enzyme": "^2.7.0",
     "enzyme-to-json": "^1.4.5",
@@ -45,9 +45,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
-    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "font-awesome": "^4.7.0",
     "gh-pages": "^0.12.0",
     "git-prepush-hook": "^1.0.1",
     "html-webpack-plugin": "^2.24.1",
@@ -100,7 +98,9 @@
   "keywords": [
     "react",
     "reactjs",
-    "adminlte"
+    "adminlte",
+    "admin",
+    "dashboard"
   ],
   "license": "MIT",
   "pre-push": [

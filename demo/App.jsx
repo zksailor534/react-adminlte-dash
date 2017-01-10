@@ -12,14 +12,14 @@ import {
 const navMenu = () => ([
   <Header.Item
     href={`https://github.com/${pkgInfo.user}/${pkgInfo.name}`}
-    image="/demo/img/GitHub-Mark-120px-plus.png"
+    image="public/GitHub-Mark-120px-plus.png"
     key="1"
   >
     Github
   </Header.Item>,
   <Header.UserMenu
     name="Alexander Pierce"
-    image="/demo/img/user2-160x160.jpg"
+    image="public/user2-160x160.jpg"
     signOutAction={() => alert('Sign out')}
     key="2"
   />,
@@ -28,7 +28,7 @@ const navMenu = () => ([
 const sb = pickTheme => ([
   <Sidebar.UserPanel
     name="Alexander Pierce"
-    image="/demo/img/user2-160x160.jpg"
+    image="public/user2-160x160.jpg"
     online
     key="1"
   />,
