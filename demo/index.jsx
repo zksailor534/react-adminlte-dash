@@ -33,6 +33,9 @@ const routes = (
   </Route>
 );
 
+// set app div height
+document.getElementById('app').style.height = '100%';
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history} routes={routes} />

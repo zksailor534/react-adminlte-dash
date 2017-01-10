@@ -24,11 +24,19 @@ React.js components for AdminLTE themed dashboard.
 npm install --save react-adminlte-dash
 ```
 
-This module uses [Styled Components](https://github.com/styled-components/styled-components), so all css styling is included when the module is called.
-
 ## Usage
 
 This module is in development, usage is subject to change.  Not all components are fully functional.
+
+This module uses [Styled Components](https://github.com/styled-components/styled-components), so all CSS styling is included when the module is called.
+However, in order for the dashboard to use the entire available screen height, the parent container components must be set to `height: 100%`.  This component sets the html & body styles, the user must set the app container.
+
+In CSS:
+```css
+#app {
+  height: 100%;
+}
+```
 
 In ES6:
 ```javascript

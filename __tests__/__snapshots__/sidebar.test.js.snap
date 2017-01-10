@@ -1,54 +1,84 @@
 exports[`<Sidebar /> renders children correctly 1`] = `
 <aside
   className="itKvVN">
-  <span
-    collapse={false}>
-    Child
-  </span>
+  <section
+    className="hZXMYD">
+    <span
+      collapse={false}>
+      Child
+    </span>
+  </section>
 </aside>
 `;
 
 exports[`<Sidebar /> renders correctly with collapsed option 1`] = `
 <aside
-  className="gJZgmQ" />
+  className="gJZgmQ">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with default options 1`] = `
 <aside
-  className="itKvVN" />
+  className="itKvVN">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with fixed and collapsed options 1`] = `
 <aside
-  className="frzhoO" />
+  className="frzhoO">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with fixed option 1`] = `
 <aside
-  className="lODyp" />
+  className="lODyp">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with mini and collapsed options 1`] = `
 <aside
-  className="xdNdT" />
+  className="xdNdT">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with mini and fixed options 1`] = `
 <aside
-  className="lODyp" />
+  className="lODyp">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with mini option 1`] = `
 <aside
-  className="itKvVN" />
+  className="itKvVN">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with mini, fixed, and collapsed options 1`] = `
 <aside
-  className="dyNUTN" />
+  className="dyNUTN">
+  <section
+    className="hZXMYD" />
+</aside>
 `;
 
 exports[`<Sidebar /> renders correctly with theme 1`] = `
 <aside
-  className="eMTNN" />
+  className="eMTNN">
+  <section
+    className="hZXMYD" />
+</aside>
 `;

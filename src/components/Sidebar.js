@@ -15,7 +15,13 @@ import {
   transitionFn,
 } from '../styles/variables';
 
-const StyledSidebar = styled.aside`
+const StyledSection = styled.section`
+  height: auto;
+  padding-bottom: 10px;
+  display: block;
+`;
+
+const StyledAside = styled.aside`
   &:before, &:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -96,13 +102,15 @@ const Sidebar = ({
   sidebarMini = false,
   sidebarCollapse = false,
 }) => (
-  <StyledSidebar
+  <StyledAside
     fixed={fixed}
     collapse={sidebarCollapse}
     mini={sidebarMini}
   >
-    {renderChildren(children, sidebarCollapse)}
-  </StyledSidebar>
+    <StyledSection>
+      {renderChildren(children, sidebarCollapse)}
+    </StyledSection>
+  </StyledAside>
 );
 
 Sidebar.propTypes = {
