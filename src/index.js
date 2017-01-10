@@ -1,5 +1,4 @@
 // import styles
-import 'font-awesome/css/font-awesome.min.css';
 import './main.css';
 
 import Dashboard from './components/Dashboard';
