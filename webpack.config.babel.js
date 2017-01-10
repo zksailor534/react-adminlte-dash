@@ -2,7 +2,7 @@ import * as path from 'path';
 
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 import SystemBellPlugin from 'system-bell-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import merge from 'webpack-merge';
@@ -16,11 +16,10 @@ const config = {
     dist: path.join(ROOT_PATH, 'dist'),
     src: path.join(ROOT_PATH, 'src'),
     demo: path.join(ROOT_PATH, 'demo'),
+    gh: path.join(ROOT_PATH, 'gh-pages'),
   },
-  filename: 'AdminLTE',
-  library: 'React-AdminLTE',
+  filename: 'index',
 };
-const extractCSS = new ExtractTextPlugin('bundle.css');
 
 process.env.BABEL_ENV = TARGET;
 
@@ -59,6 +58,10 @@ const common = {
         test: /\.md$/,
         loader: 'raw',
       },
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css'],
+      },
     ],
   },
   plugins: [
@@ -93,6 +96,7 @@ if (TARGET === 'start') {
     entry: {
       demo: config.paths.demo,
     },
+    context: ROOT_PATH,
     plugins: [
       new HtmlWebpackPlugin({
         template: require('html-webpack-template'), // eslint-disable-line global-require
@@ -109,10 +113,6 @@ if (TARGET === 'start') {
     ],
     module: {
       loaders: [
-        {
-          test: /\.css$/,
-          loaders: ['style', 'css'],
-        },
         {
           test: /\.jsx?$/,
           loaders: ['babel?cacheDirectory'],
@@ -142,17 +142,26 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
       vendors: [
         'react',
         'react-dom',
+        'redux',
+        'react-redux',
+        'react-router',
+        'react-router-redux',
+        'styled-components',
+        'tinycolor2',
       ],
     },
     output: {
-      path: './gh-pages',
       filename: 'bundle.js',
+      path: config.paths.gh,
     },
     plugins: [
       new CleanWebpackPlugin(['gh-pages'], {
         verbose: false,
       }),
-      extractCSS,
+      new CopyWebpackPlugin([
+        { from: 'public/GitHub-Mark-120px-plus.png', to: 'public' },
+        { from: 'public/user2-160x160.jpg', to: 'public' },
+      ]),
       new HtmlWebpackPlugin({
         template: 'lib/index_template.ejs',
         filename: 'index.html',
@@ -189,10 +198,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
     module: {
       loaders: [
         {
-          test: /\.css$/,
-          loader: extractCSS.extract('style', 'css?sourceMap'),
-        },
-        {
           test: /\.jsx?$/,
           loaders: ['babel'],
           include: [
@@ -206,25 +211,23 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
 }
 
 const distCommon = {
-  devtool: 'source-map',
   output: {
     path: config.paths.dist,
     libraryTarget: 'umd',
-    library: config.library,
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel'],
+        include: [
+          config.paths.src,
+        ],
+      },
+    ],
   },
   entry: {
     app: config.paths.src,
-    vendors: [
-      'react',
-    ],
-  },
-  externals: {
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'React',
-      root: 'React',
-    },
   },
 };
 

@@ -1,5 +1,3 @@
-import 'font-awesome/css/font-awesome.min.css';
-
 import black from './skin-black';
 import blackLight from './skin-black-light';
 import blue from './skin-blue';
