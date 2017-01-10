@@ -16,8 +16,9 @@ const config = {
     dist: path.join(ROOT_PATH, 'dist'),
     src: path.join(ROOT_PATH, 'src'),
     demo: path.join(ROOT_PATH, 'demo'),
+    gh: path.join(ROOT_PATH, 'gh-pages'),
   },
-  library: 'react-adminlte-dash',
+  filename: 'index',
 };
 
 process.env.BABEL_ENV = TARGET;
@@ -141,13 +142,17 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
       vendors: [
         'react',
         'react-dom',
+        'redux',
+        'react-redux',
+        'react-router',
+        'react-router-redux',
         'styled-components',
         'tinycolor2',
       ],
     },
     output: {
-      path: './gh-pages',
       filename: 'bundle.js',
+      path: config.paths.gh,
     },
     plugins: [
       new CleanWebpackPlugin(['gh-pages'], {
@@ -206,25 +211,23 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
 }
 
 const distCommon = {
-  devtool: 'source-map',
   output: {
     path: config.paths.dist,
     libraryTarget: 'umd',
-    library: config.library,
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel'],
+        include: [
+          config.paths.src,
+        ],
+      },
+    ],
   },
   entry: {
     app: config.paths.src,
-    vendors: [
-      'react',
-    ],
-  },
-  externals: {
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'React',
-      root: 'React',
-    },
   },
 };
 

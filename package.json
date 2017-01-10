@@ -17,11 +17,11 @@
     "dist": "webpack",
     "dist:min": "webpack",
     "preversion": "npm run test && npm run dist && npm run dist:min",
-    "prepublish": "npm run dist:min",
+    "prepublish": "npm run dist",
     "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
     "postinstall": "node lib/post_install.js"
   },
-  "main": "dist-modules",
+  "main": "dist",
   "module": "src",
   "jsnext:main": "src",
   "devDependencies": {
