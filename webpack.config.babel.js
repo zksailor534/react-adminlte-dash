@@ -13,10 +13,11 @@ const TARGET = process.env.npm_lifecycle_event || '';
 const ROOT_PATH = __dirname;
 const config = {
   paths: {
-    dist: path.join(ROOT_PATH, 'dist'),
-    src: path.join(ROOT_PATH, 'src'),
     demo: path.join(ROOT_PATH, 'demo'),
+    dist: path.join(ROOT_PATH, 'dist'),
     gh: path.join(ROOT_PATH, 'gh-pages'),
+    src: path.join(ROOT_PATH, 'src'),
+    style: path.join(ROOT_PATH, 'src', 'main.css'),
   },
   filename: 'index',
 };
@@ -94,7 +95,7 @@ if (TARGET === 'start') {
   module.exports = merge(common, siteCommon, {
     devtool: 'eval-source-map',
     entry: {
-      demo: config.paths.demo,
+      demo: [config.paths.demo, config.paths.style],
     },
     context: ROOT_PATH,
     plugins: [
@@ -138,7 +139,7 @@ if (TARGET === 'start') {
 if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
   module.exports = merge(common, siteCommon, {
     entry: {
-      app: config.paths.demo,
+      app: [config.paths.demo, config.paths.style],
       vendors: [
         'react',
         'react-dom',
@@ -227,7 +228,7 @@ const distCommon = {
     ],
   },
   entry: {
-    app: config.paths.src,
+    app: [config.paths.src, config.paths.style],
   },
 };
 
