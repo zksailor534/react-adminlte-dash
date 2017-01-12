@@ -25,7 +25,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 1`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="eGrrOt"
+          className="dkcmMY"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -85,7 +85,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 2`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -146,7 +146,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -219,7 +219,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="bJKzDN"
+                    className="cZtdGY"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
@@ -285,7 +285,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -358,7 +358,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="knnAH"
+                    className="dNojns"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
@@ -424,7 +424,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="eGrrOt"
+          className="dkcmMY"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -497,7 +497,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="knnAH"
+                    className="dNojns"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
@@ -563,7 +563,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -636,7 +636,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="knnAH"
+                    className="dNojns"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
@@ -701,7 +701,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 1`] 
         level={1}
         onMouseEnter={[Function]}>
         <a
-          className="bJKzDN"
+          className="cZtdGY"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -761,7 +761,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 2`] 
         level={1}
         onMouseEnter={[Function]}>
         <a
-          className="knnAH"
+          className="dNojns"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -822,7 +822,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -895,7 +895,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="knnAH"
+                    className="dNojns"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
@@ -961,7 +961,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -1034,7 +1034,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="knnAH"
+                    className="dNojns"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
@@ -1100,7 +1100,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -1173,7 +1173,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="knnAH"
+                    className="dNojns"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
@@ -1216,7 +1216,7 @@ exports[`<MenuItem /> renders correctly with active option 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="eGrrOt"
+    className="dkcmMY"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
@@ -1238,7 +1238,7 @@ exports[`<MenuItem /> renders correctly with collapse option 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="erKlVY"
+    className="cbDFam"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
@@ -1260,7 +1260,7 @@ exports[`<MenuItem /> renders correctly with default options 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="erKlVY"
+    className="cbDFam"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
@@ -1305,7 +1305,7 @@ exports[`<MenuItem /> renders correctly with icon options 1`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -1366,7 +1366,7 @@ exports[`<MenuItem /> renders correctly with icon options 2`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -1427,7 +1427,7 @@ exports[`<MenuItem /> renders correctly with icon options 3`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -1488,7 +1488,7 @@ exports[`<MenuItem /> renders correctly with icon options 4`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -1549,7 +1549,7 @@ exports[`<MenuItem /> renders correctly with icon options 5`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
@@ -1587,7 +1587,7 @@ exports[`<MenuItem /> renders correctly with labels 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="erKlVY"
+    className="cbDFam"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
@@ -1635,7 +1635,7 @@ exports[`<MenuItem /> renders correctly with labels while collapsed 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="erKlVY"
+    className="cbDFam"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
@@ -1663,7 +1663,7 @@ exports[`<MenuItem /> renders correctly with link 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="erKlVY"
+    className="cbDFam"
     href="/some/link"
     onClick={undefined}
     onMouseEnter={[Function]}>
@@ -1708,7 +1708,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="erKlVY"
+          className="cbDFam"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -1782,7 +1782,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                   onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
-                    className="knnAH"
+                    className="dNojns"
                     href={null}
                     onClick={[Function]}
                     onMouseEnter={[Function]}>
@@ -1855,7 +1855,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                             level={2}
                             onMouseEnter={[Function]}>
                             <a
-                              className="knnAH"
+                              className="dNojns"
                               href={null}
                               onMouseEnter={[Function]}>
                               <styled.i
@@ -1903,7 +1903,7 @@ exports[`<MenuItem /> renders correctly with theme 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="DJLBF"
+    className="gRaRhn"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
@@ -1925,7 +1925,7 @@ exports[`<MenuItem /> renders correctly with title 1`] = `
   className="iglJgb"
   onMouseLeave={[Function]}>
   <a
-    className="erKlVY"
+    className="cbDFam"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
