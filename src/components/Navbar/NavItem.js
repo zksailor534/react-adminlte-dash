@@ -57,6 +57,11 @@ const StyledLink = styled.a`
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 
+  display: block;
+  padding: ${navbarPaddingVertical} ${navbarPaddingHorizontal};
+  position: relative;
+  background-color: transparent;
+
   &:hover {
     text-decoration: none !important;
   }
@@ -73,11 +78,11 @@ const StyledItem = styled.li`
   box-sizing: border-box;
 
   float: left;
+  display: block;
   background-color: transparent;
   background-image: none;
   border: none;
   outline: none;
-  padding: ${navbarPaddingVertical} ${navbarPaddingHorizontal};
   position: relative;
   text-decoration: none;
   cursor: pointer;
