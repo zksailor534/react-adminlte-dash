@@ -47,7 +47,7 @@ const StyledImage = styled.img`
 `;
 
 const StyledLink = styled.a`
-  color: ${props => props.theme.navbarFontColor || '#fff'};
+  color: ${props => props.theme.navbarFontColor || '#fff'} !important;
   text-decoration: none;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -56,6 +56,10 @@ const StyledLink = styled.a`
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
+
+  &:hover {
+    text-decoration: none !important;
+  }
 `;
 
 const StyledItem = styled.li`

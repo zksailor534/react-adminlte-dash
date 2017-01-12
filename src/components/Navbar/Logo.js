@@ -19,12 +19,12 @@ const StyledLogo = styled.a`
   transition: width ${transitionSpeed} ${transitionFn};
 
   /* theme */
-  background-color: ${props => props.theme.logoBgColor || '#fff'};
-  color: ${props => props.theme.logoColor || '#000'};
-  border-bottom: ${props => props.theme.logoBorderBottom || 'none'};
-  border-right: ${props => props.theme.navbarItemBorder || 'none'};
+  background-color: ${props => props.theme.logoBgColor || '#fff'} !important;
+  color: ${props => props.theme.logoColor || '#000'} !important;
+  border-bottom: ${props => props.theme.logoBorderBottom || 'none'} !important;;
+  border-right: ${props => props.theme.navbarItemBorder || 'none'} !important;;
   &:hover {
-    background-color: ${props => props.theme.logoHover || '#f6f6f6'};
+    background-color: ${props => props.theme.logoHover || '#f6f6f6'} !important;;
   }
 
   display: block;
@@ -38,6 +38,9 @@ const StyledLogo = styled.a`
   padding: 0 15px;
   font-weight: 300;
   overflow: hidden;
+  &:hover {
+    text-decoration: none !important;
+  }
 
   /* media queries */
   @media (max-width: ${screenHeaderCollapse}) {

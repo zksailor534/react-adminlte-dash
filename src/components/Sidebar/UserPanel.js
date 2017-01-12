@@ -19,12 +19,12 @@ const StyledP = styled.p`
 `;
 
 const StyledLink = styled.a`
-  text-decoration: none;
+  text-decoration: none !important;
   padding-right: 5px;
   margin-top: 3px;
   font-size: 11px;
   background-color: transparent;
-  color: ${props => props.theme.userPanelColor || '#fff'};
+  color: ${props => props.theme.userPanelColor || '#fff'} !important;
 
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
