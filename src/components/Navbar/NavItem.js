@@ -47,7 +47,7 @@ const StyledImage = styled.img`
 `;
 
 const StyledLink = styled.a`
-  color: ${props => props.theme.navbarFontColor || '#fff'};
+  color: ${props => props.theme.navbarFontColor || '#fff'} !important;
   text-decoration: none;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -56,6 +56,15 @@ const StyledLink = styled.a`
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
+
+  display: block;
+  padding: ${navbarPaddingVertical} ${navbarPaddingHorizontal};
+  position: relative;
+  background-color: transparent;
+
+  &:hover {
+    text-decoration: none !important;
+  }
 `;
 
 const StyledItem = styled.li`
@@ -69,11 +78,11 @@ const StyledItem = styled.li`
   box-sizing: border-box;
 
   float: left;
+  display: block;
   background-color: transparent;
   background-image: none;
   border: none;
   outline: none;
-  padding: ${navbarPaddingVertical} ${navbarPaddingHorizontal};
   position: relative;
   text-decoration: none;
   cursor: pointer;

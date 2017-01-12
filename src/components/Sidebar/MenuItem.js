@@ -172,7 +172,7 @@ const StyledLeftIcon = styled.i`
 
 const StyledLink = styled.a`
   cursor: auto;
-  text-decoration: none;
+  text-decoration: none !important;
   display: block;
   padding: ${props => (!props.level ? '12px 5px 12px 15px' : '5px 5px 5px 15px')};
   position: relative;
@@ -183,14 +183,14 @@ const StyledLink = styled.a`
   &:active,
   &:focus,
   &:hover {
-    outline: none;
-    text-decoration: none;
+    outline: none !important;
+    text-decoration: none !important;
   }
 
   /* ----- theme ----- */
   /* text color - different in submenu */
   color: ${props =>
-    (props.level ? props.theme.sidebarSubmenuLinkColor : props.theme.sidebarLinkColor)};
+    (props.level ? props.theme.sidebarSubmenuLinkColor : props.theme.sidebarLinkColor)} !important;
   /* left border - none in submenu */
   border-left: ${props => (!props.level ? props.theme.sidebarLinkBorderLeft : 'none')};
   /* transition */
@@ -207,11 +207,11 @@ const StyledLink = styled.a`
 
   /* ----- active or hover properties ----- */
   ${props => (props.active || props.hover) && `
-    color: ${props.theme.sidebarLinkActiveColor || '#fff'};
+    color: ${props.theme.sidebarLinkActiveColor || '#fff'} !important;
     background: ${!props.level && props.theme.sidebarLinkActiveBg};
     border-left-color: ${props.theme.sidebarLinkActiveBorderLeftColor || '#3c8dbc'};
     font-weight: ${props.theme.sidebarLinkActiveFontWeight || 'normal'};
-    text-decoration: none;
+    text-decoration: none !important;
   `}
 `;
 
