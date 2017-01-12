@@ -2,7 +2,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
 <header
   className="Sdzae">
   <a
-    className="fBazcr"
+    className="bYXibN"
     href="#">
     <span
       className="ibQovi"
@@ -43,7 +43,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
 <header
   className="Sdzae">
   <a
-    className="fBazcr"
+    className="bYXibN"
     href="#">
     <span
       className="ibQovi"
@@ -84,7 +84,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 <header
   className="glmcVm">
   <a
-    className="fBazcr"
+    className="bYXibN"
     href="#">
     <span
       className="ibQovi"
@@ -125,7 +125,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
 <header
   className="glmcVm">
   <a
-    className="fBazcr"
+    className="bYXibN"
     href="#">
     <span
       className="ibQovi"
@@ -166,7 +166,7 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
 <header
   className="Sdzae">
   <a
-    className="fBazcr"
+    className="bYXibN"
     href="#">
     <span
       className="ibQovi"
@@ -204,7 +204,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
 <header
   className="Sdzae">
   <a
-    className="fBazcr"
+    className="bYXibN"
     href="#">
     <span
       className="ibQovi"
@@ -242,7 +242,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
 <header
   className="Sdzae">
   <a
-    className="deZxax"
+    className="ZVbxS"
     href="#">
     <span
       className="ibQovi"

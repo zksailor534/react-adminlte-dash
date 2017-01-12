@@ -1,23 +1,23 @@
 exports[`<NavItem /> renders correctly with default options 1`] = `
 <li
-  className="dzjnOV" />
+  className="bbLBpc" />
 `;
 
 exports[`<NavItem /> renders correctly with image 1`] = `
 <li
-  className="dzjnOV" />
+  className="bbLBpc" />
 `;
 
 exports[`<NavItem /> renders correctly with link 1`] = `
 <li
-  className="dzjnOV">
+  className="bbLBpc">
   <a
-    className="dfofQy"
+    className="fFsoph"
     href="/a/link" />
 </li>
 `;
 
 exports[`<NavItem /> renders correctly with theme 1`] = `
 <li
-  className="gDCOpn" />
+  className="dPbaVT" />
 `;

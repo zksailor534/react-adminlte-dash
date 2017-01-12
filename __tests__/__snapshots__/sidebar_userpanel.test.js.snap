@@ -9,7 +9,7 @@ exports[`<UserPanel /> renders children correctly 1`] = `
     <p
       className="bjsuPH" />
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="#">
       <i
         className="fa fa-circle imGDoo" />
@@ -30,7 +30,7 @@ exports[`<UserPanel /> renders correctly with collapse option 1`] = `
     <p
       className="bjsuPH" />
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="#">
       <i
         className="fa fa-circle imGDoo" />
@@ -51,7 +51,7 @@ exports[`<UserPanel /> renders correctly with default options 1`] = `
     <p
       className="bjsuPH" />
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="#">
       <i
         className="fa fa-circle imGDoo" />
@@ -72,7 +72,7 @@ exports[`<UserPanel /> renders correctly with image 1`] = `
     <p
       className="bjsuPH" />
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="#">
       <i
         className="fa fa-circle imGDoo" />
@@ -93,7 +93,7 @@ exports[`<UserPanel /> renders correctly with link 1`] = `
     <p
       className="bjsuPH" />
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="/a/link">
       <i
         className="fa fa-circle imGDoo" />
@@ -116,7 +116,7 @@ exports[`<UserPanel /> renders correctly with name 1`] = `
       My Name
     </p>
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="#">
       <i
         className="fa fa-circle imGDoo" />
@@ -137,7 +137,7 @@ exports[`<UserPanel /> renders correctly with online status option 1`] = `
     <p
       className="bjsuPH" />
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="#">
       <i
         className="fa fa-circle kjiaUJ" />
@@ -158,7 +158,7 @@ exports[`<UserPanel /> renders correctly with theme 1`] = `
     <p
       className="bjsuPH" />
     <a
-      className="gPDcRu"
+      className="jJSizu"
       href="#">
       <i
         className="fa fa-circle imGDoo" />
