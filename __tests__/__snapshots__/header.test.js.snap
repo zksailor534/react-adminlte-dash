@@ -3,10 +3,10 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="#">
+    href="/">
     <span
       className="ibQovi"
-      href="#">
+      href="/">
       <span>
         <b>
           Admin
@@ -16,7 +16,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="#">
+      href="/">
       <span>
         <b>
           A
@@ -44,10 +44,10 @@ exports[`<Header /> renders correctly with default options 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="#">
+    href="/">
     <span
       className="ibQovi"
-      href="#">
+      href="/">
       <span>
         <b>
           Admin
@@ -57,7 +57,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="#">
+      href="/">
       <span>
         <b>
           A
@@ -85,10 +85,10 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
   className="glmcVm">
   <a
     className="bYXibN"
-    href="#">
+    href="/">
     <span
       className="ibQovi"
-      href="#">
+      href="/">
       <span>
         <b>
           Admin
@@ -98,7 +98,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="#">
+      href="/">
       <span>
         <b>
           A
@@ -126,10 +126,10 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
   className="glmcVm">
   <a
     className="bYXibN"
-    href="#">
+    href="/">
     <span
       className="ibQovi"
-      href="#">
+      href="/">
       <span>
         <b>
           Admin
@@ -139,7 +139,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="#">
+      href="/">
       <span>
         <b>
           A
@@ -167,17 +167,17 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="#">
+    href="/">
     <span
       className="ibQovi"
-      href="#">
+      href="/">
       <span>
         Large
       </span>
     </span>
     <span
       className="hboVZB"
-      href="#">
+      href="/">
       <span>
         <b>
           A
@@ -205,10 +205,10 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="#">
+    href="/">
     <span
       className="ibQovi"
-      href="#">
+      href="/">
       <span>
         <b>
           Admin
@@ -218,7 +218,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="#">
+      href="/">
       <span>
         Small
       </span>
@@ -243,10 +243,10 @@ exports[`<Header /> renders correctly with theme 1`] = `
   className="Sdzae">
   <a
     className="ZVbxS"
-    href="#">
+    href="/">
     <span
       className="ibQovi"
-      href="#">
+      href="/">
       <span>
         <b>
           Admin
@@ -256,7 +256,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="#">
+      href="/">
       <span>
         <b>
           A

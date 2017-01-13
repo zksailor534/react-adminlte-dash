@@ -1,7 +1,8 @@
 exports[`<UserMenu /> opens and closes when clicked 1`] = `
 <li
   className="dzjnOV"
-  onClick={[Function]}>
+  onClick={[Function]}
+  onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
@@ -27,7 +28,8 @@ exports[`<UserMenu /> opens and closes when clicked 1`] = `
 exports[`<UserMenu /> opens and closes when clicked 2`] = `
 <li
   className="dzjnOV"
-  onClick={[Function]}>
+  onClick={[Function]}
+  onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
@@ -53,7 +55,8 @@ exports[`<UserMenu /> opens and closes when clicked 2`] = `
 exports[`<UserMenu /> renders correctly with default options 1`] = `
 <li
   className="dzjnOV"
-  onClick={[Function]}>
+  onClick={[Function]}
+  onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
@@ -79,7 +82,8 @@ exports[`<UserMenu /> renders correctly with default options 1`] = `
 exports[`<UserMenu /> renders correctly with image 1`] = `
 <li
   className="dzjnOV"
-  onClick={[Function]}>
+  onClick={[Function]}
+  onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src="/some/path" />
@@ -105,7 +109,8 @@ exports[`<UserMenu /> renders correctly with image 1`] = `
 exports[`<UserMenu /> renders correctly with name 1`] = `
 <li
   className="dzjnOV"
-  onClick={[Function]}>
+  onClick={[Function]}
+  onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
@@ -135,7 +140,8 @@ exports[`<UserMenu /> renders correctly with name 1`] = `
 exports[`<UserMenu /> renders correctly with theme 1`] = `
 <li
   className="gDCOpn"
-  onClick={[Function]}>
+  onClick={[Function]}
+  onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
