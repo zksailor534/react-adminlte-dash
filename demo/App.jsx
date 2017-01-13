@@ -20,6 +20,7 @@ const navMenu = () => ([
   <Header.UserMenu
     name="Alexander Pierce"
     image="public/user2-160x160.jpg"
+    profileAction={() => alert('Access profile')}
     signOutAction={() => alert('Sign out')}
     key="2"
   />,
