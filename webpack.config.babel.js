@@ -62,7 +62,6 @@ const common = {
       {
         test: /\.css$/,
         loaders: ['style', 'css'],
-        include: config.paths.style,
       },
     ],
   },
