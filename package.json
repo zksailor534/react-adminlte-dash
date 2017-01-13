@@ -18,8 +18,7 @@
     "dist:min": "webpack",
     "preversion": "npm run test && npm run dist:min",
     "prepublish": "npm run dist:min",
-    "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
-    "postinstall": "node lib/post_install.js"
+    "postpublish": "npm run gh-pages && npm run gh-pages:deploy"
   },
   "main": "dist/index.min.js",
   "files": [
