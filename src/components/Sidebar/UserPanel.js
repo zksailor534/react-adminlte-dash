@@ -102,7 +102,7 @@ const StyledPanel = styled.div`
   white-space: nowrap;
 `;
 
-const UserPanel = ({ name, image, href = '#', online, collapse }) => (
+const UserPanel = ({ name, image, href = null, online, collapse }) => (
   <StyledPanel collapse={collapse} >
     <StyledImage src={image} />
     <StyledInfo collapse={collapse} >
