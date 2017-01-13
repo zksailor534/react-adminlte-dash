@@ -3,7 +3,7 @@
   "description": "React.js components for AdminLTE themed dashboard",
   "author": "Nate Greene <nate.greene@gmail.com>",
   "user": "zksailor534",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest --",
@@ -16,12 +16,12 @@
     "gh-pages:stats": "webpack --profile --json > stats.json",
     "dist": "webpack",
     "dist:min": "webpack",
-    "preversion": "npm run test && npm run dist && npm run dist:min",
-    "prepublish": "npm run dist",
+    "preversion": "npm run test && npm run dist:min",
+    "prepublish": "npm run dist:min",
     "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
     "postinstall": "node lib/post_install.js"
   },
-  "main": "dist",
+  "main": "dist/index.min.js",
   "module": "src",
   "jsnext:main": "src",
   "devDependencies": {

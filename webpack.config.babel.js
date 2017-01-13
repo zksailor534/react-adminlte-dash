@@ -62,6 +62,7 @@ const common = {
       {
         test: /\.css$/,
         loaders: ['style', 'css'],
+        include: config.paths.style,
       },
     ],
   },
@@ -228,7 +229,7 @@ const distCommon = {
     ],
   },
   entry: {
-    app: [config.paths.src, config.paths.style],
+    app: config.paths.src,
   },
 };
 
