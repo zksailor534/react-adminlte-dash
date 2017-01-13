@@ -10,7 +10,7 @@ exports[`<UserPanel /> renders children correctly 1`] = `
       className="bjsuPH" />
     <a
       className="jJSizu"
-      href="#">
+      href={null}>
       <i
         className="fa fa-circle imGDoo" />
        Offline
@@ -31,7 +31,7 @@ exports[`<UserPanel /> renders correctly with collapse option 1`] = `
       className="bjsuPH" />
     <a
       className="jJSizu"
-      href="#">
+      href={null}>
       <i
         className="fa fa-circle imGDoo" />
        Offline
@@ -52,7 +52,7 @@ exports[`<UserPanel /> renders correctly with default options 1`] = `
       className="bjsuPH" />
     <a
       className="jJSizu"
-      href="#">
+      href={null}>
       <i
         className="fa fa-circle imGDoo" />
        Offline
@@ -73,7 +73,7 @@ exports[`<UserPanel /> renders correctly with image 1`] = `
       className="bjsuPH" />
     <a
       className="jJSizu"
-      href="#">
+      href={null}>
       <i
         className="fa fa-circle imGDoo" />
        Offline
@@ -117,7 +117,7 @@ exports[`<UserPanel /> renders correctly with name 1`] = `
     </p>
     <a
       className="jJSizu"
-      href="#">
+      href={null}>
       <i
         className="fa fa-circle imGDoo" />
        Offline
@@ -138,7 +138,7 @@ exports[`<UserPanel /> renders correctly with online status option 1`] = `
       className="bjsuPH" />
     <a
       className="jJSizu"
-      href="#">
+      href={null}>
       <i
         className="fa fa-circle kjiaUJ" />
        Online
@@ -159,7 +159,7 @@ exports[`<UserPanel /> renders correctly with theme 1`] = `
       className="bjsuPH" />
     <a
       className="jJSizu"
-      href="#">
+      href={null}>
       <i
         className="fa fa-circle imGDoo" />
        Offline

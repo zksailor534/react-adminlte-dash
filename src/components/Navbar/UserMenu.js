@@ -174,6 +174,7 @@ class UserMenu extends React.Component {
       open: false,
     };
     this._toggleMenu = this.toggleMenu.bind(this);
+    this._closeMenu = this.closeMenu.bind(this);
   }
 
   toggleMenu() {
@@ -182,12 +183,18 @@ class UserMenu extends React.Component {
     });
   }
 
+  closeMenu() {
+    this.setState({
+      open: false,
+    });
+  }
+
   render() {
     return (
-      <StyledUserMenu onClick={this._toggleMenu}>
+      <StyledUserMenu onClick={this._toggleMenu} onMouseLeave={this._closeMenu} >
         <StyledUserImage src={this.props.image} />
         <StyledUserName>{this.props.name}</StyledUserName>
-        <UserDropDown open={this.state.open}>
+        <UserDropDown open={this.state.open} >
           <UserMenuHeader>
             <UserMenuHeaderImage src={this.props.image} />
             <UserMenuHeaderName>{this.props.name}</UserMenuHeaderName>

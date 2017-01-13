@@ -69,15 +69,20 @@ const SmallLogo = styled.span`
 `;
 
 const Logo = props => (
-  <StyledLogo {...props} >
+  <StyledLogo {...props} href={props.href} >
     <LargeLogo {...props}>{props.logoLg}</LargeLogo>
     <SmallLogo {...props}>{props.logoSm}</SmallLogo>
   </StyledLogo>
 );
 
 Logo.propTypes = {
+  href: React.PropTypes.string,
   logoLg: React.PropTypes.element,
   logoSm: React.PropTypes.element,
+};
+
+Logo.defaultProps = {
+  href: '/',
 };
 
 export default Logo;

@@ -100,7 +100,7 @@ const StyledItem = styled.li`
 const NavItem = ({ children, onClick, href, image }) => (
   <StyledItem>
     {onClick &&
-      <StyledLink onClick={onClick} href="#">
+      <StyledLink onClick={onClick} href={null}>
         {image && <StyledImage src={image} />}
         {children}
       </StyledLink>
