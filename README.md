@@ -78,6 +78,7 @@ Provides a default empty header and sidebar.
 | theme | `string` | Choice of AdminLTE skin themes: `skin-blue`, `skin-black`, `skin-purple`, `skin-green`, `skin-red`, `skin-yellow`, `skin-blue-light`, `skin-black-light`, `skin-purple-light`, `skin-green-light`, `skin-red-light`, `skin-yellow-light` | `skin-blue` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `true` |
 | fixed | `bool` | Determines whether the Header is fixed | `false` |
+| logoHref | `string` | Link target for Logo | `'/'` |
 | logoLg | `element` | A single React component to be rendered when logo is in large state | `<span><b>Admin</b>LTE</span>` |
 | logoSm | `element` | A single React component to be rendered when logo is in small state | `<span><b>A</b>LT</span>` |
 
@@ -91,6 +92,7 @@ Header component which can be used independently of Dashboard (TBD).  Wrapper fo
 |:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | fixed | `bool` | Determines whether the Header is fixed | `false` |
+| logoHref | `string` | Link target for Logo | `'/'` |
 | logoLg | `element` | A single React component to be rendered when logo is in large state | `<span><b>Admin</b>LTE</span>` |
 | logoSm | `element` | A single React component to be rendered when logo is in small state | `<span><b>A</b>LT</span>` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `false` |
