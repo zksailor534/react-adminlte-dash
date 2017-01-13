@@ -22,6 +22,9 @@
     "postinstall": "node lib/post_install.js"
   },
   "main": "dist/index.min.js",
+  "files": [
+    "dist"
+  ],
   "module": "src",
   "jsnext:main": "src",
   "devDependencies": {
