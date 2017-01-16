@@ -69,9 +69,9 @@ const SmallLogo = styled.span`
 `;
 
 const Logo = props => (
-  <StyledLogo {...props} href={props.href} >
-    <LargeLogo {...props}>{props.logoLg}</LargeLogo>
-    <SmallLogo {...props}>{props.logoSm}</SmallLogo>
+  <StyledLogo name="navbar-logo" {...props} href={props.href} >
+    <LargeLogo name="navbar-logo-lg" {...props}>{props.logoLg}</LargeLogo>
+    <SmallLogo name="navbar-logo-sm" {...props}>{props.logoSm}</SmallLogo>
   </StyledLogo>
 );
 
