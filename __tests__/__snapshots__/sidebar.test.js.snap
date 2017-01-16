@@ -2,7 +2,8 @@ exports[`<Sidebar /> renders children correctly 1`] = `
 <aside
   className="itKvVN">
   <section
-    className="hZXMYD">
+    className="hZXMYD"
+    name="sidebar-wrapper">
     <span
       collapse={false}>
       Child
@@ -15,7 +16,8 @@ exports[`<Sidebar /> renders correctly with collapsed option 1`] = `
 <aside
   className="gJZgmQ">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -23,7 +25,8 @@ exports[`<Sidebar /> renders correctly with default options 1`] = `
 <aside
   className="itKvVN">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -31,7 +34,8 @@ exports[`<Sidebar /> renders correctly with fixed and collapsed options 1`] = `
 <aside
   className="frzhoO">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -39,7 +43,8 @@ exports[`<Sidebar /> renders correctly with fixed option 1`] = `
 <aside
   className="lODyp">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -47,7 +52,8 @@ exports[`<Sidebar /> renders correctly with mini and collapsed options 1`] = `
 <aside
   className="xdNdT">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -55,7 +61,8 @@ exports[`<Sidebar /> renders correctly with mini and fixed options 1`] = `
 <aside
   className="lODyp">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -63,7 +70,8 @@ exports[`<Sidebar /> renders correctly with mini option 1`] = `
 <aside
   className="itKvVN">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -71,7 +79,8 @@ exports[`<Sidebar /> renders correctly with mini, fixed, and collapsed options 1
 <aside
   className="dyNUTN">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;
 
@@ -79,6 +88,7 @@ exports[`<Sidebar /> renders correctly with theme 1`] = `
 <aside
   className="eMTNN">
   <section
-    className="hZXMYD" />
+    className="hZXMYD"
+    name="sidebar-wrapper" />
 </aside>
 `;

@@ -76,6 +76,7 @@ Provides a default empty header and sidebar.
 | navbarChildren | `node` | Any React child components to be rendered in the Header's navbar | n/a |
 | sidebarChildren | `node` | Any React child components to be rendered in the Sidebar | n/a |
 | theme | `string` | Choice of AdminLTE skin themes: `skin-blue`, `skin-black`, `skin-purple`, `skin-green`, `skin-red`, `skin-yellow`, `skin-blue-light`, `skin-black-light`, `skin-purple-light`, `skin-green-light`, `skin-red-light`, `skin-yellow-light` | `skin-blue` |
+| initialCollapse | `bool` | Determines initial state of sidebar: collapsed (`true`) or expanded (`false`) | `false` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `true` |
 | fixed | `bool` | Determines whether the Header is fixed | `false` |
 | logoHref | `string` | Link target for Logo | `'/'` |

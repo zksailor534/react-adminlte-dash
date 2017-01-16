@@ -88,10 +88,10 @@ const Navbar = props => (
     sidebarMini={props.sidebarMini}
     collapse={props.collapse}
   >
-    <ToggleButton className="fa fa-bars" onClick={props.toggle} />
+    <ToggleButton name="sidebar-toggle" className="fa fa-bars" onClick={props.toggle} />
 
     <StyledNavbarMenu>
-      <StyledNavbarMenuList>
+      <StyledNavbarMenuList name="navbar-menu-wrapper">
         {props.children}
       </StyledNavbarMenuList>
     </StyledNavbarMenu>

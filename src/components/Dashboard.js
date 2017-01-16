@@ -44,7 +44,7 @@ class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sidebarCollapse: false,
+      sidebarCollapse: this.props.initialCollapse,
     };
     this._sidebarToggle = this.sidebarToggle.bind(this);
   }
@@ -84,6 +84,7 @@ class Dashboard extends React.Component {
         <ThemeProvider theme={theme}>
           <Content
             fixed={this.props.fixed}
+            name="content-wrapper"
             sidebarCollapse={this.state.sidebarCollapse}
             sidebarMini={this.props.sidebarMini}
           >
@@ -97,18 +98,20 @@ class Dashboard extends React.Component {
 
 Dashboard.propTypes = {
   children: React.PropTypes.node,
-  logoHref: React.PropTypes.element,
+  logoHref: React.PropTypes.string,
   logoLg: React.PropTypes.element,
   logoSm: React.PropTypes.element,
   navbarChildren: React.PropTypes.node,
   sidebarChildren: React.PropTypes.node,
   fixed: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
+  initialCollapse: React.PropTypes.bool,
   theme: React.PropTypes.string,
 };
 
 Dashboard.defaultProps = {
   fixed: false,
+  initialCollapse: false,
   sidebarMini: false,
   theme: 'skin-blue',
 };

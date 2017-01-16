@@ -3,10 +3,12 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="/">
+    href="/"
+    name="navbar-logo">
     <span
       className="ibQovi"
-      href="/">
+      href="/"
+      name="navbar-logo-lg">
       <span>
         <b>
           Admin
@@ -16,7 +18,8 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/">
+      href="/"
+      name="navbar-logo-sm">
       <span>
         <b>
           A
@@ -29,11 +32,13 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     className="kHaBoX">
     <button
       className="fa fa-bars iXEfD"
+      name="sidebar-toggle"
       onClick={[Function]} />
     <div
       className="cTsgzF">
       <ul
-        className="bAXwxe" />
+        className="bAXwxe"
+        name="navbar-menu-wrapper" />
     </div>
   </nav>
 </header>
@@ -44,10 +49,12 @@ exports[`<Header /> renders correctly with default options 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="/">
+    href="/"
+    name="navbar-logo">
     <span
       className="ibQovi"
-      href="/">
+      href="/"
+      name="navbar-logo-lg">
       <span>
         <b>
           Admin
@@ -57,7 +64,8 @@ exports[`<Header /> renders correctly with default options 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/">
+      href="/"
+      name="navbar-logo-sm">
       <span>
         <b>
           A
@@ -70,11 +78,13 @@ exports[`<Header /> renders correctly with default options 1`] = `
     className="kHaBoX">
     <button
       className="fa fa-bars iXEfD"
+      name="sidebar-toggle"
       onClick={[Function]} />
     <div
       className="cTsgzF">
       <ul
-        className="bAXwxe" />
+        className="bAXwxe"
+        name="navbar-menu-wrapper" />
     </div>
   </nav>
 </header>
@@ -85,10 +95,12 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
   className="glmcVm">
   <a
     className="bYXibN"
-    href="/">
+    href="/"
+    name="navbar-logo">
     <span
       className="ibQovi"
-      href="/">
+      href="/"
+      name="navbar-logo-lg">
       <span>
         <b>
           Admin
@@ -98,7 +110,8 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/">
+      href="/"
+      name="navbar-logo-sm">
       <span>
         <b>
           A
@@ -111,11 +124,13 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     className="kHaBoX">
     <button
       className="fa fa-bars iXEfD"
+      name="sidebar-toggle"
       onClick={[Function]} />
     <div
       className="cTsgzF">
       <ul
-        className="bAXwxe" />
+        className="bAXwxe"
+        name="navbar-menu-wrapper" />
     </div>
   </nav>
 </header>
@@ -126,10 +141,12 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
   className="glmcVm">
   <a
     className="bYXibN"
-    href="/">
+    href="/"
+    name="navbar-logo">
     <span
       className="ibQovi"
-      href="/">
+      href="/"
+      name="navbar-logo-lg">
       <span>
         <b>
           Admin
@@ -139,7 +156,8 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/">
+      href="/"
+      name="navbar-logo-sm">
       <span>
         <b>
           A
@@ -152,11 +170,13 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     className="kHaBoX">
     <button
       className="fa fa-bars iXEfD"
+      name="sidebar-toggle"
       onClick={[Function]} />
     <div
       className="cTsgzF">
       <ul
-        className="bAXwxe" />
+        className="bAXwxe"
+        name="navbar-menu-wrapper" />
     </div>
   </nav>
 </header>
@@ -167,17 +187,20 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="/">
+    href="/"
+    name="navbar-logo">
     <span
       className="ibQovi"
-      href="/">
+      href="/"
+      name="navbar-logo-lg">
       <span>
         Large
       </span>
     </span>
     <span
       className="hboVZB"
-      href="/">
+      href="/"
+      name="navbar-logo-sm">
       <span>
         <b>
           A
@@ -190,11 +213,13 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
     className="kHaBoX">
     <button
       className="fa fa-bars iXEfD"
+      name="sidebar-toggle"
       onClick={[Function]} />
     <div
       className="cTsgzF">
       <ul
-        className="bAXwxe" />
+        className="bAXwxe"
+        name="navbar-menu-wrapper" />
     </div>
   </nav>
 </header>
@@ -205,10 +230,12 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
   className="Sdzae">
   <a
     className="bYXibN"
-    href="/">
+    href="/"
+    name="navbar-logo">
     <span
       className="ibQovi"
-      href="/">
+      href="/"
+      name="navbar-logo-lg">
       <span>
         <b>
           Admin
@@ -218,7 +245,8 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/">
+      href="/"
+      name="navbar-logo-sm">
       <span>
         Small
       </span>
@@ -228,11 +256,13 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     className="kHaBoX">
     <button
       className="fa fa-bars iXEfD"
+      name="sidebar-toggle"
       onClick={[Function]} />
     <div
       className="cTsgzF">
       <ul
-        className="bAXwxe" />
+        className="bAXwxe"
+        name="navbar-menu-wrapper" />
     </div>
   </nav>
 </header>
@@ -243,10 +273,12 @@ exports[`<Header /> renders correctly with theme 1`] = `
   className="Sdzae">
   <a
     className="ZVbxS"
-    href="/">
+    href="/"
+    name="navbar-logo">
     <span
       className="ibQovi"
-      href="/">
+      href="/"
+      name="navbar-logo-lg">
       <span>
         <b>
           Admin
@@ -256,7 +288,8 @@ exports[`<Header /> renders correctly with theme 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/">
+      href="/"
+      name="navbar-logo-sm">
       <span>
         <b>
           A
@@ -269,11 +302,13 @@ exports[`<Header /> renders correctly with theme 1`] = `
     className="rOyox">
     <button
       className="fa fa-bars jatJFQ"
+      name="sidebar-toggle"
       onClick={[Function]} />
     <div
       className="cTsgzF">
       <ul
-        className="bAXwxe" />
+        className="bAXwxe"
+        name="navbar-menu-wrapper" />
     </div>
   </nav>
 </header>
