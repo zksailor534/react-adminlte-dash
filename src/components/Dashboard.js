@@ -61,6 +61,7 @@ class Dashboard extends React.Component {
       <StyledDashboard>
         <ThemeProvider theme={theme}>
           <Header
+            logoOnClick={this.props.logoOnClick}
             logoHref={this.props.logoHref}
             logoLg={this.props.logoLg}
             logoSm={this.props.logoSm}
@@ -98,6 +99,7 @@ class Dashboard extends React.Component {
 
 Dashboard.propTypes = {
   children: React.PropTypes.node,
+  logoOnClick: React.PropTypes.func,
   logoHref: React.PropTypes.string,
   logoLg: React.PropTypes.element,
   logoSm: React.PropTypes.element,

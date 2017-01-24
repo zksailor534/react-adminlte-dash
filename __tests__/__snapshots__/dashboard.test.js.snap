@@ -78,7 +78,6 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 1`] = `
               className="Sdzae">
               <Component
                 collapse={true}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -99,22 +98,6 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 1`] = `
                 <styled.a
                   collapse={true}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -123,28 +106,10 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={true}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -156,28 +121,10 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={true}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -429,7 +376,6 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 2`] = `
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -450,22 +396,6 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 2`] = `
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -474,28 +404,10 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 2`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -507,28 +419,10 @@ exports[`<Dashboard /> opens and closes sidebar on sidebar toggle click 2`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -780,7 +674,6 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
               className="Sdzae">
               <Component
                 collapse={true}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -801,22 +694,6 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
                 <styled.a
                   collapse={true}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={true}>
                   <a
@@ -825,28 +702,10 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
                     name="navbar-logo">
                     <styled.span
                       collapse={true}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={true}>
                       <span
                         className="gdnkfC"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -858,28 +717,10 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
                     </styled.span>
                     <styled.span
                       collapse={true}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={true}>
                       <span
                         className="bgyKpT"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -1131,7 +972,6 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -1152,22 +992,6 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={true}>
                   <a
@@ -1176,28 +1000,10 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={true}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -1209,28 +1015,10 @@ exports[`<Dashboard /> opens and closes sidebar with sidebarMini on sidebar togg
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={true}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -1482,7 +1270,6 @@ exports[`<Dashboard /> renders children correctly 1`] = `
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -1503,22 +1290,6 @@ exports[`<Dashboard /> renders children correctly 1`] = `
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -1527,28 +1298,10 @@ exports[`<Dashboard /> renders children correctly 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -1560,28 +1313,10 @@ exports[`<Dashboard /> renders children correctly 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -1768,7 +1503,6 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -1779,7 +1513,6 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -1826,7 +1559,6 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -1837,7 +1569,6 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -1884,7 +1615,6 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -1895,7 +1625,6 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -1942,7 +1671,6 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -1953,7 +1681,6 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -2000,7 +1727,6 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -2011,7 +1737,6 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -2058,7 +1783,6 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -2069,7 +1793,6 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -2116,7 +1839,6 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
       name="navbar-logo">
       <span
         className="gdnkfC"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -2127,7 +1849,6 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
       </span>
       <span
         className="bgyKpT"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -2245,7 +1966,6 @@ exports[`<Dashboard /> renders correctly with given large logo 1`] = `
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     Large
@@ -2263,19 +1983,6 @@ exports[`<Dashboard /> renders correctly with given large logo 1`] = `
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      Large
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -2284,25 +1991,10 @@ exports[`<Dashboard /> renders correctly with given large logo 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          Large
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           Large
@@ -2311,25 +2003,10 @@ exports[`<Dashboard /> renders correctly with given large logo 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          Large
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -2604,22 +2281,6 @@ exports[`<Dashboard /> renders correctly with given logo href 1`] = `
                 <styled.a
                   collapse={false}
                   href="/some/link"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -2628,28 +2289,10 @@ exports[`<Dashboard /> renders correctly with given logo href 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/some/link"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/some/link"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -2661,28 +2304,10 @@ exports[`<Dashboard /> renders correctly with given logo href 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/some/link"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/some/link"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -2936,7 +2561,6 @@ exports[`<Dashboard /> renders correctly with given small logo 1`] = `
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -2954,19 +2578,6 @@ exports[`<Dashboard /> renders correctly with given small logo 1`] = `
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      Small
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -2975,25 +2586,10 @@ exports[`<Dashboard /> renders correctly with given small logo 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          Small
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -3005,25 +2601,10 @@ exports[`<Dashboard /> renders correctly with given small logo 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          Small
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           Small
@@ -3203,7 +2784,6 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -3214,7 +2794,6 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -3261,7 +2840,6 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -3272,7 +2850,6 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -3319,7 +2896,6 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
       name="navbar-logo">
       <span
         className="gdnkfC"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -3330,7 +2906,6 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
       </span>
       <span
         className="bgyKpT"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -3446,7 +3021,6 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
               className="Sdzae">
               <Component
                 collapse={true}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -3467,22 +3041,6 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
                 <styled.a
                   collapse={true}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -3491,28 +3049,10 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={true}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -3524,28 +3064,10 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={true}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -3797,7 +3319,6 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -3818,22 +3339,6 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -3842,28 +3347,10 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -3875,28 +3362,10 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -4079,7 +3548,6 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -4090,7 +3558,6 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -4137,7 +3604,6 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -4148,7 +3614,6 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -4195,7 +3660,6 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -4206,7 +3670,6 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -4253,7 +3716,6 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -4264,7 +3726,6 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -4311,7 +3772,6 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -4322,7 +3782,6 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -4369,7 +3828,6 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -4380,7 +3838,6 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -4427,7 +3884,6 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
       name="navbar-logo">
       <span
         className="ibQovi"
-        href="/"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -4438,7 +3894,6 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
       </span>
       <span
         className="hboVZB"
-        href="/"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -4559,7 +4014,6 @@ exports[`<Dashboard /> renders navbar children correctly 1`] = `
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -4580,22 +4034,6 @@ exports[`<Dashboard /> renders navbar children correctly 1`] = `
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -4604,28 +4042,10 @@ exports[`<Dashboard /> renders navbar children correctly 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -4637,28 +4057,10 @@ exports[`<Dashboard /> renders navbar children correctly 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>
@@ -4918,7 +4320,6 @@ exports[`<Dashboard /> renders sidebar children correctly 1`] = `
               className="Sdzae">
               <Component
                 collapse={false}
-                href="/"
                 logoLg={
                   <span>
                     <b>
@@ -4939,22 +4340,6 @@ exports[`<Dashboard /> renders sidebar children correctly 1`] = `
                 <styled.a
                   collapse={false}
                   href="/"
-                  logoLg={
-                    <span>
-                      <b>
-                        Admin
-                      </b>
-                      LTE
-                    </span>
-                  }
-                  logoSm={
-                    <span>
-                      <b>
-                        A
-                      </b>
-                      LT
-                    </span>
-                  }
                   name="navbar-logo"
                   sidebarMini={false}>
                   <a
@@ -4963,28 +4348,10 @@ exports[`<Dashboard /> renders sidebar children correctly 1`] = `
                     name="navbar-logo">
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-lg"
                       sidebarMini={false}>
                       <span
                         className="ibQovi"
-                        href="/"
                         name="navbar-logo-lg">
                         <span>
                           <b>
@@ -4996,28 +4363,10 @@ exports[`<Dashboard /> renders sidebar children correctly 1`] = `
                     </styled.span>
                     <styled.span
                       collapse={false}
-                      href="/"
-                      logoLg={
-                        <span>
-                          <b>
-                            Admin
-                          </b>
-                          LTE
-                        </span>
-                      }
-                      logoSm={
-                        <span>
-                          <b>
-                            A
-                          </b>
-                          LT
-                        </span>
-                      }
                       name="navbar-logo-sm"
                       sidebarMini={false}>
                       <span
                         className="hboVZB"
-                        href="/"
                         name="navbar-logo-sm">
                         <span>
                           <b>

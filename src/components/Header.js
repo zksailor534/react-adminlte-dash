@@ -37,6 +37,7 @@ const Header = props => (
     <Logo
       collapse={props.sidebarCollapse}
       sidebarMini={props.sidebarMini}
+      onClick={props.logoOnClick}
       href={props.logoHref}
       logoLg={props.logoLg}
       logoSm={props.logoSm}
@@ -54,6 +55,7 @@ const Header = props => (
 Header.propTypes = {
   children: React.PropTypes.node,
   fixed: React.PropTypes.bool,
+  logoOnClick: React.PropTypes.func,
   logoHref: React.PropTypes.string,
   logoLg: React.PropTypes.element,
   logoSm: React.PropTypes.element,

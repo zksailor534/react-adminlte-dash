@@ -7,7 +7,6 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     name="navbar-logo">
     <span
       className="ibQovi"
-      href="/"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -18,7 +17,6 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -53,7 +51,6 @@ exports[`<Header /> renders correctly with default options 1`] = `
     name="navbar-logo">
     <span
       className="ibQovi"
-      href="/"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -64,7 +61,6 @@ exports[`<Header /> renders correctly with default options 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -99,7 +95,6 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     name="navbar-logo">
     <span
       className="ibQovi"
-      href="/"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -110,7 +105,6 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -145,7 +139,6 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     name="navbar-logo">
     <span
       className="ibQovi"
-      href="/"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -156,7 +149,6 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -191,7 +183,6 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
     name="navbar-logo">
     <span
       className="ibQovi"
-      href="/"
       name="navbar-logo-lg">
       <span>
         Large
@@ -199,7 +190,6 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -234,7 +224,6 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     name="navbar-logo">
     <span
       className="ibQovi"
-      href="/"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -245,7 +234,6 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/"
       name="navbar-logo-sm">
       <span>
         Small
@@ -277,7 +265,6 @@ exports[`<Header /> renders correctly with theme 1`] = `
     name="navbar-logo">
     <span
       className="ibQovi"
-      href="/"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -288,7 +275,6 @@ exports[`<Header /> renders correctly with theme 1`] = `
     </span>
     <span
       className="hboVZB"
-      href="/"
       name="navbar-logo-sm">
       <span>
         <b>
