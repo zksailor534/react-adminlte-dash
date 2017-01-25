@@ -3,6 +3,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 
 import red from '../src/styles/skin-red';
 import Header from '../src/components/Header';
@@ -39,6 +40,18 @@ describe('<Header />', () => {
       <Header fixed sidebarCollapse sidebarToggle={() => null} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it('renders given logo onClick function', () => {
+    const func = () => null;
+    const wrapper = mount(<Header logoOnClick={func} sidebarToggle={() => null} />);
+    expect(wrapper.find('[name="navbar-logo"]').props().onClick).toEqual(func);
+  });
+
+  it('renders given logo href', () => {
+    const href = '/some/link';
+    const wrapper = mount(<Header logoHref={href} sidebarToggle={() => null} />);
+    expect(wrapper.find('[name="navbar-logo"]').props().href).toEqual(href);
   });
 
   it('renders correctly with given large logo', () => {

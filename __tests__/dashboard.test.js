@@ -117,6 +117,12 @@ describe('<Dashboard />', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it('renders given logo onClick function', () => {
+    const func = () => null;
+    const wrapper = mount(<Dashboard logoOnClick={func} />);
+    expect(wrapper.find('[name="navbar-logo"]').props().onClick).toEqual(func);
+  });
+
   it('renders given logo href', () => {
     const href = '/some/link';
     const wrapper = mount(<Dashboard logoHref={href} />);
