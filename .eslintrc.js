@@ -21,6 +21,7 @@ module.exports = {
     "no-use-before-define": 0,
     "react/sort-comp": 0,
     "react/no-multi-comp": 0,
+    "react/require-default-props": 0,
     "react/require-extension": 0
   }
 };
