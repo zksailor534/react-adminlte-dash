@@ -1,23 +1,43 @@
 exports[`<NavItem /> renders correctly with default options 1`] = `
 <li
-  className="bbLBpc" />
+  className="gwCKfy" />
+`;
+
+exports[`<NavItem /> renders correctly with icon class 1`] = `
+<li
+  className="gwCKfy">
+  <a
+    className="hWAeXK"
+    href="/a/link">
+    <i
+      className="fa fa-github koSwaT" />
+  </a>
+</li>
 `;
 
 exports[`<NavItem /> renders correctly with image 1`] = `
 <li
-  className="bbLBpc" />
-`;
-
-exports[`<NavItem /> renders correctly with link 1`] = `
-<li
-  className="bbLBpc">
+  className="gwCKfy">
   <a
-    className="fFsoph"
-    href="/a/link" />
+    className="hWAeXK"
+    href="/a/link">
+    <img
+      className="ldbpHN"
+      src="/some/path" />
+  </a>
 </li>
 `;
 
 exports[`<NavItem /> renders correctly with theme 1`] = `
 <li
-  className="dPbaVT" />
+  className="hpqKtZ" />
+`;
+
+exports[`<NavItem /> renders link correctly 1`] = `
+<li
+  className="gwCKfy">
+  <a
+    className="hWAeXK"
+    href="/a/link" />
+</li>
 `;

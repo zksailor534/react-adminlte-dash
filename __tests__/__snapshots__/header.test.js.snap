@@ -2,7 +2,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
 <header
   className="Sdzae">
   <a
-    className="bYXibN"
+    className="cykMTm"
     href="/"
     name="navbar-logo">
     <span
@@ -46,7 +46,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
 <header
   className="Sdzae">
   <a
-    className="bYXibN"
+    className="cykMTm"
     href="/"
     name="navbar-logo">
     <span
@@ -90,7 +90,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 <header
   className="glmcVm">
   <a
-    className="bYXibN"
+    className="cykMTm"
     href="/"
     name="navbar-logo">
     <span
@@ -134,7 +134,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
 <header
   className="glmcVm">
   <a
-    className="bYXibN"
+    className="cykMTm"
     href="/"
     name="navbar-logo">
     <span
@@ -178,7 +178,7 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
 <header
   className="Sdzae">
   <a
-    className="bYXibN"
+    className="cykMTm"
     href="/"
     name="navbar-logo">
     <span
@@ -219,7 +219,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
 <header
   className="Sdzae">
   <a
-    className="bYXibN"
+    className="cykMTm"
     href="/"
     name="navbar-logo">
     <span
@@ -260,7 +260,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
 <header
   className="Sdzae">
   <a
-    className="ZVbxS"
+    className="dXzCJS"
     href="/"
     name="navbar-logo">
     <span

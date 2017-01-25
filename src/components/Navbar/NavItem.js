@@ -24,7 +24,33 @@ const imageMarginBottom = `-${Math.floor(
   parseInt(navbarPaddingVertical, 10)) -
   parseInt(navbarHeight, 10)) / 2)}px`;
 
+const StyledIcon = styled.i`
+  color: inherit;
+  box-sizing: border-box;
+  float: left;
+  border: 0;
+  vertical-align: top;
+  border-radius: 50%;
+  margin-right: 10px;
+  max-width: none;
+  font-size: 28px;
+  margin-top: -4px;
+
+  &:hover {
+    color: inherit;
+  }
+
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+`;
+
 const StyledImage = styled.img`
+  color: inherit;
   box-sizing: border-box;
   float: left;
   border: 0;
@@ -37,6 +63,10 @@ const StyledImage = styled.img`
   margin-bottom: ${imageMarginBottom};
   max-width: none;
 
+  &:hover {
+    color: inherit;
+  }
+
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -47,7 +77,6 @@ const StyledImage = styled.img`
 `;
 
 const StyledLink = styled.a`
-  color: ${props => props.theme.navbarFontColor || '#fff'} !important;
   text-decoration: none;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -57,12 +86,14 @@ const StyledLink = styled.a`
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 
+  color: inherit;
   display: block;
   padding: ${navbarPaddingVertical} ${navbarPaddingHorizontal};
   position: relative;
   background-color: transparent;
 
   &:hover {
+    color: inherit;
     text-decoration: none !important;
   }
 `;
@@ -86,7 +117,10 @@ const StyledItem = styled.li`
   position: relative;
   text-decoration: none;
   cursor: pointer;
-  &:focus, &:active { background: transparent; }
+  &:focus, &:active {
+    background: transparent;
+    outline: none;
+  }
 
   /* theme */
   color: ${props => props.theme.navbarFontColor || '#fff'};
@@ -97,17 +131,26 @@ const StyledItem = styled.li`
   }
 `;
 
-const NavItem = ({ children, onClick, href, image }) => (
+const displayImage = (src, icon) => {
+  if (src) {
+    return <StyledImage src={src} />;
+  } else if (icon) {
+    return <StyledIcon className={icon} />;
+  }
+  return null;
+};
+
+const NavItem = ({ children, onClick, href, image, iconClass }) => (
   <StyledItem>
     {onClick &&
       <StyledLink onClick={onClick} href={null}>
-        {image && <StyledImage src={image} />}
+        {displayImage(image, iconClass)}
         {children}
       </StyledLink>
     }
     {(!onClick && href) &&
       <StyledLink href={href}>
-        {image && <StyledImage src={image} />}
+        {displayImage(image, iconClass)}
         {children}
       </StyledLink>
     }
@@ -119,6 +162,7 @@ NavItem.propTypes = {
   onClick: React.PropTypes.func,
   href: React.PropTypes.string,
   image: React.PropTypes.string,
+  iconClass: React.PropTypes.string,
 };
 
 export default NavItem;

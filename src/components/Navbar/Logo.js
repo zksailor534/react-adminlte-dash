@@ -38,8 +38,9 @@ const StyledLogo = styled.a`
   padding: 0 15px;
   font-weight: 300;
   overflow: hidden;
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none !important;
+    outline: none;
   }
 
   /* media queries */
@@ -50,7 +51,7 @@ const StyledLogo = styled.a`
   }
   @media (min-width: ${screenSmMin}) {
     width: ${props => ((props.sidebarMini && props.collapse) ? sidebarMiniWidth : sidebarWidth)};
-    padding: ${props => ((props.sidebarMini && props.collapse) && '0')};
+    ${props => ((props.sidebarMini && props.collapse) && 'padding: 0;')};
   }
 `;
 
