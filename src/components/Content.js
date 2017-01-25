@@ -10,7 +10,6 @@ import {
   navbarHeight,
   sidebarWidth,
   sidebarMiniWidth,
-  bodyBg,
   transitionSpeed,
   transitionFn,
 } from '../styles/variables';
@@ -39,12 +38,11 @@ const Content = styled.div`
 
   /* theme */
   ${props => (props.theme.contentLeftBorder && `border-left: ${props.theme.contentLeftBorder};`)}
+  background-color: transparent;
 
-  background-color: ${bodyBg};
   min-height: 100%;
   margin-left: ${props => (props.topNav ? '0' : sidebarWidth)};
   z-index: 800;
-  padding: 15px;
 
   -webkit-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   -moz-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};

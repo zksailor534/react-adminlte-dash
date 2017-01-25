@@ -66,9 +66,6 @@ export const screenHeaderCollapse = screenXsMax;
 export const linkColor = lightBlue;
 export const linkHoverColor = tinycolor(linkColor).lighten(15).toString();
 
-// Body background (Affects main content background only)
-export const bodyBg = '#ecf0f5';
-
 // SIDEBAR SKINS
 // --------------------------------------------------------
 

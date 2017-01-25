@@ -6,11 +6,11 @@ import './Documentation.css';
 const readme = require('../README.md');
 
 const Documentation = () => (
-  <div className="content-wrapper">
-    <section className="content-header">
+  <div>
+    <section>
       <h1>Documentation</h1>
     </section>
-    <section className="content">
+    <section>
       <Markdown source={readme} />
     </section>
   </div>

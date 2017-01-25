@@ -49,7 +49,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -105,7 +105,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fTNHSC"
+    className="gnzgiC"
     name="content-wrapper" />
 </div>
 `;
@@ -161,7 +161,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -217,7 +217,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fTNHSC"
+    className="gnzgiC"
     name="content-wrapper" />
 </div>
 `;
@@ -273,7 +273,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="KNTAu"
+    className="drFMkG"
     name="content-wrapper" />
 </div>
 `;
@@ -329,7 +329,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="KNTAu"
+    className="drFMkG"
     name="content-wrapper" />
 </div>
 `;
@@ -385,7 +385,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="kvraov"
+    className="bKmtkn"
     name="content-wrapper" />
 </div>
 `;
@@ -441,7 +441,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -497,7 +497,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fTNHSC"
+    className="gnzgiC"
     name="content-wrapper" />
 </div>
 `;
@@ -553,7 +553,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="dLNMPq"
+    className="kqnetR"
     name="content-wrapper" />
 </div>
 `;
@@ -609,7 +609,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="yvELr"
+    className="bHreLo"
     name="content-wrapper" />
 </div>
 `;
@@ -665,7 +665,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -721,7 +721,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -777,7 +777,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fTNHSC"
+    className="gnzgiC"
     name="content-wrapper" />
 </div>
 `;
@@ -833,7 +833,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -889,7 +889,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fTNHSC"
+    className="gnzgiC"
     name="content-wrapper" />
 </div>
 `;
@@ -945,7 +945,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -1001,7 +1001,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fNyzPn"
+    className="jinfUS"
     name="content-wrapper" />
 </div>
 `;
@@ -1057,7 +1057,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="fTNHSC"
+    className="gnzgiC"
     name="content-wrapper" />
 </div>
 `;
