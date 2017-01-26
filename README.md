@@ -10,7 +10,7 @@ React.js components for AdminLTE themed dashboard.
 ### Todo (path to 1.0)
 
 - [ ] Right sidebar
-- [ ] Content formatting
+- [x] Content formatting
 - [ ] Generic Navbar dropdowns
 - [ ] Messaging Navbar dropdown
 - [ ] Notifications Navbar dropdown
@@ -34,7 +34,7 @@ However, in order for the dashboard to use the entire available screen height, t
 In CSS:
 ```css
 #app {
-  height: 100%;
+  min-height: 100vh;
 }
 ```
 
@@ -76,10 +76,11 @@ Provides a default empty header and sidebar.
 | navbarChildren | `node` | Any React child components to be rendered in the Header's navbar | n/a |
 | sidebarChildren | `node` | Any React child components to be rendered in the Sidebar | n/a |
 | theme | `string` | Choice of AdminLTE skin themes: `skin-blue`, `skin-black`, `skin-purple`, `skin-green`, `skin-red`, `skin-yellow`, `skin-blue-light`, `skin-black-light`, `skin-purple-light`, `skin-green-light`, `skin-red-light`, `skin-yellow-light` | `skin-blue` |
-| initialCollapse | `bool` | Determines initial state of sidebar: collapsed (`true`) or expanded (`false`) | `false` |
+| initialCollapse | `bool` | Determines initial state of sidebar: collapsed (`true`) or expanded (`false`), defaults to true on mobile | `false` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `true` |
 | fixed | `bool` | Determines whether the Header is fixed | `false` |
-| logoHref | `string` | Link target for Logo | `'/'` |
+| logoOnClick | `func` | Function to be called on logo click, overrides logoHref | n/a |
+| logoHref | `string` | Link target for Logo, overridden by logoOnClick | `'/'` |
 | logoLg | `element` | A single React component to be rendered when logo is in large state | `<span><b>Admin</b>LTE</span>` |
 | logoSm | `element` | A single React component to be rendered when logo is in small state | `<span><b>A</b>LT</span>` |
 
@@ -93,7 +94,8 @@ Header component which can be used independently of Dashboard (TBD).  Wrapper fo
 |:--------:|:----:|:-----------:|:-------:|
 | children | `node` | Any React child components to be rendered | n/a |
 | fixed | `bool` | Determines whether the Header is fixed | `false` |
-| logoHref | `string` | Link target for Logo | `'/'` |
+| logoOnClick | `func` | Function to be called on logo click, overrides logoHref | n/a |
+| logoHref | `string` | Link target for Logo, overridden by logoOnClick | `'/'` |
 | logoLg | `element` | A single React component to be rendered when logo is in large state | `<span><b>Admin</b>LTE</span>` |
 | logoSm | `element` | A single React component to be rendered when logo is in small state | `<span><b>A</b>LT</span>` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `false` |
@@ -106,10 +108,11 @@ Header navbar menu item component.  Renders links with images in header.
 
 | Property | Type | Description | Default |
 |:--------:|:----:|:-----------:|:-------:|
-| children | `node` | Any React child components to be rendered (TBD) | n/a |
+| title | `string` | Item title to be displayed | n/a |
 | onClick | `func` | Function to be called on item click | n/a |
 | link | `string` | Link target for logo component, overridden by `onClick` | n/a |
-| image | `string` | Path to image object | n/a |
+| image | `string` | Path to image object, overrides iconClass | n/a |
+| iconClass | `string` | Class names to use for icon (libraries not included),  | n/a |
 
 ### *Header.UserMenu*
 

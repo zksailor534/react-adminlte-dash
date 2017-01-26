@@ -1,4 +1,174 @@
-table, th, tr, td {
-  border: 1px solid black;
-  padding: 5px;
+/*
+* Subset of Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Skeleton Container
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.skeleton {
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
 }
+
+  /* Grid
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .skeleton .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* For devices larger than 400px */
+  @media (min-width: 400px) {
+    .skeleton .container {
+      width: 85%;
+      padding: 0;
+    }
+  }
+
+  /* For devices larger than 550px */
+  @media (min-width: 550px) {
+    .skeleton .container {
+      width: 80%;
+    }
+  }
+
+  /* Typography
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .skeleton h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  .skeleton h1 { font-size: 2.5rem; line-height: 1.2;  letter-spacing: -.1rem;}
+  .skeleton h2 { font-size: 2.3rem; line-height: 1.25; letter-spacing: -.1rem; }
+  .skeleton h3 { font-size: 2.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+  .skeleton h4 { font-size: 1.8rem; line-height: 1.35; letter-spacing: -.08rem; }
+  .skeleton h5 { font-size: 1.4rem; line-height: 1.5;  letter-spacing: -.05rem; }
+  .skeleton h6 { font-size: 1.25rem; line-height: 1.6;  letter-spacing: 0; }
+
+  /* Larger than phablet */
+  @media (min-width: 550px) {
+    .skeleton h1 { font-size: 3.0rem; }
+    .skeleton h2 { font-size: 2.8rem; }
+    .skeleton h3 { font-size: 2.3rem; }
+    .skeleton h4 { font-size: 2.0rem; }
+    .skeleton h5 { font-size: 1.7rem; }
+    .skeleton h6 { font-size: 1.25rem; }
+  }
+
+  .skeleton p {
+    margin-top: 0;
+  }
+
+  /* Lists
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .skeleton ul {
+    list-style: circle inside; }
+  .skeleton ol {
+    list-style: decimal inside; }
+  .skeleton ol, ul {
+    padding-left: 0;
+    margin-top: 0; }
+  .skeleton ul ul,
+  .skeleton ul ol,
+  .skeleton ol ol,
+  .skeleton ol ul {
+    margin: 1.5rem 0 1.5rem 3rem;
+    font-size: 90%; }
+  .skeleton li {
+    margin-bottom: 1rem;
+  }
+
+
+  /* Code
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .skeleton code {
+    padding: .2rem .5rem;
+    margin: 0 .2rem;
+    font-size: 90%;
+    white-space: nowrap;
+    background: #F1F1F1;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+  }
+  .skeleton pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+  }
+
+
+  /* Tables
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .skeleton th,
+  .skeleton td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  .skeleton th:first-child,
+  .skeleton td:first-child {
+    padding-left: 0;
+  }
+  .skeleton th:last-child,
+  .skeleton td:last-child {
+    padding-right: 0;
+  }
+
+
+  /* Spacing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .skeleton button,
+  .skeleton .button {
+    margin-bottom: 1rem;
+  }
+  .skeleton input,
+  .skeleton textarea,
+  .skeleton select,
+  .skeleton fieldset {
+    margin-bottom: 1.5rem;
+  }
+  .skeleton pre,
+  .skeleton blockquote,
+  .skeleton dl,
+  .skeleton figure,
+  .skeleton table,
+  .skeleton p,
+  .skeleton ul,
+  .skeleton ol,
+  .skeleton form {
+    margin-bottom: 2.5rem;
+  }
+
+
+  /* Misc
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .skeleton hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1;
+  }
+
+
+  /* Clearing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /* Self Clearing Goodness */
+  .skeleton .container:after,
+  .skeleton .row:after,
+  .skeleton .u-cf {
+    content: "";
+    display: table;
+    clear: both;
+  }

@@ -32,6 +32,8 @@ export const white = '#fff';
 
 // BOOTSTRAP
 // Screen sizes
+// Extra small screen
+export const screenXsMin = '500px';
 // Small screen / tablet
 export const screenSmMin = '768px';
 // Medium screen / desktop
@@ -65,9 +67,6 @@ export const screenHeaderCollapse = screenXsMax;
 // Link colors (Aka = <a> tags)
 export const linkColor = lightBlue;
 export const linkHoverColor = tinycolor(linkColor).lighten(15).toString();
-
-// Body background (Affects main content background only)
-export const bodyBg = '#ecf0f5';
 
 // SIDEBAR SKINS
 // --------------------------------------------------------

@@ -1,13 +1,13 @@
 exports[`<UserMenu /> opens and closes when clicked 1`] = `
 <li
-  className="dzjnOV"
+  className="cGfuqK"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
   <span
-    className="dzIkgv" />
+    className="jMbPMO" />
   <ul
     className="edtLSL"
     open={false}>
@@ -27,14 +27,14 @@ exports[`<UserMenu /> opens and closes when clicked 1`] = `
 
 exports[`<UserMenu /> opens and closes when clicked 2`] = `
 <li
-  className="dzjnOV"
+  className="cGfuqK"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
   <span
-    className="dzIkgv" />
+    className="jMbPMO" />
   <ul
     className="iDtJkf"
     open={true}>
@@ -54,14 +54,14 @@ exports[`<UserMenu /> opens and closes when clicked 2`] = `
 
 exports[`<UserMenu /> renders correctly with default options 1`] = `
 <li
-  className="dzjnOV"
+  className="cGfuqK"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
   <span
-    className="dzIkgv" />
+    className="jMbPMO" />
   <ul
     className="edtLSL"
     open={false}>
@@ -81,14 +81,14 @@ exports[`<UserMenu /> renders correctly with default options 1`] = `
 
 exports[`<UserMenu /> renders correctly with image 1`] = `
 <li
-  className="dzjnOV"
+  className="cGfuqK"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src="/some/path" />
   <span
-    className="dzIkgv" />
+    className="jMbPMO" />
   <ul
     className="edtLSL"
     open={false}>
@@ -108,14 +108,14 @@ exports[`<UserMenu /> renders correctly with image 1`] = `
 
 exports[`<UserMenu /> renders correctly with name 1`] = `
 <li
-  className="dzjnOV"
+  className="cGfuqK"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
   <span
-    className="dzIkgv">
+    className="jMbPMO">
     Another name
   </span>
   <ul
@@ -139,14 +139,14 @@ exports[`<UserMenu /> renders correctly with name 1`] = `
 
 exports[`<UserMenu /> renders correctly with theme 1`] = `
 <li
-  className="gDCOpn"
+  className="jIwgmN"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
     className="guSIJB"
     src={undefined} />
   <span
-    className="dzIkgv" />
+    className="jMbPMO" />
   <ul
     className="edtLSL"
     open={false}>

@@ -12,11 +12,10 @@ import {
 const navMenu = () => ([
   <Header.Item
     href={`https://github.com/${pkgInfo.user}/${pkgInfo.name}`}
-    image="public/GitHub-Mark-120px-plus.png"
+    iconClass="fa fa-github"
     key="1"
-  >
-    Github
-  </Header.Item>,
+    title="Github"
+  />,
   <Header.UserMenu
     name="Alexander Pierce"
     image="public/user2-160x160.jpg"

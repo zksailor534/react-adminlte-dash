@@ -160,7 +160,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
         verbose: false,
       }),
       new CopyWebpackPlugin([
-        { from: 'public/GitHub-Mark-120px-plus.png', to: 'public' },
         { from: 'public/user2-160x160.jpg', to: 'public' },
       ]),
       new HtmlWebpackPlugin({
