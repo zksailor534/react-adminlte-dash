@@ -7,10 +7,12 @@ exports[`<NavItem /> renders correctly with icon class 1`] = `
 <li
   className="gwCKfy">
   <a
-    className="hWAeXK"
+    className="lndaRS"
     href="/a/link">
     <i
       className="fa fa-github koSwaT" />
+    <span
+      className="cCZXOi" />
   </a>
 </li>
 `;
@@ -19,11 +21,13 @@ exports[`<NavItem /> renders correctly with image 1`] = `
 <li
   className="gwCKfy">
   <a
-    className="hWAeXK"
+    className="lndaRS"
     href="/a/link">
     <img
       className="ldbpHN"
       src="/some/path" />
+    <span
+      className="cCZXOi" />
   </a>
 </li>
 `;
@@ -37,7 +41,10 @@ exports[`<NavItem /> renders link correctly 1`] = `
 <li
   className="gwCKfy">
   <a
-    className="hWAeXK"
-    href="/a/link" />
+    className="lndaRS"
+    href="/a/link">
+    <span
+      className="cCZXOi" />
+  </a>
 </li>
 `;
