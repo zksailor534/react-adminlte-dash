@@ -36,6 +36,7 @@ const StyledAside = styled.aside`
   left: 0;
   padding-top: 50px;
   min-height: 100vh;
+  height: 100%;
   width: ${sidebarWidth};
   z-index: 810;
 

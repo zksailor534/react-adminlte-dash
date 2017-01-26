@@ -1,6 +1,6 @@
 exports[`<Dashboard /> renders correctly with black theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -45,7 +45,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -58,7 +58,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -103,7 +103,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
     </nav>
   </header>
   <aside
-    className="feLxxV">
+    className="diPORJ">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -116,7 +116,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with blue theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -161,7 +161,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -174,7 +174,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -219,7 +219,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
     </nav>
   </header>
   <aside
-    className="feLxxV">
+    className="diPORJ">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -232,7 +232,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -277,7 +277,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
     </nav>
   </header>
   <aside
-    className="dJjICI">
+    className="jnoTwF">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -290,7 +290,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
 
 exports[`<Dashboard /> renders correctly with fixed option 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -335,7 +335,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
     </nav>
   </header>
   <aside
-    className="dJjICI">
+    className="jnoTwF">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -348,7 +348,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
 
 exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sidebarMini options 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -393,7 +393,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
     </nav>
   </header>
   <aside
-    className="lgMTFt">
+    className="hwJubO">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -406,7 +406,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
 
 exports[`<Dashboard /> renders correctly with green theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -451,7 +451,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -464,7 +464,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -509,7 +509,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
     </nav>
   </header>
   <aside
-    className="feLxxV">
+    className="diPORJ">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -522,7 +522,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini options 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -567,7 +567,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
     </nav>
   </header>
   <aside
-    className="eXBQZb">
+    className="lpcQgQ">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -580,7 +580,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
 
 exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -625,7 +625,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
     </nav>
   </header>
   <aside
-    className="hlQeXc">
+    className="bjqzmX">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -638,7 +638,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
 
 exports[`<Dashboard /> renders correctly with no options 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -683,7 +683,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -696,7 +696,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
 
 exports[`<Dashboard /> renders correctly with purple theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -741,7 +741,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -754,7 +754,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -799,7 +799,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
     </nav>
   </header>
   <aside
-    className="feLxxV">
+    className="diPORJ">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -812,7 +812,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with red theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -857,7 +857,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -870,7 +870,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -915,7 +915,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
     </nav>
   </header>
   <aside
-    className="feLxxV">
+    className="diPORJ">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -928,7 +928,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -973,7 +973,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -986,7 +986,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
 
 exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -1031,7 +1031,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
     </nav>
   </header>
   <aside
-    className="eMTNN">
+    className="dDcugc">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
@@ -1044,7 +1044,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
 
 exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
 <div
-  className="bxkLLE"
+  className="jYCcpo"
   onMouseDown={[Function]}
   onTouchStart={[Function]}>
   <header
@@ -1089,7 +1089,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
     </nav>
   </header>
   <aside
-    className="feLxxV">
+    className="diPORJ">
     <section
       className="hZXMYD"
       name="sidebar-wrapper" />
