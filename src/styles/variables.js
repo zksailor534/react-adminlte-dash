@@ -32,6 +32,8 @@ export const white = '#fff';
 
 // BOOTSTRAP
 // Screen sizes
+// Extra small screen
+export const screenXsMin = '500px';
 // Small screen / tablet
 export const screenSmMin = '768px';
 // Medium screen / desktop

@@ -10,6 +10,7 @@ import {
   navbarHeight,
   navbarPaddingHorizontal,
   navbarPaddingVertical,
+  screenXsMin,
 } from '../../styles/variables';
 
 const imageSize = `${Math.floor(parseInt(navbarHeight, 10) / 2)}px`;
@@ -23,6 +24,12 @@ const imageMarginBottom = `-${Math.floor(
   parseInt(navbarPaddingHorizontal, 10) +
   parseInt(navbarPaddingVertical, 10)) -
   parseInt(navbarHeight, 10)) / 2)}px`;
+
+const StyledSpan = styled.span`
+  @media (max-width: ${screenXsMin}) {
+    display: none;
+  }
+`;
 
 const StyledIcon = styled.i`
   color: inherit;
@@ -96,6 +103,10 @@ const StyledLink = styled.a`
     color: inherit;
     text-decoration: none !important;
   }
+
+  @media (max-width: ${screenXsMin}) {
+    padding: ${navbarPaddingVertical} 5px;
+  }
 `;
 
 const StyledItem = styled.li`
@@ -140,25 +151,25 @@ const displayImage = (src, icon) => {
   return null;
 };
 
-const NavItem = ({ children, onClick, href, image, iconClass }) => (
+const NavItem = ({ title, onClick, href, image, iconClass }) => (
   <StyledItem>
     {onClick &&
       <StyledLink onClick={onClick} href={null}>
         {displayImage(image, iconClass)}
-        {children}
+        <StyledSpan>{title}</StyledSpan>
       </StyledLink>
     }
     {(!onClick && href) &&
       <StyledLink href={href}>
         {displayImage(image, iconClass)}
-        {children}
+        <StyledSpan>{title}</StyledSpan>
       </StyledLink>
     }
   </StyledItem>
 );
 
 NavItem.propTypes = {
-  children: React.PropTypes.node,
+  title: React.PropTypes.string,
   onClick: React.PropTypes.func,
   href: React.PropTypes.string,
   image: React.PropTypes.string,

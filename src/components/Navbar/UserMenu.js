@@ -11,6 +11,7 @@ import {
   navbarHeight,
   navbarPaddingHorizontal,
   navbarPaddingVertical,
+  screenXsMin,
 } from '../../styles/variables';
 
 const imageSize = `${Math.floor(parseInt(navbarHeight, 10) / 2)}px`;
@@ -55,6 +56,10 @@ const StyledUserName = styled.span`
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
+
+  @media (max-width: ${screenXsMin}) {
+    display: none;
+  }
 `;
 
 const UserMenuHeader = styled.li`
@@ -164,6 +169,10 @@ const StyledUserMenu = styled.li`
   &:hover {
     color: ${props => props.theme.navbarHoverColor || '#fff'};
     background-color: ${props => props.theme.logoBgColor || 'transparent'};
+  }
+
+  @media (max-width: ${screenXsMin}) {
+    padding: ${navbarPaddingVertical} 5px;
   }
 `;
 
