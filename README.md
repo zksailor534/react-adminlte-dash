@@ -34,7 +34,7 @@ However, in order for the dashboard to use the entire available screen height, t
 In CSS:
 ```css
 #app {
-  height: 100%;
+  min-height: 100vh;
 }
 ```
 

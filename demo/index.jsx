@@ -34,7 +34,7 @@ const routes = (
 );
 
 // set app div height
-document.getElementById('app').style.height = '100%';
+document.getElementById('app').style['min-height'] = '100vh';
 
 ReactDOM.render(
   <Provider store={store}>

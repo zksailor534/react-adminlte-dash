@@ -29,14 +29,13 @@ const StyledDashboard = styled.div`
   /* theme */
   ${props => (props.theme.sidebarBg && `background-color: ${props.theme.sidebarBg};`)}
 
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 
   ${props => (props.boxed && `
     max-width: ${boxedLayoutMaxWidth};
     margin: 0 auto;
-    min-height: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     position: relative;
   `)}
