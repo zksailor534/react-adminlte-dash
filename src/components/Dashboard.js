@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { Swipeable } from 'react-touch';
+import MobileDetect from 'mobile-detect';
 
 import Header from './Header';
 import Sidebar from './Sidebar';
@@ -43,56 +45,61 @@ const StyledDashboard = styled.div`
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
+    this._sidebarToggle = this.sidebarToggle.bind(this);
+    this._sidebarOpen = this.sidebarOpen.bind(this);
+    this._sidebarClose = this.sidebarClose.bind(this);
+    this.md = new MobileDetect(window.navigator.userAgent);
+
     this.state = {
+      mobile: this.md.mobile() !== null,
       sidebarCollapse: this.props.initialCollapse,
     };
-    this._sidebarToggle = this.sidebarToggle.bind(this);
   }
 
-  sidebarToggle() {
-    this.setState({
-      sidebarCollapse: !this.state.sidebarCollapse,
-    });
-  }
+  sidebarToggle() { this.setState({ sidebarCollapse: !this.state.sidebarCollapse }); }
+  sidebarOpen() { this.state.mobile && this.setState({ sidebarCollapse: false }); }
+  sidebarClose() { this.state.mobile && this.setState({ sidebarCollapse: true }); }
 
   render() {
     const theme = themes[this.props.theme];
     return (
-      <StyledDashboard>
-        <ThemeProvider theme={theme}>
-          <Header
-            logoOnClick={this.props.logoOnClick}
-            logoHref={this.props.logoHref}
-            logoLg={this.props.logoLg}
-            logoSm={this.props.logoSm}
-            fixed={this.props.fixed}
-            sidebarToggle={this._sidebarToggle}
-            sidebarCollapse={this.state.sidebarCollapse}
-            sidebarMini={this.props.sidebarMini}
-          >
-            {this.props.navbarChildren}
-          </Header>
-        </ThemeProvider>
-        <ThemeProvider theme={theme}>
-          <Sidebar
-            fixed={this.props.fixed}
-            sidebarCollapse={this.state.sidebarCollapse}
-            sidebarMini={this.props.sidebarMini}
-          >
-            {this.props.sidebarChildren}
-          </Sidebar>
-        </ThemeProvider>
-        <ThemeProvider theme={theme}>
-          <Content
-            fixed={this.props.fixed}
-            name="content-wrapper"
-            sidebarCollapse={this.state.sidebarCollapse}
-            sidebarMini={this.props.sidebarMini}
-          >
-            {this.props.children}
-          </Content>
-        </ThemeProvider>
-      </StyledDashboard>
+      <Swipeable onSwipeLeft={this._sidebarClose} onSwipeRight={this._sidebarOpen} >
+        <StyledDashboard>
+          <ThemeProvider theme={theme}>
+            <Header
+              logoOnClick={this.props.logoOnClick}
+              logoHref={this.props.logoHref}
+              logoLg={this.props.logoLg}
+              logoSm={this.props.logoSm}
+              fixed={this.props.fixed}
+              sidebarToggle={this._sidebarToggle}
+              sidebarCollapse={this.state.sidebarCollapse}
+              sidebarMini={this.props.sidebarMini}
+            >
+              {this.props.navbarChildren}
+            </Header>
+          </ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <Sidebar
+              fixed={this.props.fixed}
+              sidebarCollapse={this.state.sidebarCollapse}
+              sidebarMini={this.props.sidebarMini}
+            >
+              {this.props.sidebarChildren}
+            </Sidebar>
+          </ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <Content
+              fixed={this.props.fixed}
+              name="content-wrapper"
+              sidebarCollapse={this.state.sidebarCollapse}
+              sidebarMini={this.props.sidebarMini}
+            >
+              {this.props.children}
+            </Content>
+          </ThemeProvider>
+        </StyledDashboard>
+      </Swipeable>
     );
   }
 }
