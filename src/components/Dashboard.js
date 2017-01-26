@@ -51,7 +51,7 @@ class Dashboard extends React.Component {
 
     this.state = {
       mobile: this.md.mobile() !== null,
-      sidebarCollapse: this.props.initialCollapse,
+      sidebarCollapse: this.props.initialCollapse || (this.md.mobile() !== null),
     };
   }
 
