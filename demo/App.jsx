@@ -181,10 +181,24 @@ const sb = pickTheme => ([
   </Sidebar.Menu>,
 ]);
 
+const footer = () => ([
+  <strong>
+    <span>Copyright © 2014-2016 </span>
+    <a href="http://almsaeedstudio.com">Almsaeed Studio</a>
+    <span>. </span>
+  </strong>,
+  <span> All rights reserved.</span>,
+  <div style={{ float: 'right' }}>
+    <b>Version</b>
+    <span> 2.3.8</span>
+  </div>,
+]);
+
 const App = ({ children, theme, pickTheme }) => (
   <Dashboard
     navbarChildren={navMenu()}
     sidebarChildren={sb(pickTheme)}
+    footerChildren={footer()}
     sidebarMini
     theme={theme}
   >

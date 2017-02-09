@@ -90,12 +90,11 @@ class Dashboard extends React.Component {
           </Content>
         </ThemeProvider>
         <ThemeProvider theme={theme}>
-          <Footer>
-            <strong>
-              <span>Copyright © 2014-2016 </span>
-              <a href="http://almsaeedstudio.com">Almsaeed Studio</a>
-              <span> All rights reserved.</span>
-            </strong>
+          <Footer
+            sidebarCollapse={this.state.sidebarCollapse}
+            sidebarMini={this.props.sidebarMini}
+          >
+            {this.props.footerChildren}
           </Footer>
         </ThemeProvider>
       </StyledDashboard>
@@ -111,6 +110,7 @@ Dashboard.propTypes = {
   logoSm: React.PropTypes.element,
   navbarChildren: React.PropTypes.node,
   sidebarChildren: React.PropTypes.node,
+  footerChildren: React.PropTypes.node,
   fixed: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
   initialCollapse: React.PropTypes.bool,
