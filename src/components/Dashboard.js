@@ -5,6 +5,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Content from './Content';
+import Footer from './Footer';
 import themes from '../styles';
 
 import {
@@ -88,6 +89,14 @@ class Dashboard extends React.Component {
             {this.props.children}
           </Content>
         </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Footer
+            sidebarCollapse={this.state.sidebarCollapse}
+            sidebarMini={this.props.sidebarMini}
+          >
+            {this.props.footerChildren}
+          </Footer>
+        </ThemeProvider>
       </StyledDashboard>
     );
   }
@@ -101,6 +110,7 @@ Dashboard.propTypes = {
   logoSm: React.PropTypes.element,
   navbarChildren: React.PropTypes.node,
   sidebarChildren: React.PropTypes.node,
+  footerChildren: React.PropTypes.node,
   fixed: React.PropTypes.bool,
   sidebarMini: React.PropTypes.bool,
   initialCollapse: React.PropTypes.bool,

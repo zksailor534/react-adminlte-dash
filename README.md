@@ -7,9 +7,11 @@ React.js components for AdminLTE themed dashboard.
 
 > Based off of [AdminLTE](https://github.com/almasaeed2010/AdminLTE). Static hosted [demo](http://zksailor534.github.io/react-adminlte-dash/) on GitHub Pages.
 
-### Todo (path to 1.0)
+### Todo (Path to 1.0.0)
 
+- [ ] Universal/Isomorphic component
 - [ ] Right sidebar
+- [x] Footer
 - [x] Content formatting
 - [ ] Generic Navbar dropdowns
 - [ ] Messaging Navbar dropdown
@@ -63,6 +65,8 @@ const App = ({ children }) => (
 );
 ```
 
+In order to create themed child components (not wrapped in navbarChildren, sidebarChildren, or footerChildren), use the `withTheme` wrapper provided by `styled-components`.  This will provide the `theme` object to the child component.  See `src/styles/variables.js` for the available variables.  Documentation for these variables is TBD.
+
 ## Included Components
 
 ### *Dashboard*
@@ -75,6 +79,7 @@ Provides a default empty header and sidebar.
 | children | `node` | Any React child components to be rendered in content fields | n/a |
 | navbarChildren | `node` | Any React child components to be rendered in the Header's navbar | n/a |
 | sidebarChildren | `node` | Any React child components to be rendered in the Sidebar | n/a |
+| footerChildren | `node` | Any React child components to be rendered in the Footer | n/a |
 | theme | `string` | Choice of AdminLTE skin themes: `skin-blue`, `skin-black`, `skin-purple`, `skin-green`, `skin-red`, `skin-yellow`, `skin-blue-light`, `skin-black-light`, `skin-purple-light`, `skin-green-light`, `skin-red-light`, `skin-yellow-light` | `skin-blue` |
 | initialCollapse | `bool` | Determines initial state of sidebar: collapsed (`true`) or expanded (`false`) | `false` |
 | sidebarMini | `bool` | Determines whether sidebar collapses to mini size (`true`) or off-screen (`false`) | `true` |
