@@ -65,6 +65,8 @@ const App = ({ children }) => (
 );
 ```
 
+In order to create themed child components (not wrapped in navbarChildren, sidebarChildren, or footerChildren), use the `withTheme` wrapper provided by `styled-components`.  This will provide the `theme` object to the child component.  See `src/styles/variables.js` for the available variables.  Documentation for these variables is TBD.
+
 ## Included Components
 
 ### *Dashboard*
