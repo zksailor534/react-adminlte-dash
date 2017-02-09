@@ -5,6 +5,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Content from './Content';
+import Footer from './Footer';
 import themes from '../styles';
 
 import {
@@ -87,6 +88,15 @@ class Dashboard extends React.Component {
           >
             {this.props.children}
           </Content>
+        </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Footer>
+            <strong>
+              <span>Copyright © 2014-2016 </span>
+              <a href="http://almsaeedstudio.com">Almsaeed Studio</a>
+              <span> All rights reserved.</span>
+            </strong>
+          </Footer>
         </ThemeProvider>
       </StyledDashboard>
     );
