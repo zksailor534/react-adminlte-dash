@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import App from './App';
 
 const initialState = {
-  theme: 'skin-blue',
+  theme: 'skin-black-gray',
 };
 
 const themeAction = theme => ({
@@ -15,6 +15,7 @@ const themeReducer = (state, action) => {
   switch (action.theme) {
     case 'skin-black':
     case 'skin-black-light':
+    case 'skin-black-gray':
     case 'skin-blue':
     case 'skin-blue-light':
     case 'skin-green':

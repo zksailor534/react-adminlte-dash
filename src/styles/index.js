@@ -1,5 +1,6 @@
 import black from './skin-black';
 import blackLight from './skin-black-light';
+import blackGray from './skin-black-gray';
 import blue from './skin-blue';
 import blueLight from './skin-blue-light';
 import green from './skin-green';
@@ -24,4 +25,5 @@ export default {
   'skin-red-light': redLight,
   'skin-yellow': yellow,
   'skin-yellow-light': yellowLight,
+  'skin-black-gray': blackGray,
 };
