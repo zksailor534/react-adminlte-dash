@@ -26,6 +26,7 @@ export const maroon = '#d81b60';
 export const black = '#111';
 export const gray = '#d2d6de';
 export const white = '#fff';
+export const lightgray = '#d3d3d3';
 
 // LAYOUT
 // --------------------------------------------------------
